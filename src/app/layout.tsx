@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { DataBanner } from "@/components/DataBanner";
 
 export const metadata: Metadata = {
   title: "NammaKharcha • Bengaluru Public Projects Tracker",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-[#faf9f6] text-[#1d1d1f] antialiased selection:bg-neutral-900 selection:text-white">
         <Navbar />
+        <DataBanner />
         <main className="flex-1">
           {children}
         </main>

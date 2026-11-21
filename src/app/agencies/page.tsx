@@ -1,6 +1,6 @@
 import { agencies } from "@/data/agencies";
 import { projects } from "@/data/projects";
-import { formatCrores } from "@/lib/utils";
+import { formatCrores, bestCostCr } from "@/lib/utils";
 import Link from "next/link";
 import { ExternalLink, ArrowRight } from "lucide-react";
 
@@ -19,8 +19,8 @@ export default function AgenciesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {agencies.map((agency) => {
           const agencyProjects = projects.filter((p) => p.agencyCode === agency.code);
-          const sanctionedCr = agencyProjects.reduce((sum, p) => sum + p.sanctionedAmountCr, 0);
-          const disbursedCr = agencyProjects.reduce((sum, p) => sum + p.actualDisbursedCr, 0);
+          const costKnown = agencyProjects.filter((p) => bestCostCr(p) !== null);
+          const totalCostCr = costKnown.reduce((sum, p) => sum + (bestCostCr(p) ?? 0), 0);
           const redFlagsCount = agencyProjects.reduce((sum, p) => sum + p.redFlags.length, 0);
 
           return (
@@ -57,7 +57,9 @@ export default function AgenciesPage() {
                 <div className="grid grid-cols-2 gap-2 pt-2 border-t border-neutral-100 text-xs">
                   <div className="rounded-xl bg-[#faf9f6] p-2.5">
                     <span className="text-neutral-400 text-[11px]">Annual Budget:</span>
-                    <div className="font-semibold text-neutral-900 mt-0.5">{formatCrores(agency.annualBudgetCr)}</div>
+                    <div className={`mt-0.5 ${agency.annualBudgetCr === null ? "text-neutral-400" : "font-semibold text-neutral-900"}`}>
+                      {formatCrores(agency.annualBudgetCr)}
+                    </div>
                   </div>
                   <div className="rounded-xl bg-[#faf9f6] p-2.5">
                     <span className="text-neutral-400 text-[11px]">Tracked Projects:</span>
@@ -65,15 +67,15 @@ export default function AgenciesPage() {
                   </div>
                 </div>
 
-                {sanctionedCr > 0 && (
+                {costKnown.length > 0 && (
                   <div className="rounded-xl bg-[#faf9f6] p-2.5 text-xs space-y-1">
                     <div className="flex justify-between text-neutral-500">
-                      <span>Total Approved:</span>
-                      <span className="font-semibold text-neutral-900">{formatCrores(sanctionedCr)}</span>
+                      <span>Reported cost ({costKnown.length} of {agencyProjects.length}):</span>
+                      <span className="font-semibold text-neutral-900">{formatCrores(totalCostCr)}</span>
                     </div>
                     <div className="flex justify-between text-neutral-500">
                       <span>Paid Out:</span>
-                      <span className="font-semibold text-neutral-900">{formatCrores(disbursedCr)}</span>
+                      <span className="text-neutral-400">Not available</span>
                     </div>
                     {redFlagsCount > 0 && (
                       <div className="flex justify-between text-rose-700 font-medium pt-1 border-t border-neutral-200/60">

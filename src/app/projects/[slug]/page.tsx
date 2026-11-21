@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 import { agencies } from "@/data/agencies";
 import { FinancialPipeline } from "@/components/FinancialPipeline";
 import { RedFlagBadge } from "@/components/RedFlagBadge";
-import { formatCrores, calculateDelayString } from "@/lib/utils";
+import { formatCrores, formatMonthYear, calculateDelayString, statusLabel } from "@/lib/utils";
 import { 
   Building2, 
   MapPin, 
@@ -68,7 +68,7 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
           </div>
 
           <span className="rounded-full px-2.5 py-0.5 text-xs font-medium border bg-neutral-100 text-neutral-800 border-neutral-200">
-            {project.status === "stalled" ? "Stalled" : "In Progress"}
+            {statusLabel(project.status)}
           </span>
         </div>
 
@@ -88,13 +88,25 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
           </div>
           <div className="flex items-center gap-1.5">
             <Calendar className="h-3.5 w-3.5 text-neutral-400" />
-            <span>Approved: <strong className="text-neutral-800">{new Date(project.sanctionedDate).toLocaleDateString("en-IN", { month: "short", year: "numeric" })}</strong></span>
+            <span>Original deadline: <strong className="text-neutral-800">{formatMonthYear(project.originalDeadline)}</strong></span>
           </div>
           <div className="flex items-center gap-1.5">
             <Clock className="h-3.5 w-3.5 text-neutral-400" />
-            <span>Target: <strong className="text-neutral-800">{new Date(project.revisedDeadline).toLocaleDateString("en-IN", { month: "short", year: "numeric" })}</strong> ({delayStr})</span>
+            <span>
+              Current target: <strong className="text-neutral-800">{formatMonthYear(project.revisedDeadline)}</strong>
+              {delayStr ? ` (${delayStr})` : ""}
+            </span>
           </div>
         </div>
+      </div>
+
+      {/* Overview */}
+      <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8 space-y-2 shadow-xs">
+        <h2 className="text-base font-semibold text-neutral-900 tracking-tight">About this project</h2>
+        <p className="text-sm text-neutral-600 leading-relaxed">{project.overview}</p>
+        <p className="text-[11px] text-neutral-400">
+          Last audited {project.dataQuality.lastAudited}. See the notes under each figure for sources.
+        </p>
       </div>
 
       {/* SECTION 1: THE FINANCIAL PIPELINE */}
@@ -109,19 +121,25 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
               <span>What went wrong? (Audits & Delays)</span>
             </h2>
             <p className="text-xs text-neutral-500 mt-0.5">
-              Documented delays, cost increases, and official auditor findings.
+              Delays, cost increases and audit findings, each linked to a report.
             </p>
           </div>
           <span className="rounded-full bg-neutral-100 border border-neutral-200 px-2.5 py-0.5 text-xs font-medium text-neutral-700">
-            {project.redFlags.length} notice{project.redFlags.length > 1 ? "s" : ""}
+            {project.redFlags.length} notice{project.redFlags.length === 1 ? "" : "s"}
           </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {project.redFlags.map((flag) => (
-            <RedFlagBadge key={flag.id} redFlag={flag} detailed={true} />
-          ))}
-        </div>
+        {project.redFlags.length === 0 ? (
+          <div className="p-5 rounded-xl bg-[#faf9f6] border border-neutral-200 text-center text-xs text-neutral-500">
+            No sourced notices yet. This does not mean there are no problems, only that we have not found a citable report.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {project.redFlags.map((flag) => (
+              <RedFlagBadge key={flag.id} redFlag={flag} detailed={true} />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* SECTION 3: COMPANIES BUILDING THIS */}
@@ -135,7 +153,7 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
 
         {project.contractors.length === 0 ? (
           <div className="p-5 rounded-xl bg-[#faf9f6] border border-neutral-200 text-center text-xs text-neutral-500">
-            No company currently assigned. Tenders received zero bids or are pending.
+            {project.contractorsNote ?? "Contractor details have not been confirmed yet."}
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -167,9 +185,13 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                   </div>
                   <div>
                     <span className="text-neutral-400">Awarded Date:</span>
-                    <div className="font-semibold text-neutral-900 mt-0.5">{new Date(c.contractAwardDate).toLocaleDateString("en-IN", { month: "short", year: "numeric" })}</div>
+                    <div className="font-semibold text-neutral-900 mt-0.5">{formatMonthYear(c.contractAwardDate)}</div>
                   </div>
                 </div>
+
+                {c.scope && (
+                  <p className="text-[11px] text-neutral-500 leading-relaxed">{c.scope}</p>
+                )}
 
                 {c.kpppTenderId && (
                   <div className="text-[11px] text-neutral-500 font-mono bg-white px-2 py-1 rounded border border-neutral-200 truncate">
@@ -180,14 +202,23 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
             ))}
           </div>
         )}
+        {project.contractors.length > 0 && project.contractorsNote && (
+          <p className="text-[11px] text-neutral-500 leading-relaxed">{project.contractorsNote}</p>
+        )}
       </div>
 
       {/* SECTION 4: PAYMENT TIMELINE */}
       <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8 space-y-5 shadow-xs">
         <h2 className="text-base font-semibold text-neutral-900 tracking-tight flex items-center gap-2">
           <History className="h-4 w-4 text-neutral-700" />
-          <span>Timeline of payments & milestones</span>
+          <span>Timeline of key events</span>
         </h2>
+
+        {project.milestones.length === 0 && (
+          <div className="p-5 rounded-xl bg-[#faf9f6] border border-neutral-200 text-center text-xs text-neutral-500">
+            No sourced timeline events yet.
+          </div>
+        )}
 
         <div className="relative pl-5 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-px before:bg-neutral-200">
           {project.milestones.map((m) => (
@@ -197,15 +228,24 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="text-xs font-semibold text-neutral-900">{m.stageName}</span>
                   <div className="flex items-center gap-2 text-xs">
-                    <span className="font-semibold text-neutral-900">
-                      +{formatCrores(m.amountReleasedCr)}
-                    </span>
-                    <span className="text-neutral-400">
-                      {new Date(m.date).toLocaleDateString("en-IN", { month: "short", year: "numeric" })}
-                    </span>
+                    {m.amountReleasedCr !== undefined && (
+                      <span className="font-semibold text-neutral-900">
+                        {formatCrores(m.amountReleasedCr)}
+                      </span>
+                    )}
+                    <span className="text-neutral-400">{formatMonthYear(m.date)}</span>
                   </div>
                 </div>
                 <p className="text-xs text-neutral-600 leading-relaxed">{m.description}</p>
+                <a
+                  href={m.source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 text-[11px] text-neutral-500 hover:underline"
+                >
+                  <span>Source: {m.source.label}</span>
+                  <ExternalLink className="h-3 w-3 text-neutral-400" />
+                </a>
               </div>
             </div>
           ))}
@@ -286,7 +326,7 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
       <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8 space-y-3 shadow-xs">
         <h2 className="text-base font-semibold text-neutral-900 tracking-tight flex items-center gap-2">
           <FileText className="h-4 w-4 text-neutral-700" />
-          <span>Official Government Documents</span>
+          <span>Sources and documents</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
           {project.officialDocLinks.map((doc, idx) => (

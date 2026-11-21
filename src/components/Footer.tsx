@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-2 md:col-span-1">
             <div className="font-semibold text-neutral-900 text-sm">NammaKharcha</div>
             <p className="text-neutral-500 leading-relaxed">
-              A simple public tracker for Bengaluru infrastructure projects. We follow government announcements, budget orders, and contractor payments to see where the money goes.
+              A public tracker for Bengaluru infrastructure projects, under construction. We compare published costs and timelines with progress, and show where data is missing.
             </p>
           </div>
 
@@ -55,8 +55,13 @@ export default function Footer() {
                   rel="noreferrer"
                   className="hover:text-neutral-900 inline-flex items-center gap-1"
                 >
-                  Bengaluru Administration Portal <ExternalLink className="h-3 w-3 text-neutral-400" />
+                  Bengaluru Urban District Portal <ExternalLink className="h-3 w-3 text-neutral-400" />
                 </a>
+              </li>
+              <li>
+                <Link href="/methodology" className="hover:text-neutral-900">
+                  How we check data
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,7 +70,7 @@ export default function Footer() {
           <div>
             <div className="font-semibold text-neutral-900 mb-2.5">Public Record</div>
             <p className="text-neutral-500 leading-relaxed">
-              All figures, dates, and delays are sourced directly from published government orders, official project status reports, and court filings.
+              Figures are tagged Verified (matches an official document), Reported (news or third-party tracker) or Unverified. At present no figure is fully verified against a primary government document. Spot an error? Tell us and we will correct it.
             </p>
           </div>
         </div>

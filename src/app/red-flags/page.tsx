@@ -24,7 +24,7 @@ export default function RedFlagsPage() {
           Delays & Warnings
         </h1>
         <p className="text-xs sm:text-sm text-neutral-500 max-w-2xl">
-          A list of projects with severe timeline delays, large budget increases, or official audit notices.
+          Delays, cost increases and audit findings. Only notices that link to a published report are listed; severity labels are our own judgement, and several rely on news reports that still need matching to official documents.
         </p>
       </div>
 

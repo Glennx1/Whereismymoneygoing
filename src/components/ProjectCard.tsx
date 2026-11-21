@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { Project } from "@/lib/types";
-import { formatCrores, calculateDelayString, calculateCostOverrunPct } from "@/lib/utils";
-import { RedFlagBadge } from "./RedFlagBadge";
-import { Clock, TrendingUp, ArrowRight, MapPin, AlertCircle } from "lucide-react";
+import {
+  formatCrores,
+  formatPct,
+  calculateDelayString,
+  calculateCostOverrunPct,
+  bestCostCr,
+  statusLabel,
+} from "@/lib/utils";
+import { Clock, TrendingUp, ArrowRight, MapPin } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,9 +16,9 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const delayStr = calculateDelayString(project.originalDeadline, project.revisedDeadline);
-  const isDelayed = delayStr !== "On Schedule";
-  const costOverrun = project.revisedEstimatedCostCr - project.sanctionedAmountCr;
+  const isDelayed = delayStr !== null && delayStr !== "On Schedule";
   const costOverrunPct = calculateCostOverrunPct(project.sanctionedAmountCr, project.revisedEstimatedCostCr);
+  const hasCostOverrun = costOverrunPct !== null && costOverrunPct > 0;
 
   const getStatusBadge = (status: Project["status"]) => {
     switch (status) {
@@ -29,20 +35,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     }
   };
 
-  const getStatusText = (status: Project["status"]) => {
-    switch (status) {
-      case "stalled":
-        return "Stalled";
-      case "under_construction":
-        return "In Progress";
-      case "partially_operational":
-        return "Partially Open";
-      case "completed":
-        return "Completed";
-      default:
-        return "Announced";
-    }
-  };
+  const getStatusText = statusLabel;
 
   return (
     <div className="group rounded-2xl border border-neutral-200/90 bg-white p-5 transition-all duration-200 hover:border-neutral-300 hover:shadow-md flex flex-col justify-between">
@@ -88,9 +81,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {/* Simple 3-Box Stats */}
         <div className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-[#faf9f6] border border-neutral-200/60 p-3 text-center">
           <div>
-            <div className="text-[10px] uppercase font-medium text-neutral-400">Approved</div>
+            <div className="text-[10px] uppercase font-medium text-neutral-400">Cost</div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900">
-              {formatCrores(project.sanctionedAmountCr)}
+              {formatCrores(bestCostCr(project))}
             </div>
           </div>
           <div>
@@ -102,7 +95,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div>
             <div className="text-[10px] uppercase font-medium text-neutral-400">Work Done</div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900">
-              {project.physicalProgressPct}%
+              {formatPct(project.physicalProgressPct)}
             </div>
           </div>
         </div>
@@ -115,7 +108,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               {delayStr}
             </span>
           )}
-          {costOverrun > 0 && (
+          {hasCostOverrun && (
             <span className="inline-flex items-center gap-1 rounded-md bg-amber-50 border border-amber-200 px-2 py-0.5 text-[11px] font-medium text-amber-800">
               <TrendingUp className="h-3 w-3" />
               +{costOverrunPct}% Extra Cost
@@ -124,10 +117,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Clean Notices Preview */}
+        {project.redFlags.length === 0 && (
+          <div className="mt-3.5 pt-3 border-t border-neutral-100 text-[11px] text-neutral-400">
+            No sourced notices yet
+          </div>
+        )}
         {project.redFlags.length > 0 && (
           <div className="mt-3.5 pt-3 border-t border-neutral-100 space-y-1.5">
             <div className="text-[11px] font-medium text-neutral-500">
-              Notices:
+              Notices (sourced):
             </div>
             <div className="space-y-1.5">
               {project.redFlags.slice(0, 2).map((rf) => (
@@ -149,7 +147,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Action Footer */}
       <div className="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
         <span className="text-neutral-400">
-          Target: {new Date(project.revisedDeadline).getFullYear()}
+          Target: {project.revisedDeadline ? new Date(project.revisedDeadline).getFullYear() : "Not confirmed"}
         </span>
         <Link
           href={`/projects/${project.slug}`}

@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 import { agencies } from "@/data/agencies";
 import { ProjectCard } from "@/components/ProjectCard";
 import { BengaluruMap } from "@/components/BengaluruMap";
-import { formatCrores } from "@/lib/utils";
+import { formatCrores, bestCostCr } from "@/lib/utils";
 import { 
   Search, 
   Map, 
@@ -21,21 +21,20 @@ export default function HomePage() {
   const [selectedStatus, setSelectedStatus] = useState<string>("ALL");
   const [viewMode, setViewMode] = useState<"cards" | "map">("cards");
 
-  // Macro Statistics calculations
-  const totalSanctionedCr = useMemo(() => {
-    return projects.reduce((acc, p) => acc + p.sanctionedAmountCr, 0);
-  }, []);
-
-  const totalDisbursedCr = useMemo(() => {
-    return projects.reduce((acc, p) => acc + p.actualDisbursedCr, 0);
-  }, []);
-
-  const totalCostOverrunsCr = useMemo(() => {
-    return projects.reduce((acc, p) => {
-      const diff = p.revisedEstimatedCostCr - p.sanctionedAmountCr;
-      return acc + (diff > 0 ? diff : 0);
-    }, 0);
-  }, []);
+  // Summary statistics. Only counts figures that exist; missing data is never treated as zero.
+  const costKnown = useMemo(() => projects.filter((p) => bestCostCr(p) !== null), []);
+  const totalCostCr = useMemo(
+    () => costKnown.reduce((acc, p) => acc + (bestCostCr(p) ?? 0), 0),
+    [costKnown]
+  );
+  const spendingKnownCount = useMemo(
+    () => projects.filter((p) => p.actualDisbursedCr !== null).length,
+    []
+  );
+  const sourcedProjectsCount = useMemo(
+    () => projects.filter((p) => Object.values(p.dataQuality.fields).some((f) => f && f.confidence !== "unverified")).length,
+    []
+  );
 
   const totalRedFlagsCount = useMemo(() => {
     return projects.reduce((acc, p) => acc + p.redFlags.length, 0);
@@ -74,7 +73,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-neutral-500 leading-relaxed font-normal">
-            When the government announces thousands of crores for roads, flyovers, or metro lines, how much actually gets spent? We track the numbers directly from official government releases and compare them with real progress on the ground.
+            When the government announces thousands of crores for roads, flyovers, or metro lines, how much actually gets spent? We are building a tracker that compares published costs and timelines with progress on the ground. It is a work in progress: we are verifying every figure, and show where we have not found a reliable source.
           </p>
         </div>
 
@@ -82,49 +81,49 @@ export default function HomePage() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 pt-2">
           <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
             <div className="text-xs font-medium text-neutral-500">
-              Approved Budget
+              Projects Tracked
             </div>
             <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
-              {formatCrores(totalSanctionedCr)}
+              {projects.length}
             </div>
             <div className="mt-1 text-xs text-neutral-400">
-              Across tracked city projects
+              A starter set, not the full city list
             </div>
           </div>
 
           <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
             <div className="text-xs font-medium text-neutral-500">
-              Money Spent So Far
+              Reported Combined Cost
             </div>
             <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
-              {formatCrores(totalDisbursedCr)}
+              {formatCrores(totalCostCr)}
             </div>
             <div className="mt-1 text-xs text-neutral-400">
-              Released from government treasury
+              {costKnown.length} of {projects.length} projects have a reported cost
             </div>
           </div>
 
-          <div className="rounded-2xl border border-rose-200/80 bg-rose-50/40 p-5 shadow-xs">
-            <div className="text-xs font-medium text-rose-700">
-              Extra Cost (Over Budget)
+          <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
+            <div className="text-xs font-medium text-neutral-500">
+              Spending Data Found
             </div>
-            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-rose-800">
-              +{formatCrores(totalCostOverrunsCr)}
+            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
+              {spendingKnownCount} of {projects.length}
             </div>
-            <div className="mt-1 text-xs text-rose-600/80">
-              Cost escalation over original plan
+            <div className="mt-1 text-xs text-neutral-400">
+              Project-wise payments are rarely published
             </div>
           </div>
 
           <div className="rounded-2xl border border-amber-200/80 bg-amber-50/40 p-5 shadow-xs">
             <div className="text-xs font-medium text-amber-800">
-              Delays & Warnings
+              Sourced Notices
             </div>
             <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-amber-900">
-              {totalRedFlagsCount} Notices
+              {totalRedFlagsCount}
             </div>
             <div className="mt-1 text-xs text-amber-700/80">
-              Audit flags & timeline delays
+              Each linked to a report ({sourcedProjectsCount} projects with sourced figures)
             </div>
           </div>
         </div>
@@ -258,19 +257,19 @@ export default function HomePage() {
           <div className="space-y-1">
             <div className="font-semibold text-neutral-900">Big numbers in the news, little in reality</div>
             <p className="leading-relaxed text-neutral-500">
-              Governments often announce large amounts for publicity, but only a tiny fraction is actually sanctioned in the state budget for years.
+              Announced amounts, approved budgets and revised estimates are often different numbers. We show which one each figure is.
             </p>
           </div>
           <div className="space-y-1">
             <div className="font-semibold text-neutral-900">Delays make everything cost more</div>
             <p className="leading-relaxed text-neutral-500">
-              When work gets stuck in court or land disputes, contractors submit revised price claims, causing the budget to double or triple.
+              When work stalls over land, court cases or contractor exits, projects are often re-tendered at higher cost.
             </p>
           </div>
           <div className="space-y-1">
             <div className="font-semibold text-neutral-900">Payments before delivery</div>
             <p className="leading-relaxed text-neutral-500">
-              Contractors sometimes receive advance payments before finishing work, leaving unfinished pillars and abandoned sites when issues arise.
+              Money paid out is hard to see: project-wise payment records are rarely public, which is why we show &quot;Not available&quot; instead of guessing.
             </p>
           </div>
         </div>

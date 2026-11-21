@@ -1,5 +1,7 @@
 import { Agency } from "@/lib/types";
 
+// annualBudgetCr is null until it is matched to a published budget document.
+// Earlier hand-typed values (e.g. BMRCL 8,500, BBMP 12,371) had no source.
 export const agencies: Agency[] = [
   {
     id: "bmrcl",
@@ -7,18 +9,18 @@ export const agencies: Agency[] = [
     name: "Namma Metro (BMRCL)",
     fullName: "Bangalore Metro Rail Corporation Limited",
     website: "https://english.bmrc.co.in",
-    annualBudgetCr: 8500,
-    description: "Joint venture of Govt of India and Govt of Karnataka executing Phase 2, 2A, 2B and Phase 3 of Bengaluru's rapid transit rail network.",
+    annualBudgetCr: null,
+    description: "Joint venture of Govt of India and Govt of Karnataka building and running Bengaluru's metro network.",
     headquarters: "BMTC Complex, Shanthinagar, Bengaluru"
   },
   {
     id: "bbmp",
     code: "BBMP",
-    name: "BBMP",
-    fullName: "Bruhat Bengaluru Mahanagara Palike",
-    website: "https://bengaluruurban.nic.in/en/",
-    annualBudgetCr: 12371,
-    description: "Bengaluru's municipal civic corporation responsible for arterial roads, flyovers, stormwater drains, waste management, and ward infrastructure.",
+    name: "BBMP / GBA",
+    fullName: "Bruhat Bengaluru Mahanagara Palike (recent reports refer to the Greater Bengaluru Authority, GBA)",
+    website: "https://bbmp.gov.in",
+    annualBudgetCr: null,
+    description: "Bengaluru's municipal body for arterial roads, flyovers, stormwater drains and ward infrastructure. Recent news reports attribute this work to the Greater Bengaluru Authority (GBA).",
     headquarters: "NR Square, Bengaluru"
   },
   {
@@ -27,8 +29,8 @@ export const agencies: Agency[] = [
     name: "BDA",
     fullName: "Bangalore Development Authority",
     website: "https://bdakarnataka.in",
-    annualBudgetCr: 4100,
-    description: "Urban planning and development authority for Bengaluru metropolitan area, responsible for Peripheral Ring Road, layouts, and major town schemes.",
+    annualBudgetCr: null,
+    description: "Urban planning and development authority for the Bengaluru region, responsible for the Peripheral Ring Road (Bengaluru Business Corridor), layouts and major town schemes.",
     headquarters: "Kumara Park West, Bengaluru"
   },
   {
@@ -37,28 +39,28 @@ export const agencies: Agency[] = [
     name: "K-RIDE (Suburban Rail)",
     fullName: "Rail Infrastructure Development Company (Karnataka) Limited",
     website: "https://kride.in",
-    annualBudgetCr: 2800,
-    description: "Joint venture implementing the 148 km Bengaluru Suburban Rail Project (BSRP) with 4 key transit corridors.",
-    headquarters: "Samparka Soudha, Dr. Rajkumar Road, Bengaluru"
+    annualBudgetCr: null,
+    description: "Joint venture implementing the roughly 149 km Bengaluru Suburban Rail Project.",
+    headquarters: "Bengaluru"
   },
   {
     id: "bwssb",
     code: "BWSSB",
     name: "BWSSB",
     fullName: "Bangalore Water Supply and Sewerage Board",
-    website: "https://bengaluruurban.nic.in/en/",
-    annualBudgetCr: 3600,
-    description: "Statutory body providing drinking water supply and managing sewage treatment across Bengaluru and peripheral zones.",
+    website: "https://bwssb.karnataka.gov.in",
+    annualBudgetCr: null,
+    description: "Statutory body providing drinking water supply and sewage services across Bengaluru and peripheral areas.",
     headquarters: "Cauvery Bhavan, KG Road, Bengaluru"
   },
   {
     id: "smart-city",
     code: "BENGALURU_SMART_CITY",
     name: "Bengaluru Smart City",
-    fullName: "Bengaluru Smart City Limited (BenSCL)",
+    fullName: "Bengaluru Smart City Limited",
     website: "https://smartoneblr.com",
-    annualBudgetCr: 980,
-    description: "Special Purpose Vehicle (SPV) executing redevelopment of historic city markets, tender SURE roads, and smart civic sensors.",
-    headquarters: "Corporation Building, Hudson Circle, Bengaluru"
+    annualBudgetCr: null,
+    description: "Special purpose vehicle under the Smart Cities Mission. No projects are tracked here yet.",
+    headquarters: "Bengaluru"
   }
 ];

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Project } from "@/lib/types";
-import { formatCrores } from "@/lib/utils";
+import { formatCrores, formatPct, statusLabel } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
 interface BengaluruMapProps {
@@ -149,7 +149,7 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
                 {selectedProject.agencyCode} • {selectedProject.sector}
               </span>
               <span className="text-xs text-neutral-500 font-medium">
-                {selectedProject.status === "stalled" ? "Stalled" : "In Progress"}
+                {statusLabel(selectedProject.status)}
               </span>
             </div>
 
@@ -164,7 +164,7 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
 
             <div className="rounded-xl bg-white border border-neutral-200/80 p-3.5 space-y-2 text-xs">
               <div className="flex justify-between">
-                <span className="text-neutral-500">Approved Budget:</span>
+                <span className="text-neutral-500">Approved / Estimated:</span>
                 <span className="font-semibold text-neutral-900">{formatCrores(selectedProject.sanctionedAmountCr)}</span>
               </div>
               <div className="flex justify-between">
@@ -177,7 +177,7 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
               </div>
               <div className="flex justify-between pt-1 border-t border-neutral-100">
                 <span className="text-neutral-500">Work Finished:</span>
-                <span className="font-semibold text-neutral-900">{selectedProject.physicalProgressPct}%</span>
+                <span className="font-semibold text-neutral-900">{formatPct(selectedProject.physicalProgressPct)}</span>
               </div>
             </div>
 
