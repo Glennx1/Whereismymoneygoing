@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Projects" },
+    { href: "/insights", label: "Insights" },
     { href: "/map", label: "Map View" },
     { href: "/red-flags", label: "Delays & Warnings" },
     { href: "/agencies", label: "Departments" },
@@ -25,14 +26,9 @@ export default function Navbar() {
             NK
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <span className="text-base font-semibold tracking-tight text-neutral-900">
-                NammaKharcha
-              </span>
-              <span className="text-xs text-neutral-400 font-normal">
-                Bengaluru
-              </span>
-            </div>
+            <span className="text-base font-semibold tracking-tight text-neutral-900">
+              NammaKharcha
+            </span>
           </div>
         </Link>
 

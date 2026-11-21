@@ -6,6 +6,7 @@ import {
   calculateDelayString,
   calculateCostOverrunPct,
   bestCostCr,
+  calculateEstimatedSpentCr,
   statusLabel,
 } from "@/lib/utils";
 import { Clock, TrendingUp, ArrowRight, MapPin } from "lucide-react";
@@ -15,40 +16,48 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const isCompleted = project.status === "completed";
   const delayStr = calculateDelayString(project.originalDeadline, project.revisedDeadline);
-  const isDelayed = delayStr !== null && delayStr !== "On Schedule";
+  const isDelayed = delayStr !== null && delayStr !== "On Schedule" && !isCompleted;
   const costOverrunPct = calculateCostOverrunPct(project.sanctionedAmountCr, project.revisedEstimatedCostCr);
   const hasCostOverrun = costOverrunPct !== null && costOverrunPct > 0;
+  const estimatedSpent = calculateEstimatedSpentCr(project);
 
   const getStatusBadge = (status: Project["status"]) => {
     switch (status) {
       case "stalled":
         return "bg-rose-50 text-rose-700 border-rose-200";
       case "under_construction":
-        return "bg-neutral-100 text-neutral-800 border-neutral-200";
+        return "bg-amber-50 text-amber-800 border-amber-200";
       case "partially_operational":
         return "bg-blue-50 text-blue-700 border-blue-200";
       case "completed":
         return "bg-emerald-50 text-emerald-800 border-emerald-200";
+      case "tendering":
+      case "announced":
+        return "bg-purple-50 text-purple-700 border-purple-200";
       default:
         return "bg-neutral-100 text-neutral-600 border-neutral-200";
     }
   };
-
-  const getStatusText = statusLabel;
 
   return (
     <div className="group rounded-2xl border border-neutral-200/90 bg-white p-5 transition-all duration-200 hover:border-neutral-300 hover:shadow-md flex flex-col justify-between">
       <div>
         {/* Top Badges */}
         <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 flex-wrap">
             <span className="rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-semibold text-neutral-800 border border-neutral-200/60">
               {project.agencyCode}
             </span>
             <span className="text-xs text-neutral-500">
               {project.sector}
             </span>
+            {project.lengthKm && (
+              <span className="text-[11px] text-neutral-400">
+                • {project.lengthKm} km
+              </span>
+            )}
           </div>
 
           <span
@@ -56,7 +65,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               project.status
             )}`}
           >
-            {getStatusText(project.status)}
+            {statusLabel(project.status)}
           </span>
         </div>
 
@@ -78,29 +87,37 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <span className="truncate">{project.wardOrZone}</span>
         </div>
 
-        {/* Simple 3-Box Stats */}
+        {/* 3-Box Stats */}
         <div className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-[#faf9f6] border border-neutral-200/60 p-3 text-center">
           <div>
-            <div className="text-[10px] uppercase font-medium text-neutral-400">Cost</div>
-            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900">
+            <div className="text-[10px] uppercase font-medium text-neutral-400">
+              {isCompleted ? "Final Cost" : "Cost"}
+            </div>
+            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
               {formatCrores(bestCostCr(project))}
             </div>
           </div>
           <div>
             <div className="text-[10px] uppercase font-medium text-neutral-400">Paid Out</div>
-            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900">
-              {formatCrores(project.actualDisbursedCr)}
+            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
+              {project.actualDisbursedCr !== null ? (
+                formatCrores(project.actualDisbursedCr)
+              ) : estimatedSpent !== null ? (
+                <span title="Estimated from progress">~{formatCrores(estimatedSpent)}</span>
+              ) : (
+                <span className="text-neutral-400 text-xs">Unpublished</span>
+              )}
             </div>
           </div>
           <div>
             <div className="text-[10px] uppercase font-medium text-neutral-400">Work Done</div>
-            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900">
-              {formatPct(project.physicalProgressPct)}
+            <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
+              {isCompleted ? "100%" : formatPct(project.physicalProgressPct)}
             </div>
           </div>
         </div>
 
-        {/* Delay & Extra Cost Badges */}
+        {/* Delay & Overrun Badges */}
         <div className="mt-3 flex flex-wrap gap-1.5">
           {isDelayed && (
             <span className="inline-flex items-center gap-1 rounded-md bg-rose-50 border border-rose-200 px-2 py-0.5 text-[11px] font-medium text-rose-700">
@@ -117,17 +134,16 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Clean Notices Preview */}
-        {project.redFlags.length === 0 && (
+        {project.redFlags.length === 0 ? (
           <div className="mt-3.5 pt-3 border-t border-neutral-100 text-[11px] text-neutral-400">
-            No sourced notices yet
+            No sourced notices recorded
           </div>
-        )}
-        {project.redFlags.length > 0 && (
+        ) : (
           <div className="mt-3.5 pt-3 border-t border-neutral-100 space-y-1.5">
             <div className="text-[11px] font-medium text-neutral-500">
-              Notices (sourced):
+              Documented Notices ({project.redFlags.length}):
             </div>
-            <div className="space-y-1.5">
+            <div className="space-y-1">
               {project.redFlags.slice(0, 2).map((rf) => (
                 <div key={rf.id} className="text-xs text-neutral-700 flex items-start gap-1.5 leading-snug">
                   <span className="text-neutral-400 mt-1.5 h-1 w-1 rounded-full bg-neutral-400 shrink-0" />
@@ -147,7 +163,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Action Footer */}
       <div className="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
         <span className="text-neutral-400">
-          Target: {project.revisedDeadline ? new Date(project.revisedDeadline).getFullYear() : "Not confirmed"}
+          {isCompleted
+            ? `Opened: ${project.completionDate ? new Date(project.completionDate).getFullYear() : "Done"}`
+            : `Target: ${project.revisedDeadline ? new Date(project.revisedDeadline).getFullYear() : "Pending"}`}
         </span>
         <Link
           href={`/projects/${project.slug}`}
