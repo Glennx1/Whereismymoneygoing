@@ -62,5 +62,35 @@ export const agencies: Agency[] = [
     annualBudgetCr: null,
     description: "Special purpose vehicle under the Smart Cities Mission. No projects are tracked here yet.",
     headquarters: "Bengaluru"
+  },
+  {
+    id: "nhai",
+    code: "NHAI",
+    name: "NHAI",
+    fullName: "National Highways Authority of India",
+    website: "https://nhai.gov.in",
+    annualBudgetCr: null,
+    description: "Central authority executing national expressways and ring roads around Bengaluru including STRR and Bengaluru-Chennai Expressway.",
+    headquarters: "G 5&6, Sector-10, Dwarka, New Delhi / Regional Office Bengaluru"
+  },
+  {
+    id: "bmtc",
+    code: "BMTC",
+    name: "BMTC",
+    fullName: "Bangalore Metropolitan Transport Corporation",
+    website: "https://mybmtc.karnataka.gov.in",
+    annualBudgetCr: null,
+    description: "Public bus transport provider for the Bengaluru metropolitan area, operating city bus services and procuring electric bus fleets.",
+    headquarters: "Shanthinagar, Bengaluru"
+  },
+  {
+    id: "swr",
+    code: "SWR",
+    name: "South Western Railway",
+    fullName: "South Western Railway (Indian Railways)",
+    website: "https://swr.indianrailways.gov.in",
+    annualBudgetCr: null,
+    description: "Zonal railway headquartered in Hubballi, operating Bengaluru division stations and terminal redevelopment schemes.",
+    headquarters: "Bengaluru Division Office, Majestic, Bengaluru"
   }
 ];
