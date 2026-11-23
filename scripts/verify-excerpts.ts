@@ -68,7 +68,7 @@ async function verifyArticle(item: ArticleItem): Promise<VerifyResult> {
 
   try {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 14000);
+    const timer = setTimeout(() => controller.abort(), 22000);
 
     const res = await fetch(article.url, {
       method: "GET",

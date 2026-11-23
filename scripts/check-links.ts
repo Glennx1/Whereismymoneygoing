@@ -133,6 +133,10 @@ function extractSlug(urlStr: string): string {
     let last = segments[segments.length - 1];
     // Remove .ece, .html, .cms, etc.
     last = last.replace(/\.(ece|html|htm|cms|php)$/i, "");
+    // If the last segment is purely numeric or article<digits>, the slug is the preceding segment
+    if (/^(article)?\d+$/i.test(last) && segments.length > 1) {
+      last = segments[segments.length - 2];
+    }
     return decodeURIComponent(last).toLowerCase();
   } catch {
     return "";
