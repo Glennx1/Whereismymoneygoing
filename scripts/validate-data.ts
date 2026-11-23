@@ -15,10 +15,7 @@ const seenIds = new Set<string>();
 const ISO_DATE_REGEX = /^\d{4}-\d{2}(-\d{2})?$/;
 
 // Load dead-links denylist
-// Uses docs/dead-links.json, falling back to phase 1 dead links if pending replacement
-const deadLinksPath = fs.existsSync(path.resolve(process.cwd(), "docs", "dead-links-phase1.json"))
-  ? path.resolve(process.cwd(), "docs", "dead-links-phase1.json")
-  : path.resolve(process.cwd(), "docs", "dead-links.json");
+const deadLinksPath = path.resolve(process.cwd(), "docs", "dead-links.json");
 const deadLinksSet = new Set<string>();
 if (fs.existsSync(deadLinksPath)) {
   try {
@@ -271,11 +268,25 @@ for (const project of projects) {
         });
       } else {
         const words = art.excerpt.trim().split(/\s+/).length;
-        if (words > 25) {
+        if (words < 8 || words > 25) {
           errors.push({
             projectSlug: project.slug,
             field: `articles[${i}].excerpt`,
-            message: `Article excerpt exceeds 25 words (${words} words)`,
+            message: `Article excerpt must be between 8 and 25 words (got ${words} words: "${art.excerpt}")`,
+          });
+        }
+        if (art.excerpt.toLowerCase().includes("reports that")) {
+          errors.push({
+            projectSlug: project.slug,
+            field: `articles[${i}].excerpt`,
+            message: `Article excerpt contains forbidden pattern 'reports that': "${art.excerpt}"`,
+          });
+        }
+        if (art.excerpt.trim().endsWith("...") || art.excerpt.trim().endsWith("…")) {
+          errors.push({
+            projectSlug: project.slug,
+            field: `articles[${i}].excerpt`,
+            message: `Article excerpt must not end in truncation '...': "${art.excerpt}"`,
           });
         }
       }

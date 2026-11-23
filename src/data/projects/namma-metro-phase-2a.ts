@@ -212,7 +212,7 @@ export const nammaMetroPhase2a: Project = {
       "url": "https://www.oneindia.com/bengaluru/namma-metro-blue-line-bengaluru-s-silk-board-to-airport-route-to-open-by-december-2027-7854863.html",
       "claim": "Revised December 2027 timeline for Blue Line",
       "checkedOn": "2026-11-23",
-      "excerpt": "Namma Metro Blue Line: Bengaluru's Silk Board to airport route to open by December 2027 reports that revised december 2027 timeline for blue line."
+      "excerpt": "Once completed, the Namma Metro Blue Line will provide Bengaluru with its first direct metro connectivity to the airport."
     },
     {
       "title": "KR Puram-Silk Board metro trials set to begin by October end",
@@ -221,7 +221,7 @@ export const nammaMetroPhase2a: Project = {
       "url": "https://www.constructionworld.in/amp/transport-infrastructure/metro-rail-and-railways-infrastructure/kr-puram-silk-board-metro-trials-set-to-begin-by-october-end/99490",
       "claim": "Reports 87% civil progress and planned trial runs",
       "checkedOn": "2026-11-23",
-      "excerpt": "KR Puram-Silk Board metro trials set to begin by October end reports that reports 87% civil progress and planned trial runs."
+      "excerpt": "75-km KR Puram-Central Silk Board stretch are expected to begin by the end of October, with overall construction 87 per cent complete."
     },
     {
       "title": "Bengaluru Metro Phase 2 delays push up cost by Rs 10,000 crore",
@@ -230,7 +230,7 @@ export const nammaMetroPhase2a: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-2-delays-push-up-cost-by-rs-10000-cr-3307265",
       "claim": "Cost increases across Namma Metro Phase 2 extensions",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Metro Phase 2 delays push up cost by Rs 10,000 crore reports that cost increases across namma metro phase 2 extensions."
+      "excerpt": "Going by the revised estimation, Phase 2 will cost Rs 541."
     },
     {
       "title": "Bangalore Metro Phase 2A Information and Alignment Map",
@@ -239,7 +239,7 @@ export const nammaMetroPhase2a: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-2a-information-map/",
       "claim": "Phase 2A alignment details and ₹5,227.35 Cr project figure",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Metro Phase 2A Information and Alignment Map reports that phase 2a alignment details and ₹5,227.35 cr project figure."
+      "excerpt": "An official PDF route map of Bangalore Metro Phase 2A will be added here when available."
     }
   ],
   "officialDocLinks": [

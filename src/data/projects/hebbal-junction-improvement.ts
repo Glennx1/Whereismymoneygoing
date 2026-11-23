@@ -43,7 +43,7 @@ export const hebbalJunctionImprovement: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const hebbalJunctionImprovement: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const hebbalJunctionImprovement: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
           }
         ]
       },
@@ -76,7 +76,7 @@ export const hebbalJunctionImprovement: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
           }
         ]
       }
@@ -95,20 +95,20 @@ export const hebbalJunctionImprovement: Project = {
       "description": "State cabinet chaired by CM Siddaramaiah approved ₹2,215 Cr package for Hebbal junction.",
       "source": {
         "label": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+        "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints",
-      "outlet": "Moneycontrol",
+      "title": "Cabinet approves short tunnel - flyover between Hebbal junction and Mehkri Circle",
+      "outlet": "The Hindu",
       "publishedDate": "2024-08-20",
-      "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html",
-      "claim": "Technical blueprints and traffic simulation data for Mekhri Circle corridor",
+      "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece",
+      "claim": "Cabinet approval of ₹2,215 Cr plan for Hebbal short tunnel and elevated corridor",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints reports that technical blueprints and traffic simulation data for mekhri circle corridor."
+      "excerpt": "The project is estimated to cost ₹2,215 crore and will be borne by Bangalore Development Authority"
     }
   ],
   "officialDocLinks": [

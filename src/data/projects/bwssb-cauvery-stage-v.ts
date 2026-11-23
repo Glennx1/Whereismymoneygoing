@@ -46,10 +46,6 @@ export const bwssbCauveryStageV: Project = {
           {
             "label": "Daijiworld: JICA loan for ₹5,550 Cr Stage V",
             "url": "https://daijiworld.com/news/newsDisplay?newsID=492393"
-          },
-          {
-            "label": "The Hindu: Cauvery Stage V to be inaugurated",
-            "url": "https://www.thehindu.com/news/cities/bangalore/cauvery-stage-v-to-be-inaugurated-on-october-16/article68748347.ece"
           }
         ]
       },
@@ -128,10 +124,11 @@ export const bwssbCauveryStageV: Project = {
       "title": "Project to provide Cauvery water to Bengaluru's peripheral areas launched",
       "outlet": "ThePrint",
       "publishedDate": "2024-10-16",
-      "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754",
+      "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754/",
       "claim": "Official dedication and inauguration of 775 MLD water scheme",
       "checkedOn": "2026-11-23",
-      "excerpt": "Project to provide Cauvery water to Bengaluru's peripheral areas launched reports that official dedication and inauguration of 775 mld water scheme."
+      "excerpt": "The project was completed at a cost of Rs 4,336 crore and received financial backing from the Japan International Cooperation Agency",
+      "excerptChecked": "manual"
     },
     {
       "title": "BWSSB to launch Stage V of Cauvery water supply scheme on Oct 16",
@@ -140,7 +137,7 @@ export const bwssbCauveryStageV: Project = {
       "url": "https://deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbwssb-to-launch-stage-v-of-cauvery-water-supply-scheme-on-oct-16-3224963",
       "claim": "Launch dates, testing phase, and pumping station readiness",
       "checkedOn": "2026-11-23",
-      "excerpt": "BWSSB to launch Stage V of Cauvery water supply scheme on Oct 16 reports that launch dates, testing phase, and pumping station readiness."
+      "excerpt": "> Bangalore Water Supply and Sewerage Board (BWSSB)."
     },
     {
       "title": "After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts",
@@ -149,7 +146,7 @@ export const bwssbCauveryStageV: Project = {
       "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fafter-a-decade-long-wait-cauvery-water-to-finally-reach-bengalurus-outskirts-3233582",
       "claim": "Supply rollout across 110 villages in Mahadevapura, Bommanahalli, RR Nagar",
       "checkedOn": "2026-11-23",
-      "excerpt": "After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts reports that supply rollout across 110 villages in mahadevapura, bommanahalli, rr nagar."
+      "excerpt": "> Four lakh new Cauvery water connections will be added, taking the total count to 14."
     },
     {
       "title": "Bengaluru: JICA to fund Cauvery water supply project Phase V",
@@ -158,7 +155,7 @@ export const bwssbCauveryStageV: Project = {
       "url": "https://daijiworld.com/news/newsDisplay?newsID=492393",
       "claim": "JICA financing structure and ₹5,550 Cr overall project outlay",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru: JICA to fund Cauvery water supply project Phase V reports that jica financing structure and ₹5,550 cr overall project outlay."
+      "excerpt": "JICA loan for Rs 5,550 crore Cauvery Stage V Water Supply Project - Daijiworld."
     }
   ],
   "officialDocLinks": [

@@ -44,7 +44,7 @@ export const strrDobbaspetHoskote: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+            "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
           }
         ]
       },
@@ -55,7 +55,7 @@ export const strrDobbaspetHoskote: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+            "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
           }
         ]
       },
@@ -66,7 +66,7 @@ export const strrDobbaspetHoskote: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+            "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
           }
         ]
       },
@@ -77,7 +77,7 @@ export const strrDobbaspetHoskote: Project = {
         "sources": [
           {
             "label": "Construction World: STRR packages awarded",
-            "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148"
+            "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
           }
         ]
       },
@@ -88,7 +88,7 @@ export const strrDobbaspetHoskote: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+            "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
           }
         ]
       }
@@ -121,7 +121,7 @@ export const strrDobbaspetHoskote: Project = {
       "description": "NHAI awarded northern arc packages under Bharatmala Pariyojana.",
       "source": {
         "label": "Construction World",
-        "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148"
+        "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
       }
     },
     {
@@ -131,20 +131,20 @@ export const strrDobbaspetHoskote: Project = {
       "description": "80-km expressway section dedicated by Prime Minister Narendra Modi.",
       "source": {
         "label": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+        "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway",
-      "outlet": "Moneycontrol",
+      "title": "PM Modi launches two key Satellite Town Ring Road stretches in Bengaluru",
+      "outlet": "The News Minute",
       "publishedDate": "2024-04-01",
-      "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html",
-      "claim": "Notifies toll plazas and commercial user charges on NH-648",
+      "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru",
+      "claim": "Inauguration of two key STRR stretches totalling 80 km around Bengaluru",
       "checkedOn": "2026-11-23",
-      "excerpt": "NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway reports that notifies toll plazas and commercial user charges on nh-648."
+      "excerpt": "Prime Minister Narendra Modi, on Monday, March 11, virtually inaugurated two key stretches of the Satellite Town Ring Road (STRR) around Bengaluru."
     }
   ],
   "officialDocLinks": [

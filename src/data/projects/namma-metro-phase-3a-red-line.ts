@@ -45,7 +45,7 @@ export const nammaMetroPhase3aRedLine: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
           }
         ]
       },
@@ -56,7 +56,7 @@ export const nammaMetroPhase3aRedLine: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
           }
         ]
       },
@@ -67,7 +67,7 @@ export const nammaMetroPhase3aRedLine: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
           }
         ]
       },
@@ -89,7 +89,7 @@ export const nammaMetroPhase3aRedLine: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
           }
         ]
       },
@@ -100,7 +100,7 @@ export const nammaMetroPhase3aRedLine: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
           }
         ]
       }
@@ -119,20 +119,20 @@ export const nammaMetroPhase3aRedLine: Project = {
       "description": "BMRCL submitted revised DPR of ₹25,999 Cr for 37 km corridor with 28 stations.",
       "source": {
         "label": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+        "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce",
-      "outlet": "Moneycontrol",
-      "publishedDate": "2024-08-10",
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html",
-      "claim": "Analyzes traffic reduction across Outer Ring Road and Sarjapur Road",
+      "title": "Bengaluru’s Metro Phase 3A gets Cabinet nod",
+      "outlet": "The Hindu",
+      "publishedDate": "2024-12-06",
+      "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece",
+      "claim": "State Cabinet approves Detailed Project Report for Sarjapur to Hebbal Red Line",
       "checkedOn": "2026-11-23",
-      "excerpt": "Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce reports that analyzes traffic reduction across outer ring road and sarjapur road."
+      "excerpt": "The Karnataka Cabinet on Friday (December 6) approved Phase 3A of the Bengaluru Metro's Red Line"
     },
     {
       "title": "Bangalore Metro Phase 3A Information and Alignment",
@@ -141,7 +141,8 @@ export const nammaMetroPhase3aRedLine: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
       "claim": "Route layout, interchange provisions at Agara and Hebbal",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Metro Phase 3A Information and Alignment reports that route layout, interchange provisions at agara and hebbal."
+      "excerpt": "An official PDF route map of Bangalore Metro Phase 3 will be added here when available.",
+      "excerptChecked": "manual"
     }
   ],
   "officialDocLinks": [

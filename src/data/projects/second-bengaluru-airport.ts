@@ -104,7 +104,7 @@ export const secondBengaluruAirport: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/second-airport-in-bengaluru-will-be-within-50-70-km-from-city/article68411387.ece",
       "claim": "Confirms feasibility study and shortlist of potential locations within 50-70 km",
       "checkedOn": "2026-11-23",
-      "excerpt": "Infrastructure Minister M.B. Patil said the proposed second international airport for Bengaluru will be located within 50 to 70 km from the city."
+      "excerpt": "The proposed second airport in Bengaluru is expected to be located within 50 to 60 km from the city."
     },
     {
       "title": "Bengaluru's 2nd international airport plans accelerate: two locations shortlisted",
@@ -113,7 +113,7 @@ export const secondBengaluruAirport: Project = {
       "url": "https://timesofindia.indiatimes.com/city/bengaluru/bengalurus-2nd-international-airport-plans-accelerate-two-locations-shortlisted/articleshow/115424685.cms",
       "claim": "Reports shortlisted sites along Kanakapura and Nelamangala corridors",
       "checkedOn": "2026-11-23",
-      "excerpt": "The state government submitted shortlisted locations including sites along Kanakapura Road and Nelamangala-Kunigal Road to the Airports Authority of India."
+      "excerpt": "The state govt is expediting plans for Bengaluru's second international airport, aiming to finalise the location soon amid growing criticism over delays."
     }
   ],
   "officialDocLinks": [

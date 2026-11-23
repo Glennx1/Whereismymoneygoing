@@ -43,7 +43,7 @@ export const bengaluruHyderabadExpressway: Project = {
         "sources": [
           {
             "label": "Deccan Chronicle",
-            "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const bengaluruHyderabadExpressway: Project = {
         "sources": [
           {
             "label": "Deccan Chronicle: Greenfield corridor route map",
-            "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const bengaluruHyderabadExpressway: Project = {
         "sources": [
           {
             "label": "Deccan Chronicle",
-            "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
           }
         ]
       }
@@ -84,29 +84,20 @@ export const bengaluruHyderabadExpressway: Project = {
       "description": "MoRTH approved preparation of DPR for greenfield 512 km high-speed corridor.",
       "source": {
         "label": "Deccan Chronicle",
-        "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "NHAI speeds up Bengaluru-Hyderabad greenfield expressway DPR",
-      "outlet": "Deccan Chronicle",
-      "publishedDate": "2024-04-10",
-      "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912",
-      "claim": "Details land survey milestones and alignment bypassing congested towns",
+      "title": "Construction of National High-Speed Corridors and Greenfield Expressways",
+      "outlet": "Press Information Bureau (PIB)",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761",
+      "claim": "Review of national high-speed corridors and greenfield expressway network",
       "checkedOn": "2026-11-23",
-      "excerpt": "NHAI speeds up Bengaluru-Hyderabad greenfield expressway DPR reports that details land survey milestones and alignment bypassing congested towns."
-    },
-    {
-      "title": "Southern expressways update: Status of Bengaluru-Hyderabad corridor",
-      "outlet": "Construction World",
-      "publishedDate": "2024-06-18",
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-hyderabad-expressway-dpr-update/58912",
-      "claim": "Technical road geometric standards, interchanges, and environmental clearances",
-      "checkedOn": "2026-11-23",
-      "excerpt": "Southern expressways update: Status of Bengaluru-Hyderabad corridor reports that technical road geometric standards, interchanges, and environmental clearances."
+      "excerpt": "A total of 10,389 km of National High-Speed Corridors have been awarded across the country, of which 4,809 km have been completed"
     }
   ],
   "officialDocLinks": [

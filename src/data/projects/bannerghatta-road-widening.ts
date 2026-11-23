@@ -17,7 +17,7 @@ export const bannerghattaRoadWidening: Project = {
     "notes": "Funded by BBMP / GBA through state capital works grant"
   },
   "announcedAmountCr": null,
-  "sanctionedAmountCr": 152,
+  "sanctionedAmountCr": null,
   "revisedEstimatedCostCr": null,
   "actualDisbursedCr": null,
   "announcedDate": "2016-08-20",
@@ -37,13 +37,13 @@ export const bannerghattaRoadWidening: Project = {
     "summary": "Civil cost (₹152 Cr), TDR land value (~₹600 Cr; total ~₹752 Cr), six-year timeline slippage, and landowner disputes are verified through BBMP council records and High Court affidavits.",
     "fields": {
       "sanctionedAmountCr": {
-        "confidence": "reported",
-        "asOf": "2018-03-12",
-        "note": "Civil construction sanctioned at ₹152 Cr by BBMP.",
+        "confidence": "unverified",
+        "asOf": "2026-11-23",
+        "note": "Civil construction sanctioned amount unverified without official tender/order.",
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const bannerghattaRoadWidening: Project = {
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const bannerghattaRoadWidening: Project = {
         "sources": [
           {
             "label": "Deccan Herald: BBMP promises end of 2025 deadline",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       },
@@ -76,7 +76,7 @@ export const bannerghattaRoadWidening: Project = {
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       },
@@ -87,7 +87,7 @@ export const bannerghattaRoadWidening: Project = {
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       },
@@ -98,7 +98,7 @@ export const bannerghattaRoadWidening: Project = {
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+            "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
           }
         ]
       }
@@ -118,7 +118,7 @@ export const bannerghattaRoadWidening: Project = {
       "description": "BBMP issued work order for 7.4 km widening with an initial December 2019 deadline.",
       "source": {
         "label": "Deccan Herald",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+        "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
       }
     },
     {
@@ -128,7 +128,7 @@ export const bannerghattaRoadWidening: Project = {
       "description": "Work stalled as property owners refused TDR certificates, demanding fair cash compensation.",
       "source": {
         "label": "Deccan Herald",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+        "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
       }
     }
   ],
@@ -142,19 +142,19 @@ export const bannerghattaRoadWidening: Project = {
       "calculatedMetric": "5+ years land litigation delay",
       "officialCitation": {
         "sourceName": "Deccan Herald",
-        "documentUrl": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
       }
     }
   ],
   "articles": [
     {
-      "title": "BBMP sets new deadline for Bannerghatta road widening as tree felling hurdles clear",
-      "outlet": "Deccan Herald",
-      "publishedDate": "2024-06-20",
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841",
-      "claim": "Reports tree expert committee permissions and late 2025 completion roadmap",
+      "title": "Bannerghatta Road widening: Cash relief for land-losers",
+      "outlet": "The Hindu",
+      "publishedDate": "2019-09-09",
+      "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece",
+      "claim": "Land acquisition disputes and rejection of Transferable Development Rights for Bannerghatta Road widening",
       "checkedOn": "2026-11-23",
-      "excerpt": "BBMP sets new deadline for Bannerghatta road widening as tree felling hurdles clear reports that reports tree expert committee permissions and late 2025 completion roadmap."
+      "excerpt": "The BBMP has been offering Transferable Development Rights (TDR), which the land-losers have rejected."
     }
   ],
   "officialDocLinks": [

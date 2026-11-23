@@ -43,7 +43,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
         "sources": [
           {
             "label": "The Hindu: Silk Board double-decker flyover opened",
-            "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+            "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+            "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+            "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
           }
         ]
       },
@@ -76,7 +76,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+            "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
           }
         ]
       },
@@ -98,7 +98,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+            "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
           }
         ]
       }
@@ -124,7 +124,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
       "description": "Inaugurated by Karnataka Deputy Chief Minister DK Shivakumar for vehicular traffic.",
       "source": {
         "label": "The Hindu",
-        "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+        "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
       }
     }
   ],
@@ -138,19 +138,19 @@ export const silkBoardDoubleDeckerFlyover: Project = {
       "calculatedMetric": "Ramps delayed past main opening",
       "officialCitation": {
         "sourceName": "The Hindu",
-        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+        "documentUrl": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
       }
     }
   ],
   "articles": [
     {
-      "title": "Silk Board double-decker flyover opened for vehicular traffic",
-      "outlet": "The Hindu",
+      "title": "South India’s first double-decker flyover opens for public, BMRCL says Yellow line to be commissioned by end of 2024",
+      "outlet": "The Indian Express",
       "publishedDate": "2024-07-17",
-      "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece",
-      "claim": "Reports inauguration of lower road deck and ₹449 Cr project outlay",
+      "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/",
+      "claim": "South India's first double-decker flyover opens between Ragigudda and Central Silk Board to reduce travel times",
       "checkedOn": "2026-11-23",
-      "excerpt": "Silk Board double-decker flyover opened for vehicular traffic reports that reports inauguration of lower road deck and ₹449 cr project outlay."
+      "excerpt": "signal-free travel from Ragigudda to HSR Layout and Hosur Road, promising to reduce travel time by more than 30 per cent"
     }
   ],
   "officialDocLinks": [
@@ -161,7 +161,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
     },
     {
       "label": "The Hindu: Silk Board double-decker flyover opened",
-      "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece",
+      "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/",
       "type": "NEWS_REPORT"
     }
   ],

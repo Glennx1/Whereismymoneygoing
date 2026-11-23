@@ -54,7 +54,7 @@ export const nammaMetroPinkLineElevated: Project = {
         "sources": [
           {
             "label": "Deccan Herald: Pink Line elevated stretch opened",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/pink-line-first-stretch-kalena-agrahara-tavarekere-opens-3829141"
+            "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13"
           }
         ]
       },
@@ -177,7 +177,7 @@ export const nammaMetroPinkLineElevated: Project = {
       "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13",
       "claim": "Reports official flag-off of 7.5-km elevated section on 13 November 2026",
       "checkedOn": "2026-11-23",
-      "excerpt": "Prime Minister Narendra Modi on Friday inaugurated Bengaluru Metro's Pink Line ... took a ride on the newly opened 7.5-km stretch between Tavarekere and..."
+      "excerpt": "PM Modi, during his Karnataka visit, inaugurated the Bengaluru Metro's Pink Line, flagged off Bengaluru-Mangaluru-Madgaon Vande Bharat Express"
     },
     {
       "title": "Pink Line likely to be inaugurated on November 13",
@@ -186,7 +186,7 @@ export const nammaMetroPinkLineElevated: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/pink-line-likely-to-be-inaugurated-on-november-13/article71657962.ece",
       "claim": "Confirms target opening date for elevated Reach 6 section",
       "checkedOn": "2026-11-23",
-      "excerpt": "Member of Parliament for Bangalore South, L.S. Tejasvi Surya, on Monday hinted that the Namma Metro’s elevated Pink Line will likely be inaugurated on..."
+      "excerpt": "Tejasvi Surya, on Monday hinted that the Namma Metro's elevated Pink Line will likely be inaugurated on November 13."
     },
     {
       "title": "GR Infra Wins Bangalore Metro Pink Line's Pending Work",
@@ -195,7 +195,8 @@ export const nammaMetroPinkLineElevated: Project = {
       "url": "https://themetrorailguy.com/2021/07/16/gr-infra-wins-bangalore-metro-pink-lines-pending-work/",
       "claim": "Details award of balance civil and viaduct works on Reach 6 elevated",
       "checkedOn": "2026-11-23",
-      "excerpt": "GR Infraprojects emerged as the lowest bidder for balance viaduct and station works on Bangalore Metro Reach 6 along Bannerghatta Road."
+      "excerpt": "GR Infra has no experience in delivering metro projects, but they qualified through the technical round based on the parameters set.",
+      "excerptChecked": "manual"
     }
   ],
   "officialDocLinks": [

@@ -124,16 +124,7 @@ export const hebbalFlyoverNewLoop: Project = {
       "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/karnataka-cm-launches-game-changing-hebbal-flyover-loop-to-ease-bengaluru-traffic/123383360?next=1",
       "claim": "Confirms official inauguration of new KR Puram-Mekhri Circle loop on 18 August 2025",
       "checkedOn": "2026-11-23",
-      "excerpt": "Chief Minister Siddaramaiah and Deputy CM DK Shivakumar inaugurated the newly constructed two-lane loop of Hebbal flyover easing traffic towards Mekhri Circle."
-    },
-    {
-      "title": "BDA to construct two-lane loop from KR Puram towards city at Hebbal",
-      "outlet": "Construction World",
-      "publishedDate": "2023-04-12",
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bda-to-construct-two-lane-loop-from-kr-puram-towards-city-at-hebbal/40892",
-      "claim": "Details Rs 80 crore contract and technical specifications of new loop",
-      "checkedOn": "2026-11-23",
-      "excerpt": "The Bangalore Development Authority awarded the two-lane ramp project costing approximately Rs 80 crore to eliminate the massive bottleneck at Hebbal junction."
+      "excerpt": "A 700 metre ramp built at a cost of 80 crore in just seven months, will reduce traffic congestion by 30 per cent"
     }
   ],
   "officialDocLinks": [

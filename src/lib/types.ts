@@ -145,6 +145,7 @@ export interface Article {
   isOfficial?: boolean;
   checkedOn?: string; // ISO date YYYY-MM-DD
   excerpt?: string; // Verbatim quote, 25 words or fewer, supporting the claim
+  excerptChecked?: "machine" | "manual";
 }
 
 export interface FundingSplit {

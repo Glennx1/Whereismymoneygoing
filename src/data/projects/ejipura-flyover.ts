@@ -193,7 +193,7 @@ export const ejipuraFlyover: Project = {
       "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fdycm-dk-shivakumar-promises-completion-of-long-delayed-ejipura-flyover-by-june-2026-3769909",
       "claim": "Revised completion timeline and inspection update",
       "checkedOn": "2026-11-23",
-      "excerpt": "Dy CM DK Shivakumar promises completion of long-delayed Ejipura flyover reports that revised completion timeline and inspection update."
+      "excerpt": "> Deputy Chief Minister DK Shivakumar inspects work on the Koramangala-Ejipura flyover on Sunday."
     },
     {
       "title": "Delays, debt, disputes: Inside the saga of Bengaluru's Ejipura flyover",
@@ -202,7 +202,7 @@ export const ejipuraFlyover: Project = {
       "url": "https://www.thenewsminute.com/karnataka/delays-debt-disputes-inside-the-saga-of-bengalurus-ejipura-flyover",
       "claim": "Original work order issued in May 2017 with November 2019 deadline",
       "checkedOn": "2026-11-23",
-      "excerpt": "Delays, debt, disputes: Inside the saga of Bengaluru's Ejipura flyover reports that original work order issued in may 2017 with november 2019 deadline."
+      "excerpt": "Now, with work set to be completed by the end of the year, residents have rallied around the slogan 'Ee sala flyover sampoorna'."
     },
     {
       "title": "BBMP finds sole bidder for long-delayed Ejipura flyover on fourth attempt; cost escalation raises concerns",
@@ -211,7 +211,7 @@ export const ejipuraFlyover: Project = {
       "url": "https://swarajyamag.com/amp/story/infrastructure/bengaluru-bbmp-finds-sole-bidder-for-long-delayed-ejipura-flyover-on-fourth-attempt-cost-escalation-raises-concerns",
       "claim": "Revised project estimate around ₹307.96 Cr and sole bidder BSCPL Infrastructure",
       "checkedOn": "2026-11-23",
-      "excerpt": "BBMP finds sole bidder for long-delayed Ejipura flyover on fourth attempt; cost escalation raises concerns reports that revised project estimate around ₹307.96 cr and..."
+      "excerpt": "The BBMP's initial estimate for the project's cost was Rs 204 crore."
     },
     {
       "title": "Ejipura flyover status: 2.5 km long project takes shape with new pillars",
@@ -220,7 +220,7 @@ export const ejipuraFlyover: Project = {
       "url": "https://www.oneindia.com/bengaluru/ejipura-flyover-status-2-5-km-long-project-takes-shape-with-new-pillars-3870279.html",
       "claim": "Resumption of physical work and pier casting on ground",
       "checkedOn": "2026-11-23",
-      "excerpt": "Ejipura flyover status: 2.5 km long project takes shape with new pillars reports that resumption of physical work and pier casting on ground."
+      "excerpt": "After a prolonged delay of five years, the stalled flyover on the critical Koramangala 100 feet road is finally going to resume construction."
     }
   ],
   "officialDocLinks": [

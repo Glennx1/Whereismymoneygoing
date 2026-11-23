@@ -209,7 +209,7 @@ export const kRideSuburbanRail: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-suburban-railway-project-deadline-pushed-to-2028-2644956",
       "claim": "Suburban rail Corridor 2 target pushed to December 2028",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru suburban railway project deadline pushed to 2028 reports that suburban rail corridor 2 target pushed to december 2028."
+      "excerpt": "The 148.17-km Bengaluru Suburban Railway Project (BSRP) will get ready by 2028, Minister of Infrastructure Development M B Patil has stated"
     },
     {
       "title": "Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track",
@@ -218,16 +218,7 @@ export const kRideSuburbanRail: Project = {
       "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Ffresh-tenders-to-bring-149-km-long-bengaluru-suburban-rail-project-back-on-track-3754945",
       "claim": "Re-tendering of Corridor 2 civil packages following contractor exit",
       "checkedOn": "2026-11-23",
-      "excerpt": "Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track reports that re-tendering of corridor 2 civil packages following contractor exit."
-    },
-    {
-      "title": "NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project",
-      "outlet": "Metro Rail Today",
-      "publishedDate": "2024-05-10",
-      "url": "https://metrorailtoday.com/news/ncc-awarded-50125-crore-civil-contract-for-bengaluru-suburban-rail-project",
-      "claim": "Award of Package C2-A for 12 stations to NCC Ltd.",
-      "checkedOn": "2026-11-23",
-      "excerpt": "NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project reports that award of package c2-a for 12 stations to ncc ltd.."
+      "excerpt": "With L&T out of the picture, the K-RIDE board has now decided to call fresh tenders."
     },
     {
       "title": "Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages",
@@ -236,7 +227,7 @@ export const kRideSuburbanRail: Project = {
       "url": "https://www.oneindia.com/bengaluru/bengaluru-suburban-rail-back-on-track-as-k-ride-divides-mallige-line-work-into-three-packages-7908251.html",
       "claim": "Packaging strategy and timeline milestones for Corridor 2",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages reports that packaging strategy and timeline milestones for corridor 2."
+      "excerpt": "The project, which had slowed down after Larsen & Toubro (L&T) pulled out earlier this year, will now move ahead through three separate construction packages."
     }
   ],
   "officialDocLinks": [

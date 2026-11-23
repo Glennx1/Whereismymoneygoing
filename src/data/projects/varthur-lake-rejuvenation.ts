@@ -153,7 +153,7 @@ export const varthurLakeRejuvenation: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/varthur-lake-to-be-rejuvenated-at-an-estimated-cost-of-119-crore/article30668486.ece",
       "claim": "Confirms ₹119 Cr BDA rejuvenation and desilting project sanctioned under NGT directions",
       "checkedOn": "2026-11-23",
-      "excerpt": "The Bangalore Development Authority has invited tenders for the rejuvenation of the 450-acre Varthur lake at an estimated cost of Rs 119 crore."
+      "excerpt": "The Bangalore Development Authority (BDA) has finally called for tenders for the rejuvenation and development of the downstream Varthur lake."
     }
   ],
   "officialDocLinks": [

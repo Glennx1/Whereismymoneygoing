@@ -43,7 +43,7 @@ export const ksrBengaluruStationRedevelopment: Project = {
         "sources": [
           {
             "label": "The Hindu: RLDA moves forward on Bengaluru Majestic revamp",
-            "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+            "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const ksrBengaluruStationRedevelopment: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+            "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const ksrBengaluruStationRedevelopment: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+            "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
           }
         ]
       }
@@ -84,7 +84,7 @@ export const ksrBengaluruStationRedevelopment: Project = {
       "description": "Indian Railways announced KSR Bengaluru among major stations selected for world-class redevelopment.",
       "source": {
         "label": "The Hindu",
-        "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+        "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
       }
     },
     {
@@ -94,20 +94,20 @@ export const ksrBengaluruStationRedevelopment: Project = {
       "description": "Global engineering tenders invited for air concourse, multi-modal bridges, and passenger concourses.",
       "source": {
         "label": "The Hindu",
-        "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+        "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "RLDA moves forward on Bengaluru Majestic railway station makeover",
-      "outlet": "The Hindu",
+      "title": "KSR railway station to be modernised after 56 years",
+      "outlet": "Bangalore Mirror",
       "publishedDate": "2024-03-05",
-      "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece",
+      "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms",
       "claim": "Details integration with Metro lines and BMTC bus terminals",
       "checkedOn": "2026-11-23",
-      "excerpt": "RLDA moves forward on Bengaluru Majestic railway station makeover reports that details integration with metro lines and bmtc bus terminals."
+      "excerpt": "South Western Railway has proposed a comprehensive redevelopment plan for the Kranthiveera Sangolli Rayanna (KSR) Bengaluru City Railway Station (Majestic)."
     }
   ],
   "officialDocLinks": [

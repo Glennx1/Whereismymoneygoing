@@ -44,7 +44,7 @@ export const bwssbCauveryStageVi: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
           }
         ]
       },
@@ -55,7 +55,7 @@ export const bwssbCauveryStageVi: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
           }
         ]
       },
@@ -66,7 +66,7 @@ export const bwssbCauveryStageVi: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
           }
         ]
       },
@@ -77,7 +77,7 @@ export const bwssbCauveryStageVi: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
           }
         ]
       }
@@ -96,20 +96,20 @@ export const bwssbCauveryStageVi: Project = {
       "description": "BWSSB announced plans to formulate DPR for 500 MLD Cauvery Stage VI project.",
       "source": {
         "label": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+        "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "How Cauvery Stage 6 aims to drought-proof Bengaluru's IT hubs by 2030",
-      "outlet": "Moneycontrol",
+      "title": "BWSSB invites bids for Cauvery VI stage DPR to supply water to towns around Bengaluru",
+      "outlet": "The Hindu",
       "publishedDate": "2024-04-05",
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html",
-      "claim": "Analysis of ground water depletion and long-term water supply infrastructure",
+      "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece",
+      "claim": "BWSSB invites bids for Cauvery VI stage DPR to supply 500 MLD to towns around Bengaluru",
       "checkedOn": "2026-11-23",
-      "excerpt": "How Cauvery Stage 6 aims to drought-proof Bengaluru's IT hubs by 2030 reports that analysis of ground water depletion and long-term water supply infrastructure."
+      "excerpt": "Cauvery VI stage to supply 500 MLD, or around 6 tmcft annually"
     }
   ],
   "officialDocLinks": [

@@ -87,7 +87,7 @@ export const bengaluruChennaiExpressway: Project = {
         "sources": [
           {
             "label": "Construction World",
-            "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-chennai-expressway-update/41294"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece"
           }
         ]
       },
@@ -139,7 +139,7 @@ export const bengaluruChennaiExpressway: Project = {
       "description": "NHAI awarded all 3 civil packages covering 71 km in Karnataka under Hybrid Annuity / EPC models.",
       "source": {
         "label": "Construction World",
-        "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-chennai-expressway-update/41294"
+        "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece"
       }
     },
     {
@@ -175,7 +175,7 @@ export const bengaluruChennaiExpressway: Project = {
       "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-to-be-fully-operational-by-june-2026/article69340081.ece",
       "claim": "Reports target completion timeline for four-lane greenfield expressway corridor",
       "checkedOn": "2026-11-23",
-      "excerpt": "Union Minister Nitin Gadkari stated that the 262-km Bengaluru-Chennai Expressway project will be fully operational by June 2026."
+      "excerpt": "Union Minister for Road Transport Nitin Gadkari recently stated that the remaining portions of the expressway are scheduled to be completed by June 2026."
     },
     {
       "title": "Bengaluru-Chennai expressway work to be flagged off by PM",
@@ -184,7 +184,7 @@ export const bengaluruChennaiExpressway: Project = {
       "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece",
       "claim": "Details foundation laying and package-wise construction of 71-km Karnataka section",
       "checkedOn": "2026-11-23",
-      "excerpt": "The 71-km stretch of the greenfield expressway falling in Karnataka from Hoskote to Bethamangala is divided into three construction packages."
+      "excerpt": "Prime Minister Narendra Modi is expected to flag off work on the much-awaited 263-km-long Bengaluru-Chennai Expressway, a greenfield project"
     }
   ],
   "officialDocLinks": [

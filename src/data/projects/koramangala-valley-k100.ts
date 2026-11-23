@@ -137,7 +137,7 @@ export const koramangalaValleyK100: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/city-gets-7795-cr-for-comprehensive-development/article34018546.ece",
       "claim": "Reports initial allocation of ₹169 Cr for K-100 waterway",
       "checkedOn": "2026-11-23",
-      "excerpt": "The government has allocated Rs 169 crore to transform the Koramangala Valley Rajakaluve into a public waterway corridor."
+      "excerpt": "Under this project, the stormwater drain network in Koramangala Valley will be converted into a fresh water canal."
     },
     {
       "title": "K-100 project: Sewage flow still a challenge",
@@ -146,7 +146,7 @@ export const koramangalaValleyK100: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/k-100-project-sewage-flow-still-a-challenge/article65360567.ece",
       "claim": "Reports execution progress and wastewater interception challenges on K-100",
       "checkedOn": "2026-11-23",
-      "excerpt": "Work on the 11.5 km K-100 waterway from KR Market to Bellandur continues with sewage interception lines being laid along the valley."
+      "excerpt": "The project, which began in March 2021, was to be completed in 10 months."
     },
     {
       "title": "Bengaluru: CM Yediyurappa lays foundation stone for K-100 waterway project",
@@ -155,7 +155,7 @@ export const koramangalaValleyK100: Project = {
       "url": "https://daijiworld.com/news/newsDisplay?newsID=817115",
       "claim": "Confirms project foundation stone laid at ₹179.5 Cr estimated cost",
       "checkedOn": "2026-11-23",
-      "excerpt": "Chief Minister B S Yediyurappa on Thursday laid the foundation stone for the Rs 179.5 crore K-100 Citizens Waterway project."
+      "excerpt": "When the state cabinet approved the project last year, the estimated cost was Rs 169 crore."
     }
   ],
   "officialDocLinks": [

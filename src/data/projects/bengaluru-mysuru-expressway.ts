@@ -159,35 +159,17 @@ export const bengaluruMysuruExpressway: Project = {
       "title": "PM dedicates Bengaluru-Mysuru Expressway to the Nation",
       "outlet": "Press Information Bureau (PIB)",
       "publishedDate": "2023-03-12",
-      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1906233",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1905535",
       "claim": "Official government announcement confirming ₹8,480 Cr cost and 118 km alignment",
       "isOfficial": true,
       "checkedOn": "2026-11-23",
-      "excerpt": "PM dedicates Bengaluru-Mysuru Expressway to the Nation reports that official government announcement confirming ₹8,480 cr cost and 118 km alignment."
-    },
-    {
-      "title": "Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts",
-      "outlet": "Moneycontrol",
-      "publishedDate": "2023-03-11",
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-mysuru-expressway-all-you-need-to-know-about-nh-275-10234121.html",
-      "claim": "Detailed travel times, bypass structures, and tolling infrastructure",
-      "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts reports that detailed travel times, bypass structures, and tolling infrastructure."
-    },
-    {
-      "title": "How the 10-lane Bengaluru-Mysuru highway transforms regional logistics",
-      "outlet": "Deccan Herald",
-      "publishedDate": "2023-03-13",
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/how-bengaluru-mysuru-expressway-alters-karnataka-economy-1199841.html",
-      "claim": "Analysis of commercial freight velocity and bypass decongestion",
-      "checkedOn": "2026-11-23",
-      "excerpt": "How the 10-lane Bengaluru-Mysuru highway transforms regional logistics reports that analysis of commercial freight velocity and bypass decongestion."
+      "excerpt": "The 118 Km long project has been developed at a total cost of around Rs 8480 crores."
     }
   ],
   "officialDocLinks": [
     {
       "label": "PIB Release: Prime Minister dedicates Bengaluru-Mysuru Expressway",
-      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1906233",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1905535",
       "type": "GOVERNMENT_ORDER"
     },
     {

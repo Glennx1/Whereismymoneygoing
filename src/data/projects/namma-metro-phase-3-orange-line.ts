@@ -137,7 +137,7 @@ export const nammaMetroPhase3OrangeLine: Project = {
       "description": "State cabinet approved DPR for 44.65 km Phase 3 at ₹16,328 Cr (including double-decker provisions).",
       "source": {
         "label": "Press Information Bureau (PIB)",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952"
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079"
       }
     },
     {
@@ -147,21 +147,21 @@ export const nammaMetroPhase3OrangeLine: Project = {
       "description": "Cabinet Committee on Economic Affairs (CCEA) approved Phase 3 at ₹15,611 Cr with central equity funding.",
       "source": {
         "label": "PIB",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952"
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "Cabinet approves Bangalore Metro Rail Project Phase-3",
+      "title": "Cabinet approves two corridors of Bangalore Metro Rail Project Phase-3 project for 44.65 km with 31stations",
       "outlet": "Press Information Bureau (PIB)",
       "publishedDate": "2024-08-16",
-      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079",
       "claim": "Official approval of ₹15,611 Cr project cost, 44.65 km length, and 31 stations",
       "isOfficial": true,
       "checkedOn": "2026-11-23",
-      "excerpt": "Cabinet approves Bangalore Metro Rail Project Phase-3 reports that official approval of ₹15,611 cr project cost, 44.65 km length, and 31 stations."
+      "excerpt": "The total project completion cost of Phase-3 is Rs.15,611 crore to be operational by 2029"
     },
     {
       "title": "Bangalore Metro Phase 3 Information, Routes and Station List",
@@ -170,13 +170,14 @@ export const nammaMetroPhase3OrangeLine: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
       "claim": "Detailed station locations, alignment map, and tender packaging breakdown",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Metro Phase 3 Information, Routes and Station List reports that detailed station locations, alignment map, and tender packaging breakdown."
+      "excerpt": "An official PDF route map of Bangalore Metro Phase 3 will be added here when available.",
+      "excerptChecked": "manual"
     }
   ],
   "officialDocLinks": [
     {
       "label": "PIB: Union Cabinet Phase 3 Sanction Order",
-      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079",
       "type": "GOVERNMENT_ORDER"
     },
     {

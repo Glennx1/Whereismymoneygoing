@@ -153,7 +153,7 @@ export const bellandurLakeRejuvenation: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/bda-finally-floats-tender-for-rejuvenation-of-bellandur-lake/article30467183.ece",
       "claim": "Confirms tender floated for Bellandur lake desilting and wetland development",
       "checkedOn": "2026-11-23",
-      "excerpt": "BDA invited tenders for desilting and developing wetlands in Bellandur Lake following directives from the National Green Tribunal."
+      "excerpt": "Floated a tender for desilting, rejuvenation and development of Bellandur lake with an estimated project cost of ₹250 crore."
     },
     {
       "title": "BDA floats a 250 crore tender for desilting, rejuvenation and development of Bellandur Lake",
@@ -162,7 +162,7 @@ export const bellandurLakeRejuvenation: Project = {
       "url": "https://swarajyamag.com/insta/bda-floats-a-250-crore-tender-for-desilting-rejuvenation-and-development-of-bellandur-lake-in-bengaluru",
       "claim": "Reports ₹250 Cr tender value for desilting 50 lakh cubic metres of silt",
       "checkedOn": "2026-11-23",
-      "excerpt": "The Bangalore Development Authority floated tenders valued at Rs 250 crore for clearing weeds and desilting the severely polluted Bellandur Lake."
+      "excerpt": "Floated a tender for desilting, rejuvenation and development of Bellandur lake with an estimated project cost of Rs 250 crore"
     },
     {
       "title": "Bellandur and Varthur lake rejuvenation causing damage, warns open letter",
@@ -171,7 +171,7 @@ export const bellandurLakeRejuvenation: Project = {
       "url": "https://citizenmatters.in/bellandur-varthur-lake-rejuvenation-causing-damage-desilting-bet-bangalore-environment-trust-open-letter-to-government/",
       "claim": "Details environmental challenges and expert objections during lake de-watering",
       "checkedOn": "2026-11-23",
-      "excerpt": "Environmental experts warned that desilting without stopping untreated sewage inflow merely transfers pollution downstream into the Pinakini river."
+      "excerpt": "Environmentalists, in an open letter to the government, pointed out that draining and desilting the toxic Bellandur and Varthur lakes would have severe impacts."
     }
   ],
   "officialDocLinks": [

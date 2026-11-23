@@ -79,7 +79,7 @@ export const nammaMetroYellowLine: Project = {
           },
           {
             "label": "The Hindu: Yellow line progress and budget updates",
-            "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+            "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
           }
         ]
       },
@@ -90,7 +90,7 @@ export const nammaMetroYellowLine: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+            "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
           }
         ]
       },
@@ -101,7 +101,7 @@ export const nammaMetroYellowLine: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+            "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
           }
         ]
       },
@@ -112,7 +112,7 @@ export const nammaMetroYellowLine: Project = {
         "sources": [
           {
             "label": "The Hindu: Yellow Line CRS clearance and opening",
-            "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+            "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
           }
         ]
       },
@@ -134,7 +134,7 @@ export const nammaMetroYellowLine: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+            "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
           }
         ]
       }
@@ -185,7 +185,7 @@ export const nammaMetroYellowLine: Project = {
       "description": "Prototype six-coach train arrived at Hebbagodi depot for statutory oscillation tests.",
       "source": {
         "label": "Deccan Herald",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412"
+        "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
       }
     },
     {
@@ -195,7 +195,7 @@ export const nammaMetroYellowLine: Project = {
       "description": "Revenue operations commenced following Commissioner of Metro Railway Safety (CMRS) sanction.",
       "source": {
         "label": "The Hindu",
-        "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+        "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
       }
     }
   ],
@@ -209,7 +209,7 @@ export const nammaMetroYellowLine: Project = {
       "calculatedMetric": "3 yr 8 mo delay",
       "officialCitation": {
         "sourceName": "The Hindu",
-        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
       }
     },
     {
@@ -227,22 +227,22 @@ export const nammaMetroYellowLine: Project = {
   ],
   "articles": [
     {
-      "title": "Yellow Line Metro trial runs completed; CRS gives safety approval",
+      "title": "Four years late, Bengaluru metro’s Yellow Line ready to run",
       "outlet": "The Hindu",
       "publishedDate": "2025-07-28",
-      "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece",
-      "claim": "Confirms statutory testing, signalling validation, and opening readiness",
+      "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece",
+      "claim": "Reports readiness and inauguration schedule for Yellow Line metro from RV Road to Bommasandra",
       "checkedOn": "2026-11-23",
-      "excerpt": "Yellow Line Metro trial runs completed; CRS gives safety approval reports that confirms statutory testing, signalling validation, and opening readiness."
+      "excerpt": "the much-awaited Yellow Line of Namma Metro, from R.V. Road to Bommasandra, will finally be inaugurated by Prime Minister Narendra Modi"
     },
     {
       "title": "First prototype train for Bengaluru Yellow Line arrives from CRRC",
       "outlet": "Deccan Herald",
       "publishedDate": "2024-02-15",
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412",
+      "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece",
       "claim": "Delivery of driverless train coaches and track testing milestones",
       "checkedOn": "2026-11-23",
-      "excerpt": "First prototype train for Bengaluru Yellow Line arrives from CRRC reports that delivery of driverless train coaches and track testing milestones."
+      "excerpt": "Once all trains are delivered and fully inducted, the line is expected to carry over 2."
     },
     {
       "title": "Namma Metro Phase 2 cost escalated by Rs 10,000 Cr across extensions",
@@ -251,7 +251,7 @@ export const nammaMetroYellowLine: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-2-delays-push-up-cost-by-rs-10000-cr-3307265",
       "claim": "Reports total cost escalation for Reach 5 and Phase 2 packages",
       "checkedOn": "2026-11-23",
-      "excerpt": "Namma Metro Phase 2 cost escalated by Rs 10,000 Cr across extensions reports that reports total cost escalation for reach 5 and phase 2 packages."
+      "excerpt": "the Yellow Line (RV Road-Bommasandra, 19.15 km) has long been ready but commercial operations haven't begun for want of trains."
     }
   ],
   "officialDocLinks": [

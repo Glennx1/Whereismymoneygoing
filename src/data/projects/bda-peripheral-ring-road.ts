@@ -172,7 +172,7 @@ export const bdaPeripheralRingRoad: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-business-corridor-deadlock-over-as-bda-begins-issuing-awards-for-land-3809159",
       "claim": "Reports BDA issuing compensation awards to land owners",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Business Corridor deadlock over as BDA begins issuing awards for land reports that reports bda issuing compensation awards to land owners."
+      "excerpt": "the pace of awards will accelerate in the coming days, putting the land acquisition machinery into its most active phase"
     },
     {
       "title": "Bengaluru Business Corridor: Global tenders floated for 20k first phase works",
@@ -181,7 +181,7 @@ export const bdaPeripheralRingRoad: Project = {
       "url": "https://www.etvbharat.com/en/state/bengaluru-business-corridor-global-tenders-floated-for-20k-first-phase-works-enn26033105183",
       "claim": "Corridor cost ₹27,000 Cr and Phase 1 tender issuance",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Business Corridor: Global tenders floated for 20k first phase works reports that corridor cost ₹27,000 cr and phase 1 tender issuance."
+      "excerpt": "The project will use a design, build, operate and transfer model and includes 10 years of operations and maintenance."
     },
     {
       "title": "Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR",
@@ -190,7 +190,7 @@ export const bdaPeripheralRingRoad: Project = {
       "url": "https://swarajyamag.com/amp/story/news-brief%2Fbangalore-development-authority-invites-rs-3348-crore-bids-for-first-package-of-bengaluru-business-corridor-project",
       "claim": "Package 1 estimate of ₹3,348 Cr for Madavara to Ballari Road stretch",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR reports that package 1 estimate of ₹3,348 cr for madavara to..."
+      "excerpt": "The Bangalore Development Authority (BDA) has invited bids for civil works covering a nearly 20 km section."
     },
     {
       "title": "Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1",
@@ -199,7 +199,7 @@ export const bdaPeripheralRingRoad: Project = {
       "url": "https://www.oneindia.com/bengaluru/bengaluru-business-corridor-nears-execution-as-two-firms-bid-for-prr-package-1-8081733.html",
       "claim": "Bidding outcome with 2 bidders and LOA recommendation",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1 reports that bidding outcome with 2 bidders and loa recommendation."
+      "excerpt": "The Bengaluru Business Corridor is estimated to cost around Rs 26,786 crore, including land acquisition costs."
     }
   ],
   "officialDocLinks": [

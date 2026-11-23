@@ -138,7 +138,7 @@ export const bmtcElectricBuses: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/bmtc-to-induct-921-non-ac-electric-buses-soon-all-four-rtcs-to-add-3888-new-buses-to-its-fleet/article67093574.ece",
       "claim": "Details induction of 921 12-metre electric buses under FAME II scheme",
       "checkedOn": "2026-11-23",
-      "excerpt": "BMTC will induct 921 non-air-conditioned electric buses under the CESL FAME II scheme with operations managed under a gross cost contract."
+      "excerpt": "According to BMTC officials, Tata Motors, a commercial vehicle manufacturer, will lease 921 electric buses under the FAME-2 scheme."
     },
     {
       "title": "Bengaluru's BMTC signs pact with Tata Motors for 921 electric buses",
@@ -147,7 +147,7 @@ export const bmtcElectricBuses: Project = {
       "url": "https://government.economictimes.indiatimes.com/news/digital-india/green-mobility-bengalurus-bmtc-signs-pact-with-tata-motors-for-921-electric-buses/102243991",
       "claim": "Confirms 12-year GCC agreement with Tata Motors subsidiary for 921 e-buses",
       "checkedOn": "2026-11-23",
-      "excerpt": "Tata Motors subsidiary TML Smart City Mobility Solutions signed a definitive agreement with BMTC to supply, operate and maintain 921 electric buses for 12 years."
+      "excerpt": "All the 921 buses will be added to service in a phased manner."
     }
   ],
   "officialDocLinks": [

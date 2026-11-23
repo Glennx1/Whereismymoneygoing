@@ -129,7 +129,7 @@ export const bbmpStormwaterDrain: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/cag-raps-bbmp-bda-over-unreliable-records-on-storm-water-drains-1030811.html",
       "claim": "CAG performance audit findings on documentation and encroachment tracking",
       "checkedOn": "2026-11-23",
-      "excerpt": "CAG raps BBMP, BDA over unreliable records on storm water drains reports that cag performance audit findings on documentation and encroachment tracking."
+      "excerpt": "A performance audit criticised agencies for lack of financial discipline, shoddy mapping of storm water drains and tertiary drains."
     },
     {
       "title": "Audit flags lapses in BBMP's SWD department",
@@ -138,7 +138,7 @@ export const bbmpStormwaterDrain: Project = {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/audit-flags-lapses-in-bbmps-swd-department-1231205.html",
       "claim": "Irregularities flagged in ₹490 Cr drain development spending",
       "checkedOn": "2026-11-23",
-      "excerpt": "Audit flags lapses in BBMP's SWD department reports that irregularities flagged in ₹490 cr drain development spending."
+      "excerpt": "The auditors have flagged a total of 132 discrepancies in the SWD department over three financial years."
     },
     {
       "title": "Why BBMP encroachment clearance on storm water drains faces endless delays",
@@ -147,7 +147,7 @@ export const bbmpStormwaterDrain: Project = {
       "url": "https://citizenmatters.in/bbmp-encroachment-clearance-delay-problems/",
       "claim": "Encroachment survey data: 714 of 2,626 encroachments remaining",
       "checkedOn": "2026-11-23",
-      "excerpt": "Why BBMP encroachment clearance on storm water drains faces endless delays reports that encroachment survey data: 714 of 2,626 encroachments remaining."
+      "excerpt": "After the 2016 floods, BBMP started the demolition drive to clear drain encroachments, and followed it with a plan to remodel Bengaluru's stormwater drains."
     },
     {
       "title": "Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru",
@@ -157,7 +157,8 @@ export const bbmpStormwaterDrain: Project = {
       "claim": "Official CAG audit findings on stormwater drains in Bengaluru",
       "isOfficial": true,
       "checkedOn": "2026-11-23",
-      "excerpt": "Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru reports that official cag audit findings on stormwater drains in bengaluru."
+      "excerpt": "Performance Audit on Management of Storm Water Drains in Bengaluru Urban area was conducted to evaluate whether stormwater drains were managed efficiently.",
+      "excerptChecked": "manual"
     }
   ],
   "officialDocLinks": [

@@ -151,7 +151,7 @@ export const bengaluruTwinTunnel: Project = {
       "url": "https://www.thehindu.com/news/national/karnataka/tunnel-road-a-real-estate-project-in-disguise-contend-citizen-groups/article71321305.ece",
       "claim": "Details citizen opposition and High Court scrutiny over ₹17,780 Cr tunnel road proposal",
       "checkedOn": "2026-11-23",
-      "excerpt": "Citizen groups questioned the feasibility and high cost of the proposed Rs 17,780 crore twin tunnel road connecting Hebbal to Central Silk Board."
+      "excerpt": "Citizens opposing the Congress government's ambitious tunnel road project have termed it a real estate project in disguise."
     },
     {
       "title": "Adani Group lowest bidder for both packages of Bengaluru tunnel road project",
@@ -160,7 +160,7 @@ export const bengaluruTwinTunnel: Project = {
       "url": "https://www.thenewsminute.com/karnataka/adani-group-lowest-bidder-for-both-packages-of-bengaluru-tunnel-road-project",
       "claim": "Confirms Adani Enterprises emerged L1 bidder quoting ₹22,267 Cr, above govt estimate",
       "checkedOn": "2026-11-23",
-      "excerpt": "Adani Enterprises emerged as the lowest bidder for both packages of the 16.75-km underground tunnel road quoting a combined Rs 22,267 crore."
+      "excerpt": "With only two bidders remaining, the Adani Group emerged as the lowest bidder, while Vishwa Samudra ranked second."
     },
     {
       "title": "DK Shivakumar's lasting legacy? A Bengaluru tunnel project mired in questions",
@@ -169,7 +169,7 @@ export const bengaluruTwinTunnel: Project = {
       "url": "https://www.thenewsminute.com/karnataka/dk-shivakumars-lasting-legacy-a-bengaluru-tunnel-project-mired-in-questions",
       "claim": "Analyzes 16.75-km twin-tunnel proposal, funding model, and high cost per km",
       "checkedOn": "2026-11-23",
-      "excerpt": "The Karnataka cabinet approved the detailed feasibility report for the 16.75 km twin tube tunnel road with 40 percent state funding."
+      "excerpt": "The biggest casualty in the government's singular pursuit of the tunnel project has been the neglect of public transport projects."
     }
   ],
   "officialDocLinks": [

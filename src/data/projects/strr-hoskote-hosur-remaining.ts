@@ -43,7 +43,7 @@ export const strrHoskoteHosurRemaining: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const strrHoskoteHosurRemaining: Project = {
         "sources": [
           {
             "label": "The Hindu: NHAI pushes STRR Hosur stretch target to 2027",
-            "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const strrHoskoteHosurRemaining: Project = {
         "sources": [
           {
             "label": "Construction World: STRR southern packages status",
-            "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
           }
         ]
       },
@@ -76,7 +76,7 @@ export const strrHoskoteHosurRemaining: Project = {
         "sources": [
           {
             "label": "Construction World",
-            "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
           }
         ]
       },
@@ -87,7 +87,7 @@ export const strrHoskoteHosurRemaining: Project = {
         "sources": [
           {
             "label": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
           }
         ]
       }
@@ -120,7 +120,7 @@ export const strrHoskoteHosurRemaining: Project = {
       "description": "NHAI awarded 5 remaining packages totaling 144.25 km for ₹4,749.74 Cr.",
       "source": {
         "label": "The Hindu",
-        "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+        "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
       }
     }
   ],
@@ -134,28 +134,19 @@ export const strrHoskoteHosurRemaining: Project = {
       "calculatedMetric": "Over 15 months delay on ROB package",
       "officialCitation": {
         "sourceName": "The Hindu",
-        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+        "documentUrl": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
       }
     }
   ],
   "articles": [
     {
-      "title": "Railway bridge clearances set new timeline for STRR Hoskote-Tamil Nadu section",
+      "title": "Bengaluru STRR nears completion as four of six packages finished, remaining stretches due this year",
       "outlet": "The Hindu",
-      "publishedDate": "2024-07-08",
-      "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece",
-      "claim": "Details South Western Railway permissions and superstructure fabrication",
+      "publishedDate": "2026-08-20",
+      "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece",
+      "claim": "Status of STRR packages and physical completion milestones",
       "checkedOn": "2026-11-23",
-      "excerpt": "Railway bridge clearances set new timeline for STRR Hoskote-Tamil Nadu section reports that details south western railway permissions and superstructure fabrication."
-    },
-    {
-      "title": "NHAI expedites work on Satellite Town Ring Road southern arc",
-      "outlet": "Construction World",
-      "publishedDate": "2024-08-15",
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812",
-      "claim": "Reports 58% physical completion across southern packages",
-      "checkedOn": "2026-11-23",
-      "excerpt": "NHAI expedites work on Satellite Town Ring Road southern arc reports that reports 58% physical completion across southern packages."
+      "excerpt": "The Dobbspet-Doddballapur package has achieved 100% completion, while the Doddballapur-Hoskote section has been completed despite recording 99.2% physical progress"
     }
   ],
   "officialDocLinks": [

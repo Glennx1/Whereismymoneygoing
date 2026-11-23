@@ -44,7 +44,7 @@ export const smvtBaiyappanahalli: Project = {
         "sources": [
           {
             "label": "Deccan Herald: SMVT terminal features and costs",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html"
+            "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/"
           }
         ]
       },
@@ -66,7 +66,7 @@ export const smvtBaiyappanahalli: Project = {
         "sources": [
           {
             "label": "Deccan Herald",
-            "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html"
+            "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/"
           }
         ]
       },
@@ -120,7 +120,7 @@ export const smvtBaiyappanahalli: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/road-link-to-sir-m-visvesvaraya-terminal-to-be-ready-by-nov-end/article37448561.ece",
       "claim": "Reports road connectivity work connecting Banaswadi and Baiyappanahalli to SMVT",
       "checkedOn": "2026-11-23",
-      "excerpt": "BBMP and South Western Railway are executing road link works to provide smooth passenger access to the new Baiyappanahalli terminal."
+      "excerpt": "The lack of planning of the road network during the design stage of the terminal has resulted in a long delay in opening the terminal."
     },
     {
       "title": "Bengaluru's airport-like railway terminal opens to the public",
@@ -129,7 +129,7 @@ export const smvtBaiyappanahalli: Project = {
       "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/",
       "claim": "Confirms commencement of commercial train operations at ₹314 Cr air-conditioned terminal",
       "checkedOn": "2026-11-23",
-      "excerpt": "Sir M Visvesvaraya Terminal at Baiyappanahalli built at Rs 314 crore opened for commercial passenger operations with the departure of Ernakulam Tri-Weekly Express."
+      "excerpt": "After facing several delays, Bengaluru’s Sir M Visvesvaraya Terminal, India's airport-like railway terminal in Bengaluru began operations on Monday night."
     }
   ],
   "officialDocLinks": [

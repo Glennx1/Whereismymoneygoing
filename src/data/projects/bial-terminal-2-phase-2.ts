@@ -25,7 +25,7 @@ export const bialTerminal2Phase2: Project = {
   "originalDeadline": "2026-12-31",
   "revisedDeadline": "2027-06-30",
   "financialProgressPct": null,
-  "physicalProgressPct": 65,
+  "physicalProgressPct": null,
   "wardOrZone": "Devanahalli, Kempegowda International Airport, North Peri-urban",
   "coordinates": {
     "lat": 13.1986,
@@ -65,7 +65,7 @@ export const bialTerminal2Phase2: Project = {
         "sources": [
           {
             "label": "Construction World: Bengaluru Airport T2 Phase 2 update",
-            "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142"
+            "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece"
           }
         ]
       },
@@ -76,7 +76,7 @@ export const bialTerminal2Phase2: Project = {
         "sources": [
           {
             "label": "Construction World",
-            "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142"
+            "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece"
           }
         ]
       },
@@ -120,22 +120,13 @@ export const bialTerminal2Phase2: Project = {
   "redFlags": [],
   "articles": [
     {
-      "title": "BIAL to invest in Terminal 2 Phase-2 expansion at Bengaluru airport to handle 45M passengers",
-      "outlet": "Business Standard",
-      "publishedDate": "2023-06-21",
-      "url": "https://www.business-standard.com/companies/news/bial-to-invest-in-terminal-2-phase-2-expansion-at-bengaluru-airport-123062000841_1.html",
-      "claim": "Details ₹4,000 Cr capital investment, boarding pier expansion, and passenger capacity metrics",
+      "title": "BIAL aims to complete second phase of KIA’s T2 by 2029",
+      "outlet": "The Hindu",
+      "publishedDate": "2026-02-07",
+      "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece",
+      "claim": "Target completion of T2 Phase 2 by 2029 to expand passenger capacity",
       "checkedOn": "2026-11-23",
-      "excerpt": "BIAL to invest in Terminal 2 Phase-2 expansion at Bengaluru airport to handle 45M passengers reports that details ₹4,000 cr capital investment, boarding pier..."
-    },
-    {
-      "title": "L&T advances structural works for Kempegowda Airport T2 Phase 2 piers",
-      "outlet": "Construction World",
-      "publishedDate": "2024-05-18",
-      "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142",
-      "claim": "Reports 65% civil completion and baggage handling system integration",
-      "checkedOn": "2026-11-23",
-      "excerpt": "L&T advances structural works for Kempegowda Airport T2 Phase 2 piers reports that reports 65% civil completion and baggage handling system integration."
+      "excerpt": "The completion of the second phase of Terminal 2 will add capacity by an additional 20 million passengers per annum"
     }
   ],
   "officialDocLinks": [
@@ -145,8 +136,8 @@ export const bialTerminal2Phase2: Project = {
       "type": "NEWS_REPORT"
     },
     {
-      "label": "Business Standard: BIAL to invest in T2 Phase 2",
-      "url": "https://www.business-standard.com/companies/news/bial-to-invest-in-terminal-2-phase-2-expansion-at-bengaluru-airport-123062000841_1.html",
+      "label": "The Hindu: BIAL aims to complete second phase of T2 by 2029",
+      "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece",
       "type": "NEWS_REPORT"
     }
   ]

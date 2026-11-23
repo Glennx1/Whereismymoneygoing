@@ -43,7 +43,7 @@ export const bengaluruPuneExpressway: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
           }
         ]
       },
@@ -54,7 +54,7 @@ export const bengaluruPuneExpressway: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const bengaluruPuneExpressway: Project = {
         "sources": [
           {
             "label": "Moneycontrol",
-            "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+            "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
           }
         ]
       }
@@ -84,20 +84,20 @@ export const bengaluruPuneExpressway: Project = {
       "description": "MoRTH approved preparation of DPR for greenfield 700 km expressway between Pune and Bengaluru.",
       "source": {
         "label": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+        "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
       }
     }
   ],
   "redFlags": [],
   "articles": [
     {
-      "title": "Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway",
-      "outlet": "Moneycontrol",
+      "title": "Bengaluru-Mysuru expressway will be ready by end of February, says Union Minister Nitin Gadkari",
+      "outlet": "The Hindu",
       "publishedDate": "2024-06-25",
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html",
-      "claim": "Examines land acquisition requirements across Karnataka and Maharashtra borders",
+      "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece",
+      "claim": "Logistics connectivity and linking of STRR to proposed Pune-Bengaluru greenfield expressway",
       "checkedOn": "2026-11-23",
-      "excerpt": "Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway reports that examines land acquisition requirements across karnataka and maharashtra borders."
+      "excerpt": "The road will be connected to the multi-nodal logistics park at Dobbaspet and also linked to the proposed Pune-Bengaluru Greenfield Expressway"
     }
   ],
   "officialDocLinks": [

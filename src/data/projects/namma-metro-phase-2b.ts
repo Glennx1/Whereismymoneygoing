@@ -189,7 +189,7 @@ export const nammaMetroPhase2b: Project = {
       "url": "https://www.businesstoday.in/amp/india/story/tired-of-bengaluru-traffic-airport-metro-crosses-72-mark-heres-what-it-means-for-you-547584-2026-08-06",
       "claim": "Reports 72% construction progress on the Airport Metro corridor",
       "checkedOn": "2026-11-23",
-      "excerpt": "Tired of Bengaluru traffic? Airport Metro crosses 72% mark, here's what it means for you reports that reports 72% construction progress on the airport..."
+      "excerpt": "Despite these setbacks, officials maintain that the airport Metro corridor remains on schedule for phased opening through 2027."
     },
     {
       "title": "Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report",
@@ -198,7 +198,7 @@ export const nammaMetroPhase2b: Project = {
       "url": "https://swarajyamag.com/infrastructure/bengaluru-metros-blue-line-to-kia-airport-slated-for-completion-by-end-of-2027-report",
       "claim": "Revised completion timeline targeting late 2027",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report reports that revised completion timeline targeting late 2027."
+      "excerpt": "The Blue Line will introduce driverless trains equipped with luggage racks and modern safety systems, designed to meet the needs of air passengers."
     },
     {
       "title": "Bangalore Metro Phase 2B Information and Stations Map",
@@ -207,7 +207,7 @@ export const nammaMetroPhase2b: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-2b-information-map",
       "claim": "Detailed station alignment and package tender specifications",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Metro Phase 2B Information and Stations Map reports that detailed station alignment and package tender specifications."
+      "excerpt": "An official PDF route map of Bangalore Metro Phase 2B will be added here when available."
     },
     {
       "title": "MPC approves Rs 14,788.10 cr Namma Metro expansion",
@@ -216,7 +216,7 @@ export const nammaMetroPhase2b: Project = {
       "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
       "claim": "Combined sanction of Phase 2A and Phase 2B network",
       "checkedOn": "2026-11-23",
-      "excerpt": "MPC approves Rs 14,788.10 cr Namma Metro expansion reports that combined sanction of phase 2a and phase 2b network."
+      "excerpt": "The approval came after the Centre approved the project and nearly two years after the state government steered cleared the mega metro project."
     }
   ],
   "officialDocLinks": [

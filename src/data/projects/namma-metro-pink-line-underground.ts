@@ -70,7 +70,7 @@ export const nammaMetroPinkLineUnderground: Project = {
         "sources": [
           {
             "label": "Construction World",
-            "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+            "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
           }
         ]
       },
@@ -81,7 +81,7 @@ export const nammaMetroPinkLineUnderground: Project = {
         "sources": [
           {
             "label": "Construction World: Bengaluru Pink Line tunneling completed",
-            "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+            "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
           }
         ]
       },
@@ -103,7 +103,7 @@ export const nammaMetroPinkLineUnderground: Project = {
         "sources": [
           {
             "label": "Construction World",
-            "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+            "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
           }
         ]
       }
@@ -154,7 +154,7 @@ export const nammaMetroPinkLineUnderground: Project = {
       "description": "TBM Urja deployed by L&T to begin tunneling at Cantonment station.",
       "source": {
         "label": "Construction World",
-        "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+        "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
       }
     },
     {
@@ -164,7 +164,7 @@ export const nammaMetroPinkLineUnderground: Project = {
       "description": "TBM Tunga completed the final breakthrough at Nagawara, completing 100% of underground tunnel excavation.",
       "source": {
         "label": "Construction World",
-        "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+        "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
       }
     }
   ],
@@ -178,19 +178,19 @@ export const nammaMetroPinkLineUnderground: Project = {
       "calculatedMetric": "Over 2 years delay in tunneling milestones",
       "officialCitation": {
         "sourceName": "Construction World",
-        "documentUrl": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+        "documentUrl": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
       }
     }
   ],
   "articles": [
     {
-      "title": "BMRCL completes Pink Line underground tunneling works with 9 TBMs",
-      "outlet": "Construction World",
-      "publishedDate": "2024-10-02",
-      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294",
-      "claim": "Details 91% civil progress and handover to track and electrification teams",
+      "title": "Namma Metro’s Bhadra TBM achieves final breakthrough in underground tunnelling",
+      "outlet": "The Hindu",
+      "publishedDate": "2024-10-31",
+      "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece",
+      "claim": "Final TBM breakthrough marking completion of Reach 6 underground tunneling",
       "checkedOn": "2026-11-23",
-      "excerpt": "BMRCL completes Pink Line underground tunneling works with 9 TBMs reports that details 91% civil progress and handover to track and electrification teams."
+      "excerpt": "This breakthrough, achieved by tunnel boring machine (TBM) Bhadra, marks the end of a 937-metre stretch from K.G. Halli to Nagawara."
     },
     {
       "title": "Bangalore Metro Phase 2 Underground Reach 6 Information and Map",
@@ -199,7 +199,8 @@ export const nammaMetroPinkLineUnderground: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-2-information-map/",
       "claim": "Technical breakdown of all 4 underground packages, station depths, and TBM stats",
       "checkedOn": "2026-11-23",
-      "excerpt": "Bangalore Metro Phase 2 Underground Reach 6 Information and Map reports that technical breakdown of all 4 underground packages, station depths, and tbm stats."
+      "excerpt": "An official PDF route map of Bangalore Metro Phase 2 will be added here when available.",
+      "excerptChecked": "manual"
     }
   ],
   "officialDocLinks": [
