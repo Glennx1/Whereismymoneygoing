@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import { projects } from "../src/data/projects/index";
 
 interface ValidationError {
@@ -11,6 +13,32 @@ const seenSlugs = new Set<string>();
 const seenIds = new Set<string>();
 
 const ISO_DATE_REGEX = /^\d{4}-\d{2}(-\d{2})?$/;
+
+// Load dead-links denylist if present
+const deadLinksPath = path.resolve(process.cwd(), "docs", "dead-links.json");
+const deadLinksSet = new Set<string>();
+if (fs.existsSync(deadLinksPath)) {
+  try {
+    const list = JSON.parse(fs.readFileSync(deadLinksPath, "utf8"));
+    if (Array.isArray(list)) {
+      list.forEach((u) => deadLinksSet.add(u.trim()));
+    }
+  } catch (err) {
+    console.warn("Warning: Could not read docs/dead-links.json");
+  }
+}
+
+function checkUrlNotDead(url: string | undefined | null, projectSlug: string, location: string) {
+  if (!url) return;
+  const trimmed = url.trim();
+  if (deadLinksSet.has(trimmed)) {
+    errors.push({
+      projectSlug,
+      field: location,
+      message: `URL is in the dead-links denylist: ${trimmed}`,
+    });
+  }
+}
 
 console.log(`\n🔍 Validating NammaKharcha project data across ${projects.length} projects...\n`);
 
@@ -125,8 +153,8 @@ for (const project of projects) {
   }
 
   // 5. Data Quality and Sources rule:
-  // Every non-null figure in sanctionedAmountCr, revisedEstimatedCostCr, announcedAmountCr, actualDisbursedCr
-  // must have an entry in dataQuality.fields
+  // Every non-null figure in sanctionedAmountCr, revisedEstimatedCostCr, announcedAmountCr, actualDisbursedCr, physicalProgressPct
+  // must have an entry in dataQuality.fields with at least one valid source URL not in the denylist.
   const checkedFinancialFields = [
     "sanctionedAmountCr",
     "revisedEstimatedCostCr",
@@ -145,17 +173,62 @@ for (const project of projects) {
           field: `dataQuality.fields.${cf}`,
           message: `Figure '${cf}' is set to ${figureVal} but has no dataQuality audit entry`,
         });
-      } else if (!fieldAudit.note || fieldAudit.note.trim() === "") {
-        errors.push({
-          projectSlug: project.slug,
-          field: `dataQuality.fields.${cf}.note`,
-          message: `Field audit for '${cf}' is missing an explanatory note`,
-        });
+      } else {
+        if (!fieldAudit.note || fieldAudit.note.trim() === "") {
+          errors.push({
+            projectSlug: project.slug,
+            field: `dataQuality.fields.${cf}.note`,
+            message: `Field audit for '${cf}' is missing an explanatory note`,
+          });
+        }
+        if (!fieldAudit.sources || fieldAudit.sources.length === 0) {
+          errors.push({
+            projectSlug: project.slug,
+            field: `dataQuality.fields.${cf}.sources`,
+            message: `Figure '${cf}' is set to ${figureVal} but has no supporting sources`,
+          });
+        } else {
+          for (const s of fieldAudit.sources) {
+            checkUrlNotDead(s.url, project.slug, `dataQuality.fields.${cf}.sources`);
+          }
+        }
       }
     }
   }
 
-  // 6. Article citations
+  // Check other field audit sources against denylist
+  if (project.dataQuality?.fields) {
+    for (const [fName, fCheck] of Object.entries(project.dataQuality.fields)) {
+      if (fCheck?.sources) {
+        for (const s of fCheck.sources) {
+          checkUrlNotDead(s.url, project.slug, `dataQuality.fields.${fName}.sources`);
+        }
+      }
+    }
+  }
+
+  // Check officialDocLinks
+  if (project.officialDocLinks) {
+    project.officialDocLinks.forEach((doc, idx) => {
+      checkUrlNotDead(doc.url, project.slug, `officialDocLinks[${idx}]`);
+    });
+  }
+
+  // Check milestones
+  if (project.milestones) {
+    project.milestones.forEach((m, idx) => {
+      checkUrlNotDead(m.source?.url, project.slug, `milestones[${idx}].source`);
+    });
+  }
+
+  // Check redFlags
+  if (project.redFlags) {
+    project.redFlags.forEach((rf, idx) => {
+      checkUrlNotDead(rf.officialCitation?.documentUrl, project.slug, `redFlags[${idx}].officialCitation`);
+    });
+  }
+
+  // 6. Article citations (Phase A strict requirements: checkedOn + verbatim excerpt <= 25 words)
   if (!project.articles || !Array.isArray(project.articles)) {
     errors.push({
       projectSlug: project.slug,
@@ -170,9 +243,38 @@ for (const project of projects) {
       }
       if (!art.url || !art.url.startsWith("http")) {
         errors.push({ projectSlug: project.slug, field: `articles[${i}].url`, message: `Invalid article URL: ${art.url}` });
+      } else {
+        checkUrlNotDead(art.url, project.slug, `articles[${i}].url`);
       }
       if (!art.claim || art.claim.trim() === "") {
         errors.push({ projectSlug: project.slug, field: `articles[${i}].claim`, message: "Article missing claim" });
+      }
+
+      // checkedOn
+      if (!art.checkedOn || !ISO_DATE_REGEX.test(art.checkedOn)) {
+        errors.push({
+          projectSlug: project.slug,
+          field: `articles[${i}].checkedOn`,
+          message: `Article missing valid ISO checkedOn date (got '${art.checkedOn}')`,
+        });
+      }
+
+      // excerpt
+      if (!art.excerpt || art.excerpt.trim() === "") {
+        errors.push({
+          projectSlug: project.slug,
+          field: `articles[${i}].excerpt`,
+          message: `Article missing verbatim excerpt supporting claim`,
+        });
+      } else {
+        const words = art.excerpt.trim().split(/\s+/).length;
+        if (words > 25) {
+          errors.push({
+            projectSlug: project.slug,
+            field: `articles[${i}].excerpt`,
+            message: `Article excerpt exceeds 25 words (${words} words)`,
+          });
+        }
       }
     }
   }
@@ -180,13 +282,17 @@ for (const project of projects) {
 
 if (errors.length > 0) {
   console.error(`❌ Validation failed with ${errors.length} issue(s):\n`);
-  for (const err of errors) {
+  for (const err of errors.slice(0, 30)) {
     console.error(`  • [${err.projectSlug}] ${err.field}: ${err.message}`);
+  }
+  if (errors.length > 30) {
+    console.error(`  ... and ${errors.length - 30} more issue(s).`);
   }
   process.exit(1);
 } else {
   console.log(`✅ All ${projects.length} project records passed data integrity validation!`);
   console.log(`   - Verified unique slugs: ${seenSlugs.size}`);
-  console.log(`   - Checked financial figures, dates, and article citations.\n`);
+  console.log(`   - Denylist verified: 0 dead URLs present.`);
+  console.log(`   - All articles have checkedOn dates and concise verbatim excerpts (<= 25 words).\n`);
   process.exit(0);
 }

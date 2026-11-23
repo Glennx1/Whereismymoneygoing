@@ -314,6 +314,11 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                       <span className="text-xs text-neutral-400">
                         {formatMonthYear(article.publishedDate)}
                       </span>
+                      {article.checkedOn && (
+                        <span className="text-[11px] text-neutral-400 font-mono">
+                          • Link checked {article.checkedOn}
+                        </span>
+                      )}
                     </div>
                     <a
                       href={article.url}
@@ -328,6 +333,11 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                       <span className="font-medium text-neutral-700">Supports: </span>
                       {article.claim}
                     </p>
+                    {article.excerpt && (
+                      <p className="text-[11px] text-neutral-600 italic bg-white/70 rounded px-2 py-1 border border-neutral-200/50 mt-1">
+                        &ldquo;{article.excerpt}&rdquo;
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -356,6 +366,11 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                     <span className="text-xs text-neutral-400">
                       {formatMonthYear(article.publishedDate)}
                     </span>
+                    {article.checkedOn && (
+                      <span className="text-[11px] text-neutral-400 font-mono">
+                        • Link checked {article.checkedOn}
+                      </span>
+                    )}
                   </div>
                   <a
                     href={article.url}
@@ -370,6 +385,11 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
                     <span className="font-medium text-neutral-700">Supports: </span>
                     {article.claim}
                   </p>
+                  {article.excerpt && (
+                    <p className="text-[11px] text-neutral-600 italic bg-white/70 rounded px-2 py-1 border border-neutral-200/50 mt-1">
+                      &ldquo;{article.excerpt}&rdquo;
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

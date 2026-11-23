@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "validate-data": "tsx scripts/validate-data.ts",
+    "check-links": "tsx scripts/check-links.ts",
     "build": "npm run validate-data && next build",
     "start": "next start",
     "lint": "next lint"
