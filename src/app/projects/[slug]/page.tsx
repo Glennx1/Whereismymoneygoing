@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { projects } from "@/data/projects";
 import { agencies } from "@/data/agencies";
 import { FinancialPipeline } from "@/components/FinancialPipeline";
+import { ProjectTimelineBar } from "@/components/ProjectTimelineBar";
 import { RedFlagBadge } from "@/components/RedFlagBadge";
 import { formatMonthYear, calculateDelayString, statusLabel } from "@/lib/utils";
 import { 
@@ -26,6 +28,35 @@ interface ProjectPageProps {
   };
 }
 
+export function generateMetadata({ params }: ProjectPageProps): Metadata {
+  const project = projects.find((p) => p.slug === params.slug);
+  if (!project) {
+    return {
+      title: "Project Not Found | NammaKharcha",
+      description: "Bengaluru public infrastructure project spending and timeline tracker.",
+    };
+  }
+
+  const title = `${project.title} — Budget, Delays & Progress | NammaKharcha`;
+  const description = `${project.tagline} Tracking reported budget, contract timeline, delays, and contractor details from verified public records.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      siteName: "NammaKharcha",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
+
 export function generateStaticParams() {
   return projects.map((p) => ({
     slug: p.slug,
@@ -39,8 +70,14 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
     notFound();
   }
 
+  const isCompleted = project.status === "completed" || project.category === "completed";
   const agency = agencies.find((a) => a.code === project.agencyCode);
-  const delayStr = calculateDelayString(project.originalDeadline, project.revisedDeadline);
+  const delayStr = calculateDelayString(
+    project.originalDeadline,
+    project.revisedDeadline,
+    isCompleted,
+    project.completionDate
+  );
 
   // Group articles into official vs news
   const officialArticles = project.articles.filter((a) => a.isOfficial);
@@ -136,6 +173,9 @@ export default function ProjectDetailsPage({ params }: ProjectPageProps) {
           Last audited {project.dataQuality.lastAudited}. See the notes under each figure for sources.
         </p>
       </div>
+
+      {/* PROMISED VS ACTUAL TIMELINE */}
+      <ProjectTimelineBar project={project} />
 
       {/* SECTION 1: THE FINANCIAL PIPELINE */}
       <FinancialPipeline project={project} />

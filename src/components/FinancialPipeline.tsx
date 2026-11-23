@@ -13,7 +13,7 @@ import {
   isStale,
 } from "@/lib/utils";
 import { ConfidenceBadge } from "./ConfidenceBadge";
-import { TrendingUp, ExternalLink, Info, CheckCircle2, Clock } from "lucide-react";
+import { TrendingUp, ExternalLink, Info, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 interface FinancialPipelineProps {
   project: Project;
@@ -44,6 +44,12 @@ function Step({
   const missing = value === "Not available";
   const check = field ? project.dataQuality.fields[field] : undefined;
   const stale = isStale(asOf ?? check?.asOf);
+
+  const issueTitle = encodeURIComponent(`Data correction: ${project.slug} - ${field ?? label}`);
+  const issueBody = encodeURIComponent(
+    `## Project: ${project.title} (${project.slug})\n## Field: ${field ?? label}\n## Current Value Shown: ${value}\n\n## Correction & Verified Source URL:\n[Provide link to official document or reputable news outlet]\n`
+  );
+  const reportUrl = `https://github.com/Glennx1/Whereismymoneygoing/issues/new?title=${issueTitle}&body=${issueBody}`;
 
   return (
     <div className="rounded-xl border border-neutral-200/80 bg-[#faf9f6] p-4 flex flex-col justify-between relative group">
@@ -87,39 +93,54 @@ function Step({
         )}
       </div>
 
-      {check && check.sources.length > 0 && (
-        <div className="mt-3 pt-2 border-t border-neutral-200/60">
-          <button
-            type="button"
-            onClick={() => setShowSources(!showSources)}
-            className="text-[10px] text-neutral-500 hover:text-neutral-900 flex items-center gap-1 font-medium underline underline-offset-2"
-          >
-            <Info className="h-3 w-3 text-neutral-400" />
-            <span>{showSources ? "Hide sources" : `Sources (${check.sources.length})`}</span>
-          </button>
-
-          {showSources && (
-            <div className="mt-2 p-2 rounded bg-white border border-neutral-200 text-[11px] space-y-1 shadow-xs">
-              <div className="font-semibold text-neutral-700 text-[10px]">Citations:</div>
-              <ul className="space-y-1">
-                {check.sources.map((s, idx) => (
-                  <li key={idx}>
-                    <a
-                      href={s.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-neutral-600 hover:text-neutral-900 hover:underline flex items-center gap-1"
-                    >
-                      <span className="truncate">{s.label}</span>
-                      <ExternalLink className="h-2.5 w-2.5 shrink-0 text-neutral-400" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      <div className="mt-3 pt-2 border-t border-neutral-200/60">
+        <div className="flex items-center justify-between text-[10px]">
+          {check && check.sources.length > 0 ? (
+            <button
+              type="button"
+              onClick={() => setShowSources(!showSources)}
+              className="text-neutral-500 hover:text-neutral-900 flex items-center gap-1 font-medium underline underline-offset-2"
+            >
+              <Info className="h-3 w-3 text-neutral-400" />
+              <span>{showSources ? "Hide sources" : `Sources (${check.sources.length})`}</span>
+            </button>
+          ) : (
+            <span />
           )}
+
+          <a
+            href={reportUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-400 hover:text-neutral-700 flex items-center gap-1 transition-colors"
+            title="Report a data correction on GitHub"
+          >
+            <AlertCircle className="h-2.5 w-2.5" />
+            <span>Report error</span>
+          </a>
         </div>
-      )}
+
+        {showSources && check && check.sources.length > 0 && (
+          <div className="mt-2 p-2 rounded bg-white border border-neutral-200 text-[11px] space-y-1 shadow-xs">
+            <div className="font-semibold text-neutral-700 text-[10px]">Citations:</div>
+            <ul className="space-y-1">
+              {check.sources.map((s, idx) => (
+                <li key={idx}>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-neutral-600 hover:text-neutral-900 hover:underline flex items-center gap-1"
+                  >
+                    <span className="truncate">{s.label}</span>
+                    <ExternalLink className="h-2.5 w-2.5 shrink-0 text-neutral-400" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

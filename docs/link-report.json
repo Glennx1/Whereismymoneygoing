@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-23T07:56:46.504Z",
+  "timestamp": "2026-11-23T16:02:59.428Z",
   "totalUrls": 375,
   "uniqueUrls": 108,
   "summary": {
-    "ok": 99,
+    "ok": 100,
     "dead": 0,
     "blocked": 5,
-    "error": 4
+    "error": 3
   },
   "byDomain": {
     "thehindu.com": {
@@ -16,7 +16,7 @@
       "blocked": 0,
       "error": 0
     },
-    "indiatoday.in": {
+    "english.bmrc.co.in": {
       "total": 1,
       "ok": 1,
       "dead": 0,
@@ -30,25 +30,11 @@
       "blocked": 0,
       "error": 0
     },
-    "english.bmrc.co.in": {
-      "total": 1,
-      "ok": 1,
-      "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
     "deccanherald.com": {
       "total": 20,
       "ok": 20,
       "dead": 0,
       "blocked": 0,
-      "error": 0
-    },
-    "pib.gov.in": {
-      "total": 2,
-      "ok": 0,
-      "dead": 0,
-      "blocked": 2,
       "error": 0
     },
     "constructionworld.in": {
@@ -58,18 +44,11 @@
       "blocked": 0,
       "error": 0
     },
-    "nhai.gov.in": {
-      "total": 1,
-      "ok": 1,
+    "pib.gov.in": {
+      "total": 2,
+      "ok": 0,
       "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
-    "infra.economictimes.indiatimes.com": {
-      "total": 1,
-      "ok": 1,
-      "dead": 0,
-      "blocked": 0,
+      "blocked": 2,
       "error": 0
     },
     "moneycontrol.com": {
@@ -86,28 +65,14 @@
       "blocked": 1,
       "error": 0
     },
-    "bwssb.karnataka.gov.in": {
-      "total": 1,
-      "ok": 0,
-      "dead": 0,
-      "blocked": 0,
-      "error": 1
-    },
-    "daijiworld.com": {
-      "total": 2,
-      "ok": 2,
-      "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
-    "indianexpress.com": {
+    "nhai.gov.in": {
       "total": 1,
       "ok": 1,
       "dead": 0,
       "blocked": 0,
       "error": 0
     },
-    "bseindia.com": {
+    "infra.economictimes.indiatimes.com": {
       "total": 1,
       "ok": 1,
       "dead": 0,
@@ -121,6 +86,27 @@
       "blocked": 0,
       "error": 0
     },
+    "daijiworld.com": {
+      "total": 2,
+      "ok": 2,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
+    "bwssb.karnataka.gov.in": {
+      "total": 1,
+      "ok": 0,
+      "dead": 0,
+      "blocked": 0,
+      "error": 1
+    },
+    "indianexpress.com": {
+      "total": 1,
+      "ok": 1,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
     "mybmtc.karnataka.gov.in": {
       "total": 1,
       "ok": 0,
@@ -128,23 +114,9 @@
       "blocked": 0,
       "error": 1
     },
-    "bbmp.gov.in": {
-      "total": 1,
-      "ok": 0,
-      "dead": 0,
-      "blocked": 0,
-      "error": 1
-    },
-    "government.economictimes.indiatimes.com": {
+    "bseindia.com": {
       "total": 1,
       "ok": 1,
-      "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
-    "oneindia.com": {
-      "total": 4,
-      "ok": 4,
       "dead": 0,
       "blocked": 0,
       "error": 0
@@ -156,7 +128,14 @@
       "blocked": 0,
       "error": 0
     },
-    "thenewsminute.com": {
+    "bbmp.gov.in": {
+      "total": 1,
+      "ok": 0,
+      "dead": 0,
+      "blocked": 0,
+      "error": 1
+    },
+    "oneindia.com": {
       "total": 4,
       "ok": 4,
       "dead": 0,
@@ -166,6 +145,20 @@
     "swarajyamag.com": {
       "total": 5,
       "ok": 5,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
+    "thenewsminute.com": {
+      "total": 4,
+      "ok": 4,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
+    "government.economictimes.indiatimes.com": {
+      "total": 1,
+      "ok": 1,
       "dead": 0,
       "blocked": 0,
       "error": 0
@@ -198,13 +191,6 @@
       "blocked": 0,
       "error": 0
     },
-    "metrorailtoday.com": {
-      "total": 1,
-      "ok": 1,
-      "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
     "citizenmatters.in": {
       "total": 2,
       "ok": 2,
@@ -219,21 +205,7 @@
       "blocked": 0,
       "error": 0
     },
-    "greentribunal.gov.in": {
-      "total": 1,
-      "ok": 0,
-      "dead": 0,
-      "blocked": 1,
-      "error": 0
-    },
-    "kride.in": {
-      "total": 1,
-      "ok": 0,
-      "dead": 0,
-      "blocked": 0,
-      "error": 1
-    },
-    "bengaluruairport.com": {
+    "indiatoday.in": {
       "total": 1,
       "ok": 1,
       "dead": 0,
@@ -247,11 +219,32 @@
       "blocked": 0,
       "error": 0
     },
+    "metrorailtoday.com": {
+      "total": 1,
+      "ok": 1,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
+    "bengaluruairport.com": {
+      "total": 1,
+      "ok": 1,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
     "etvbharat.com": {
       "total": 1,
       "ok": 1,
       "dead": 0,
       "blocked": 0,
+      "error": 0
+    },
+    "greentribunal.gov.in": {
+      "total": 1,
+      "ok": 0,
+      "dead": 0,
+      "blocked": 1,
       "error": 0
     },
     "kppp.karnataka.gov.in": {
@@ -275,13 +268,6 @@
       "blocked": 0,
       "error": 0
     },
-    "rlda.indianrailways.gov.in": {
-      "total": 1,
-      "ok": 1,
-      "dead": 0,
-      "blocked": 0,
-      "error": 0
-    },
     "ksiidc.karnataka.gov.in": {
       "total": 1,
       "ok": 1,
@@ -289,7 +275,21 @@
       "blocked": 0,
       "error": 0
     },
+    "rlda.indianrailways.gov.in": {
+      "total": 1,
+      "ok": 1,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
     "karnataka.gov.in": {
+      "total": 1,
+      "ok": 1,
+      "dead": 0,
+      "blocked": 0,
+      "error": 0
+    },
+    "kride.in": {
       "total": 1,
       "ok": 1,
       "dead": 0,
@@ -472,16 +472,6 @@
           "location": "officialDocLinks[0] ('BBMP Major Roads Department')"
         }
       ]
-    },
-    {
-      "url": "https://kride.in/tender",
-      "error": "HTTP 500",
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "officialDocLinks[0] ('K-RIDE Official Tenders Portal')"
-        }
-      ]
     }
   ],
   "allResults": [
@@ -494,102 +484,6 @@
         {
           "projectSlug": "namma-metro-pink-line-elevated-stretch",
           "location": "articles[1] ('Pink Line likely to be inaugurated on November 13')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13",
-      "domain": "indiatoday.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "articles[0] ('PM inaugurates Bengaluru Metro's Pink Line, takes a ride with Karnataka CM DK Shivakumar')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "milestones[0].source ('Re-awarded to GR Infraprojects')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "milestones[1].source ('Trial runs conducted')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "milestones[2].source ('Flagged off for operations')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "redFlags[0].officialCitation ('Initial contractor termination delayed completion by ~2 years')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "dataQuality.fields.originalDeadline.sources[0] ('India Today')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('India Today')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "dataQuality.fields.contractors.sources[0] ('India Today')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('India Today')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece",
-      "domain": "thehindu.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "articles[0] ('Yellow Line Metro trial runs completed; CRS gives safety approval')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "milestones[2].source ('Commercial operations launched')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "redFlags[0].officialCitation ('Opening delayed by 44 months past initial 2021 target')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[1] ('The Hindu: Yellow line progress and budget updates')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "dataQuality.fields.originalDeadline.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('The Hindu: Yellow Line CRS clearance and opening')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
-        }
-      ]
-    },
-    {
-      "url": "https://bdakarnataka.in",
-      "domain": "bdakarnataka.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "hebbal-flyover-new-loop-kr-puram-mekhri",
-          "location": "officialDocLinks[0] ('BDA Official Website')"
         }
       ]
     },
@@ -630,6 +524,18 @@
       ]
     },
     {
+      "url": "https://bdakarnataka.in",
+      "domain": "bdakarnataka.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "hebbal-flyover-new-loop-kr-puram-mekhri",
+          "location": "officialDocLinks[0] ('BDA Official Website')"
+        }
+      ]
+    },
+    {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-2-delays-push-up-cost-by-rs-10000-cr-3307265",
       "domain": "deccanherald.com",
       "statusClass": "ok",
@@ -658,6 +564,18 @@
         {
           "projectSlug": "namma-metro-phase-2a-outer-ring-road",
           "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Deccan Herald: Phase 2 delays push up cost')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bda-to-construct-two-lane-loop-from-kr-puram-towards-city-at-hebbal/40892",
+      "domain": "constructionworld.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "hebbal-flyover-new-loop-kr-puram-mekhri",
+          "location": "articles[1] ('BDA to construct two-lane loop from KR Puram towards city at Hebbal')"
         }
       ]
     },
@@ -706,14 +624,114 @@
       ]
     },
     {
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bda-to-construct-two-lane-loop-from-kr-puram-towards-city-at-hebbal/40892",
-      "domain": "constructionworld.in",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412",
+      "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "hebbal-flyover-new-loop-kr-puram-mekhri",
-          "location": "articles[1] ('BDA to construct two-lane loop from KR Puram towards city at Hebbal')"
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "articles[1] ('First prototype train for Bengaluru Yellow Line arrives from CRRC')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "milestones[1].source ('First prototype CBTC train arrived from China')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece",
+      "domain": "thehindu.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "articles[0] ('Yellow Line Metro trial runs completed; CRS gives safety approval')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "milestones[2].source ('Commercial operations launched')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "redFlags[0].officialCitation ('Opening delayed by 44 months past initial 2021 target')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[1] ('The Hindu: Yellow line progress and budget updates')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "dataQuality.fields.originalDeadline.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('The Hindu: Yellow Line CRS clearance and opening')"
+        },
+        {
+          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-mysuru-expressway-all-you-need-to-know-about-nh-275-10234121.html",
+      "domain": "moneycontrol.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bengaluru-mysuru-expressway-nh-275",
+          "location": "articles[1] ('Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/pink-line-first-stretch-kalena-agrahara-tavarekere-opens-3829141",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald: Pink Line elevated stretch opened')"
+        }
+      ]
+    },
+    {
+      "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754",
+      "domain": "theprint.in",
+      "statusClass": "blocked",
+      "statusCode": 403,
+      "occurrences": [
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "articles[0] ('Project to provide Cauvery water to Bengaluru's peripheral areas launched')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "milestones[0].source ('Stage V commissioned and dedicated to citizens')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('ThePrint: project launched')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.status.sources[1] ('ThePrint: project launched')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.contractors.sources[0] ('ThePrint')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('ThePrint')"
         }
       ]
     },
@@ -798,86 +816,110 @@
       ]
     },
     {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "articles[1] ('First prototype train for Bengaluru Yellow Line arrives from CRRC')"
-        },
-        {
-          "projectSlug": "namma-metro-yellow-line-rv-road-bommasandra",
-          "location": "milestones[1].source ('First prototype CBTC train arrived from China')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/pink-line-first-stretch-kalena-agrahara-tavarekere-opens-3829141",
-      "domain": "deccanherald.com",
+      "url": "https://themetrorailguy.com/2021/07/16/gr-infra-wins-bangalore-metro-pink-lines-pending-work/",
+      "domain": "themetrorailguy.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald: Pink Line elevated stretch opened')"
+          "location": "articles[2] ('GR Infra Wins Bangalore Metro Pink Line's Pending Work')"
         }
       ]
     },
     {
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-mysuru-expressway-all-you-need-to-know-about-nh-275-10234121.html",
+      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148",
+      "domain": "constructionworld.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "milestones[0].source ('Civil contracts awarded')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "dataQuality.fields.contractors.sources[0] ('Construction World: STRR packages awarded')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html",
       "domain": "moneycontrol.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "bengaluru-mysuru-expressway-nh-275",
-          "location": "articles[1] ('Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts')"
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "articles[0] ('NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "milestones[1].source ('Northern arc dedicated and opened')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
         }
       ]
     },
     {
-      "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754",
-      "domain": "theprint.in",
-      "statusClass": "blocked",
-      "statusCode": 403,
-      "occurrences": [
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "articles[0] ('Project to provide Cauvery water to Bengaluru's peripheral areas launched')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "milestones[0].source ('Stage V commissioned and dedicated to citizens')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('ThePrint: project launched')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.status.sources[1] ('ThePrint: project launched')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.contractors.sources[0] ('ThePrint')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('ThePrint')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fafter-a-decade-long-wait-cauvery-water-to-finally-reach-bengalurus-outskirts-3233582",
-      "domain": "deccanherald.com",
+      "url": "https://daijiworld.com/news/newsDisplay?newsID=492393",
+      "domain": "daijiworld.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "articles[2] ('After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts')"
+          "location": "articles[3] ('Bengaluru: JICA to fund Cauvery water supply project Phase V')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "officialDocLinks[1] ('Daijiworld: JICA loan for Stage V')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Daijiworld: JICA loan for ₹5,550 Cr Stage V')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/how-bengaluru-mysuru-expressway-alters-karnataka-economy-1199841.html",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bengaluru-mysuru-expressway-nh-275",
+          "location": "articles[2] ('How the 10-lane Bengaluru-Mysuru highway transforms regional logistics')"
+        }
+      ]
+    },
+    {
+      "url": "https://bwssb.karnataka.gov.in",
+      "domain": "bwssb.karnataka.gov.in",
+      "statusClass": "error",
+      "errorMessage": "fetch failed",
+      "occurrences": [
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "officialDocLinks[0] ('BWSSB Official Portal')"
+        },
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-vi",
+          "location": "officialDocLinks[0] ('BWSSB Official Portal')"
         }
       ]
     },
@@ -918,142 +960,6 @@
       ]
     },
     {
-      "url": "https://www.thehindu.com/news/cities/bangalore/cauvery-stage-v-to-be-inaugurated-on-october-16/article68748347.ece",
-      "domain": "thehindu.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('The Hindu: Cauvery Stage V to be inaugurated')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html",
-      "domain": "moneycontrol.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "articles[0] ('NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "milestones[1].source ('Northern arc dedicated and opened')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148",
-      "domain": "constructionworld.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "milestones[0].source ('Civil contracts awarded')"
-        },
-        {
-          "projectSlug": "strr-dobbaspet-doddaballapur-hoskote",
-          "location": "dataQuality.fields.contractors.sources[0] ('Construction World: STRR packages awarded')"
-        }
-      ]
-    },
-    {
-      "url": "https://bwssb.karnataka.gov.in",
-      "domain": "bwssb.karnataka.gov.in",
-      "statusClass": "error",
-      "errorMessage": "fetch failed",
-      "occurrences": [
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "officialDocLinks[0] ('BWSSB Official Portal')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-vi",
-          "location": "officialDocLinks[0] ('BWSSB Official Portal')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/how-bengaluru-mysuru-expressway-alters-karnataka-economy-1199841.html",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bengaluru-mysuru-expressway-nh-275",
-          "location": "articles[2] ('How the 10-lane Bengaluru-Mysuru highway transforms regional logistics')"
-        }
-      ]
-    },
-    {
-      "url": "https://daijiworld.com/news/newsDisplay?newsID=492393",
-      "domain": "daijiworld.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "articles[3] ('Bengaluru: JICA to fund Cauvery water supply project Phase V')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "officialDocLinks[1] ('Daijiworld: JICA loan for Stage V')"
-        },
-        {
-          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Daijiworld: JICA loan for ₹5,550 Cr Stage V')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.thehindu.com/news/cities/bangalore/road-link-to-sir-m-visvesvaraya-terminal-to-be-ready-by-nov-end/article37448561.ece",
-      "domain": "thehindu.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "articles[0] ('Road link to Sir M. Visvesvaraya Terminal to be ready by Nov-end')"
-        },
-        {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "milestones[0].source ('Commercial operations launched')"
-        },
-        {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "dataQuality.fields.contractors.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
-        }
-      ]
-    },
-    {
       "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/",
       "domain": "indianexpress.com",
       "statusClass": "ok",
@@ -1062,6 +968,30 @@
         {
           "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
           "location": "articles[1] ('Bengaluru's airport-like railway terminal opens to the public')"
+        }
+      ]
+    },
+    {
+      "url": "https://mybmtc.karnataka.gov.in",
+      "domain": "mybmtc.karnataka.gov.in",
+      "statusClass": "error",
+      "errorMessage": "fetch failed",
+      "occurrences": [
+        {
+          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
+          "location": "officialDocLinks[0] ('BMTC Official Portal')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bseindia.com",
+      "domain": "bseindia.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
+          "location": "dataQuality.fields.contractors.sources[0] ('Tata Motors BSE Filing')"
         }
       ]
     },
@@ -1106,18 +1036,6 @@
       ]
     },
     {
-      "url": "https://www.bseindia.com",
-      "domain": "bseindia.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
-          "location": "dataQuality.fields.contractors.sources[0] ('Tata Motors BSE Filing')"
-        }
-      ]
-    },
-    {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-2-information-map/",
       "domain": "themetrorailguy.com",
       "statusClass": "ok",
@@ -1158,6 +1076,30 @@
       ]
     },
     {
+      "url": "https://www.thehindu.com/news/cities/bangalore/cauvery-stage-v-to-be-inaugurated-on-october-16/article68748347.ece",
+      "domain": "thehindu.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('The Hindu: Cauvery Stage V to be inaugurated')"
+        }
+      ]
+    },
+    {
+      "url": "https://swr.indianrailways.gov.in",
+      "domain": "swr.indianrailways.gov.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "officialDocLinks[0] ('South Western Railway Official Portal')"
+        }
+      ]
+    },
+    {
       "url": "https://www.thehindu.com/news/cities/bangalore/k-100-project-sewage-flow-still-a-challenge/article65360567.ece",
       "domain": "thehindu.com",
       "statusClass": "ok",
@@ -1166,18 +1108,6 @@
         {
           "projectSlug": "koramangala-valley-citizens-waterway-k100",
           "location": "articles[1] ('K-100 project: Sewage flow still a challenge')"
-        }
-      ]
-    },
-    {
-      "url": "https://mybmtc.karnataka.gov.in",
-      "domain": "mybmtc.karnataka.gov.in",
-      "statusClass": "error",
-      "errorMessage": "fetch failed",
-      "occurrences": [
-        {
-          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
-          "location": "officialDocLinks[0] ('BMTC Official Portal')"
         }
       ]
     },
@@ -1198,34 +1128,26 @@
       ]
     },
     {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fdycm-dk-shivakumar-promises-completion-of-long-delayed-ejipura-flyover-by-june-2026-3769909",
+      "url": "https://daijiworld.com/news/newsDisplay?newsID=817115",
+      "domain": "daijiworld.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "koramangala-valley-citizens-waterway-k100",
+          "location": "articles[2] ('Bengaluru: CM Yediyurappa lays foundation stone for K-100 waterway project')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fafter-a-decade-long-wait-cauvery-water-to-finally-reach-bengalurus-outskirts-3233582",
       "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "articles[0] ('Dy CM DK Shivakumar promises completion of long-delayed Ejipura flyover')"
-        },
-        {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald: June 2026 promise')"
-        },
-        {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald')"
-        }
-      ]
-    },
-    {
-      "url": "https://government.economictimes.indiatimes.com/news/digital-india/green-mobility-bengalurus-bmtc-signs-pact-with-tata-motors-for-921-electric-buses/102243991",
-      "domain": "government.economictimes.indiatimes.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
-          "location": "articles[1] ('Bengaluru's BMTC signs pact with Tata Motors for 921 electric buses')"
+          "projectSlug": "bwssb-cauvery-water-supply-stage-v",
+          "location": "articles[2] ('After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts')"
         }
       ]
     },
@@ -1246,38 +1168,46 @@
       ]
     },
     {
-      "url": "https://swr.indianrailways.gov.in",
-      "domain": "swr.indianrailways.gov.in",
+      "url": "https://www.thehindu.com/news/cities/bangalore/road-link-to-sir-m-visvesvaraya-terminal-to-be-ready-by-nov-end/article37448561.ece",
+      "domain": "thehindu.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "officialDocLinks[0] ('South Western Railway Official Portal')"
+          "location": "articles[0] ('Road link to Sir M. Visvesvaraya Terminal to be ready by Nov-end')"
+        },
+        {
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "milestones[0].source ('Commercial operations launched')"
+        },
+        {
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "dataQuality.fields.contractors.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
         }
       ]
     },
     {
-      "url": "https://www.thenewsminute.com/karnataka/after-years-of-delays-gba-sets-july-deadline-to-finish-bengalurus-ejipura-flyover",
-      "domain": "thenewsminute.com",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html",
+      "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "dataQuality.fields.revisedDeadline.sources[1] ('The News Minute: GBA sets July deadline')"
-        }
-      ]
-    },
-    {
-      "url": "https://daijiworld.com/news/newsDisplay?newsID=817115",
-      "domain": "daijiworld.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Deccan Herald: SMVT terminal features and costs')"
+        },
         {
-          "projectSlug": "koramangala-valley-citizens-waterway-k100",
-          "location": "articles[2] ('Bengaluru: CM Yediyurappa lays foundation stone for K-100 waterway project')"
+          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Deccan Herald')"
         }
       ]
     },
@@ -1302,90 +1232,6 @@
         {
           "projectSlug": "ejipura-koramangala-flyover",
           "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Swarajya: BBMP finds sole bidder on fourth attempt')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fcabinet-to-decide-fate-of-long-delayed-ejipura-flyover-project-1086805.html",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "milestones[2].source ('Original contract cancelled')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.oneindia.com/bengaluru/namma-metro-blue-line-bengaluru-s-silk-board-to-airport-route-to-open-by-december-2027-7854863.html",
-      "domain": "oneindia.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "articles[0] ('Namma Metro Blue Line: Bengaluru's Silk Board to airport route to open by December 2027')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "redFlags[0].officialCitation ('Completion pushed to around December 2027')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('OneIndia: Blue Line to open by December 2027')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('OneIndia')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbbmp-weighs-terminating-contract-as-ejipura-flyover-faces-continued-delays-3341865",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "dataQuality.fields.contractors.sources[0] ('Deccan Herald: BBMP weighs terminating contract')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.constructionworld.in/amp/transport-infrastructure/metro-rail-and-railways-infrastructure/kr-puram-silk-board-metro-trials-set-to-begin-by-october-end/99490",
-      "domain": "constructionworld.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "articles[1] ('KR Puram-Silk Board metro trials set to begin by October end')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.revisedDeadline.sources[1] ('Construction World: trials by October end')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: trials by October end')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.status.sources[0] ('Construction World')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/half-built-much-delayed-ejipura-flyover-to-open-only-in-2022-969706.html",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "ejipura-koramangala-flyover",
-          "location": "milestones[1].source ('Original deadline passes')"
         }
       ]
     },
@@ -1422,22 +1268,106 @@
       ]
     },
     {
-      "url": "https://swarajyamag.com/infrastructure/bengaluru-metros-blue-line-to-kia-airport-slated-for-completion-by-end-of-2027-report",
-      "domain": "swarajyamag.com",
+      "url": "https://www.oneindia.com/bengaluru/namma-metro-blue-line-bengaluru-s-silk-board-to-airport-route-to-open-by-december-2027-7854863.html",
+      "domain": "oneindia.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "articles[1] ('Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report')"
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "articles[0] ('Namma Metro Blue Line: Bengaluru's Silk Board to airport route to open by December 2027')"
         },
         {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "redFlags[0].officialCitation ('Airport connection target pushed to December 2027')"
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "redFlags[0].officialCitation ('Completion pushed to around December 2027')"
         },
         {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Swarajya: Blue Line to KIA by end of 2027')"
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('OneIndia: Blue Line to open by December 2027')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('OneIndia')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/half-built-much-delayed-ejipura-flyover-to-open-only-in-2022-969706.html",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "milestones[1].source ('Original deadline passes')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fdycm-dk-shivakumar-promises-completion-of-long-delayed-ejipura-flyover-by-june-2026-3769909",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "articles[0] ('Dy CM DK Shivakumar promises completion of long-delayed Ejipura flyover')"
+        },
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald: June 2026 promise')"
+        },
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald')"
+        }
+      ]
+    },
+    {
+      "url": "https://government.economictimes.indiatimes.com/news/digital-india/green-mobility-bengalurus-bmtc-signs-pact-with-tata-motors-for-921-electric-buses/102243991",
+      "domain": "government.economictimes.indiatimes.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bmtc-electric-bus-procurement-fame-ii",
+          "location": "articles[1] ('Bengaluru's BMTC signs pact with Tata Motors for 921 electric buses')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.constructionworld.in/amp/transport-infrastructure/metro-rail-and-railways-infrastructure/kr-puram-silk-board-metro-trials-set-to-begin-by-october-end/99490",
+      "domain": "constructionworld.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "articles[1] ('KR Puram-Silk Board metro trials set to begin by October end')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.revisedDeadline.sources[1] ('Construction World: trials by October end')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: trials by October end')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.status.sources[0] ('Construction World')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thenewsminute.com/karnataka/after-years-of-delays-gba-sets-july-deadline-to-finish-bengalurus-ejipura-flyover",
+      "domain": "thenewsminute.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "dataQuality.fields.revisedDeadline.sources[1] ('The News Minute: GBA sets July deadline')"
         }
       ]
     },
@@ -1470,6 +1400,26 @@
       ]
     },
     {
+      "url": "https://swarajyamag.com/infrastructure/bengaluru-metros-blue-line-to-kia-airport-slated-for-completion-by-end-of-2027-report",
+      "domain": "swarajyamag.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "articles[1] ('Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "redFlags[0].officialCitation ('Airport connection target pushed to December 2027')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Swarajya: Blue Line to KIA by end of 2027')"
+        }
+      ]
+    },
+    {
       "url": "https://deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbwssb-to-launch-stage-v-of-cauvery-water-supply-scheme-on-oct-16-3224963",
       "domain": "deccanherald.com",
       "statusClass": "ok",
@@ -1486,18 +1436,50 @@
       ]
     },
     {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html",
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fcabinet-to-decide-fate-of-long-delayed-ejipura-flyover-project-1086805.html",
       "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Deccan Herald: SMVT terminal features and costs')"
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "milestones[2].source ('Original contract cancelled')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbbmp-weighs-terminating-contract-as-ejipura-flyover-faces-continued-delays-3341865",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "ejipura-koramangala-flyover",
+          "location": "dataQuality.fields.contractors.sources[0] ('Deccan Herald: BBMP weighs terminating contract')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
+      "domain": "nbmcw.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "officialDocLinks[1] ('NBM&CW: ₹14,788.10 Cr Namma Metro expansion approved')"
         },
         {
-          "projectSlug": "sir-m-visvesvaraya-terminal-baiyappanahalli",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Deccan Herald')"
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('NBM&CW: MPC approves ₹14,788.10 Cr expansion')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "articles[3] ('MPC approves Rs 14,788.10 cr Namma Metro expansion')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('NBM&CW: MPC approves ₹14,788.10 Cr expansion')"
         }
       ]
     },
@@ -1530,6 +1512,42 @@
         {
           "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
           "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294",
+      "domain": "constructionworld.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "articles[0] ('BMRCL completes Pink Line underground tunneling works with 9 TBMs')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "milestones[1].source ('First TBM 'Urja' launched')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "milestones[2].source ('Final TBM breakthrough achieved')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "redFlags[0].officialCitation ('Hard granite rock and mixed face geology delayed tunneling by 2+ years')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Construction World')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: Bengaluru Pink Line tunneling completed')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Construction World')"
         }
       ]
     },
@@ -1574,18 +1592,6 @@
       ]
     },
     {
-      "url": "https://themetrorailguy.com/2021/07/16/gr-infra-wins-bangalore-metro-pink-lines-pending-work/",
-      "domain": "themetrorailguy.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-pink-line-elevated-stretch",
-          "location": "articles[2] ('GR Infra Wins Bangalore Metro Pink Line's Pending Work')"
-        }
-      ]
-    },
-    {
       "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece",
       "domain": "thehindu.com",
       "statusClass": "ok",
@@ -1598,126 +1604,22 @@
       ]
     },
     {
-      "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
-      "domain": "nbmcw.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "officialDocLinks[1] ('NBM&CW: ₹14,788.10 Cr Namma Metro expansion approved')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('NBM&CW: MPC approves ₹14,788.10 Cr expansion')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "articles[3] ('MPC approves Rs 14,788.10 cr Namma Metro expansion')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[1] ('NBM&CW: MPC approves ₹14,788.10 Cr expansion')"
-        }
-      ]
-    },
-    {
-      "url": "https://themetrorailguy.com/2023/06/05/lt-awarded-bangalore-metro-phase-2a-2bs-track-work-contracts/",
-      "domain": "themetrorailguy.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "milestones[1].source ('L&T awarded track work (Phases 2A and 2B)')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "milestones[1].source ('L&T awarded track work (Phases 2A and 2B)')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294",
+      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812",
       "domain": "constructionworld.in",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "articles[0] ('BMRCL completes Pink Line underground tunneling works with 9 TBMs')"
+          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
+          "location": "articles[1] ('NHAI expedites work on Satellite Town Ring Road southern arc')"
         },
         {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "milestones[1].source ('First TBM 'Urja' launched')"
+          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: STRR southern packages status')"
         },
         {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "milestones[2].source ('Final TBM breakthrough achieved')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "redFlags[0].officialCitation ('Hard granite rock and mixed face geology delayed tunneling by 2+ years')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Construction World')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: Bengaluru Pink Line tunneling completed')"
-        },
-        {
-          "projectSlug": "namma-metro-pink-line-underground-tavarekere-nagawara",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Construction World')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Ffresh-tenders-to-bring-149-km-long-bengaluru-suburban-rail-project-back-on-track-3754945",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "articles[1] ('Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track')"
-        },
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "officialDocLinks[1] ('Deccan Herald: Fresh tenders for suburban rail')"
-        },
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "redFlags[0].officialCitation ('Original civil contractor exited due to delays; packages re-tendered')"
-        },
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "dataQuality.fields.contractors.sources[2] ('Deccan Herald: fresh tenders')"
-        }
-      ]
-    },
-    {
-      "url": "https://themetrorailguy.com/bangalore-metro-phase-2a-information-map/",
-      "domain": "themetrorailguy.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "articles[3] ('Bangalore Metro Phase 2A Information and Alignment Map')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "officialDocLinks[0] ('The Metro Rail Guy: Phase 2A tenders & updates')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Metro Rail Guy: Phase 2A')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "dataQuality.fields.contractors.sources[0] ('The Metro Rail Guy: Phase 2A')"
+          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
+          "location": "dataQuality.fields.contractors.sources[0] ('Construction World')"
         }
       ]
     },
@@ -1766,82 +1668,6 @@
       ]
     },
     {
-      "url": "https://www.oneindia.com/bengaluru/bengaluru-suburban-rail-back-on-track-as-k-ride-divides-mallige-line-work-into-three-packages-7908251.html",
-      "domain": "oneindia.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "articles[3] ('Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages')"
-        },
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "dataQuality.fields.revisedDeadline.sources[1] ('OneIndia: Mallige line split into three packages')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812",
-      "domain": "constructionworld.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
-          "location": "articles[1] ('NHAI expedites work on Satellite Town Ring Road southern arc')"
-        },
-        {
-          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: STRR southern packages status')"
-        },
-        {
-          "projectSlug": "strr-hoskote-tamil-nadu-border-remaining-packages",
-          "location": "dataQuality.fields.contractors.sources[0] ('Construction World')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.inkl.com/news/k-ride-issues-work-order-for-suburban-rail-project-work-to-start-soon",
-      "domain": "inkl.com",
-      "statusClass": "blocked",
-      "statusCode": 403,
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "milestones[0].source ('Civil work order issued to L&T')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbengaluru-suburban-rail-work-crawls-but-cost-zooms-by-rs-1k-cr-3849906",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "redFlags[2].officialCitation ('Total suburban rail project cost increased by ~₹1,019 Cr')"
-        },
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Deccan Herald: work crawls but cost zooms')"
-        }
-      ]
-    },
-    {
-      "url": "https://newsable.asianetnews.com/karnataka-news/k-ride-fresh-tender-mallige-line-civil-works-bengaluru-suburban-rail-phase-articleshow-xgif8oh",
-      "domain": "newsable.asianetnews.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "milestones[1].source ('Fresh tenders for Mallige Line civil works')"
-        }
-      ]
-    },
-    {
       "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-chennai-expressway-update/41294",
       "domain": "constructionworld.in",
       "statusClass": "ok",
@@ -1854,6 +1680,62 @@
         {
           "projectSlug": "bengaluru-chennai-expressway-karnataka-section",
           "location": "dataQuality.fields.contractors.sources[0] ('Construction World')"
+        }
+      ]
+    },
+    {
+      "url": "https://themetrorailguy.com/bangalore-metro-phase-2a-information-map/",
+      "domain": "themetrorailguy.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "articles[3] ('Bangalore Metro Phase 2A Information and Alignment Map')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "officialDocLinks[0] ('The Metro Rail Guy: Phase 2A tenders & updates')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Metro Rail Guy: Phase 2A')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "dataQuality.fields.contractors.sources[0] ('The Metro Rail Guy: Phase 2A')"
+        }
+      ]
+    },
+    {
+      "url": "https://themetrorailguy.com/2021/12/17/rites-awarded-bangalore-metro-phase-2a-2bs-pmc-contract/",
+      "domain": "themetrorailguy.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2a-outer-ring-road",
+          "location": "milestones[0].source ('RITES appointed project management consultant (Phases 2A and 2B)')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "milestones[0].source ('RITES appointed project management consultant (Phases 2A and 2B)')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.oneindia.com/bengaluru/bengaluru-suburban-rail-back-on-track-as-k-ride-divides-mallige-line-work-into-three-packages-7908251.html",
+      "domain": "oneindia.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "articles[3] ('Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages')"
+        },
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "dataQuality.fields.revisedDeadline.sources[1] ('OneIndia: Mallige line split into three packages')"
         }
       ]
     },
@@ -1882,34 +1764,130 @@
       ]
     },
     {
-      "url": "https://themetrorailguy.com/2021/12/17/rites-awarded-bangalore-metro-phase-2a-2bs-pmc-contract/",
+      "url": "https://www.inkl.com/news/k-ride-issues-work-order-for-suburban-rail-project-work-to-start-soon",
+      "domain": "inkl.com",
+      "statusClass": "blocked",
+      "statusCode": 403,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "milestones[0].source ('Civil work order issued to L&T')"
+        }
+      ]
+    },
+    {
+      "url": "https://newsable.asianetnews.com/karnataka-news/k-ride-fresh-tender-mallige-line-civil-works-bengaluru-suburban-rail-phase-articleshow-xgif8oh",
+      "domain": "newsable.asianetnews.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "milestones[1].source ('Fresh tenders for Mallige Line civil works')"
+        }
+      ]
+    },
+    {
+      "url": "https://themetrorailguy.com/2023/06/05/lt-awarded-bangalore-metro-phase-2a-2bs-track-work-contracts/",
       "domain": "themetrorailguy.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "namma-metro-phase-2a-outer-ring-road",
-          "location": "milestones[0].source ('RITES appointed project management consultant (Phases 2A and 2B)')"
+          "location": "milestones[1].source ('L&T awarded track work (Phases 2A and 2B)')"
         },
         {
           "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "milestones[0].source ('RITES appointed project management consultant (Phases 2A and 2B)')"
+          "location": "milestones[1].source ('L&T awarded track work (Phases 2A and 2B)')"
         }
       ]
     },
     {
-      "url": "https://metrorailtoday.com/news/ncc-awarded-50125-crore-civil-contract-for-bengaluru-suburban-rail-project",
-      "domain": "metrorailtoday.com",
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Ffresh-tenders-to-bring-149-km-long-bengaluru-suburban-rail-project-back-on-track-3754945",
+      "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "articles[2] ('NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project')"
+          "location": "articles[1] ('Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track')"
         },
         {
           "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "dataQuality.fields.contractors.sources[0] ('Metro Rail Today: NCC awarded ₹501.25 Cr')"
+          "location": "officialDocLinks[1] ('Deccan Herald: Fresh tenders for suburban rail')"
+        },
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "redFlags[0].officialCitation ('Original civil contractor exited due to delays; packages re-tendered')"
+        },
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "dataQuality.fields.contractors.sources[2] ('Deccan Herald: fresh tenders')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/cag-raps-bbmp-bda-over-unreliable-records-on-storm-water-drains-1030811.html",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "articles[0] ('CAG raps BBMP, BDA over unreliable records on storm water drains')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "officialDocLinks[1] ('Deccan Herald: CAG raps BBMP, BDA over drains')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "redFlags[0].officialCitation ('CAG found stormwater drain records and asset mapping unreliable')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "dataQuality.fields.contractors.sources[0] ('Deccan Herald')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "dataQuality.fields.status.sources[0] ('Deccan Herald: CAG raps BBMP over stormwater drains')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/audit-flags-lapses-in-bbmps-swd-department-1231205.html",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "articles[1] ('Audit flags lapses in BBMP's SWD department')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "redFlags[1].officialCitation ('State audit flagged serious lapses in ₹490 Cr drain expenditure')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald: audit flags lapses in SWD department')"
+        }
+      ]
+    },
+    {
+      "url": "https://citizenmatters.in/bbmp-encroachment-clearance-delay-problems/",
+      "domain": "citizenmatters.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "articles[2] ('Why BBMP encroachment clearance on storm water drains faces endless delays')"
+        },
+        {
+          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
+          "location": "milestones[0].source ('2,626 encroachments on drains identified')"
         }
       ]
     },
@@ -1962,18 +1940,34 @@
       ]
     },
     {
-      "url": "https://citizenmatters.in/bbmp-encroachment-clearance-delay-problems/",
-      "domain": "citizenmatters.in",
+      "url": "https://cag.gov.in/uploads/download_audit_report/2021/2.%20Executive%20Summary-061430463965e68.70381499.pdf",
+      "domain": "cag.gov.in",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "articles[2] ('Why BBMP encroachment clearance on storm water drains faces endless delays')"
+          "location": "articles[3] ('Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru')"
         },
         {
           "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "milestones[0].source ('2,626 encroachments on drains identified')"
+          "location": "officialDocLinks[0] ('CAG Audit Report on Stormwater Drains (Executive Summary)')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbengaluru-suburban-rail-work-crawls-but-cost-zooms-by-rs-1k-cr-3849906",
+      "domain": "deccanherald.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "redFlags[2].officialCitation ('Total suburban rail project cost increased by ~₹1,019 Cr')"
+        },
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Deccan Herald: work crawls but cost zooms')"
         }
       ]
     },
@@ -2026,78 +2020,46 @@
       ]
     },
     {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/cag-raps-bbmp-bda-over-unreliable-records-on-storm-water-drains-1030811.html",
-      "domain": "deccanherald.com",
+      "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13",
+      "domain": "indiatoday.in",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "articles[0] ('CAG raps BBMP, BDA over unreliable records on storm water drains')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "articles[0] ('PM inaugurates Bengaluru Metro's Pink Line, takes a ride with Karnataka CM DK Shivakumar')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "officialDocLinks[1] ('Deccan Herald: CAG raps BBMP, BDA over drains')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "milestones[0].source ('Re-awarded to GR Infraprojects')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "redFlags[0].officialCitation ('CAG found stormwater drain records and asset mapping unreliable')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "milestones[1].source ('Trial runs conducted')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "dataQuality.fields.contractors.sources[0] ('Deccan Herald')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "milestones[2].source ('Flagged off for operations')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "dataQuality.fields.status.sources[0] ('Deccan Herald: CAG raps BBMP over stormwater drains')"
-        }
-      ]
-    },
-    {
-      "url": "https://cag.gov.in/uploads/download_audit_report/2021/2.%20Executive%20Summary-061430463965e68.70381499.pdf",
-      "domain": "cag.gov.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "articles[3] ('Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "redFlags[0].officialCitation ('Initial contractor termination delayed completion by ~2 years')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "officialDocLinks[0] ('CAG Audit Report on Stormwater Drains (Executive Summary)')"
-        }
-      ]
-    },
-    {
-      "url": "https://swarajyamag.com/insta/bda-floats-a-250-crore-tender-for-desilting-rejuvenation-and-development-of-bellandur-lake-in-bengaluru",
-      "domain": "swarajyamag.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bellandur-lake-comprehensive-rejuvenation-bda",
-          "location": "articles[1] ('BDA floats a 250 crore tender for desilting, rejuvenation and development of Bellandur Lake')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/audit-flags-lapses-in-bbmps-swd-department-1231205.html",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "articles[1] ('Audit flags lapses in BBMP's SWD department')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "dataQuality.fields.originalDeadline.sources[0] ('India Today')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "redFlags[1].officialCitation ('State audit flagged serious lapses in ₹490 Cr drain expenditure')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('India Today')"
         },
         {
-          "projectSlug": "bbmp-raja-kaluve-flood-mitigation-project",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald: audit flags lapses in SWD department')"
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "dataQuality.fields.contractors.sources[0] ('India Today')"
+        },
+        {
+          "projectSlug": "namma-metro-pink-line-elevated-stretch",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('India Today')"
         }
       ]
     },
@@ -2114,35 +2076,6 @@
       ]
     },
     {
-      "url": "https://greentribunal.gov.in",
-      "domain": "greentribunal.gov.in",
-      "statusClass": "blocked",
-      "statusCode": 403,
-      "occurrences": [
-        {
-          "projectSlug": "varthur-lake-rejuvenation-project-bda",
-          "location": "officialDocLinks[0] ('National Green Tribunal (NGT) Principal Bench Orders')"
-        },
-        {
-          "projectSlug": "bellandur-lake-comprehensive-rejuvenation-bda",
-          "location": "officialDocLinks[0] ('NGT Principal Bench Case Records: O.A. No. 125/2017 (Bellandur Lake)')"
-        }
-      ]
-    },
-    {
-      "url": "https://kride.in/tender",
-      "domain": "kride.in",
-      "statusClass": "error",
-      "statusCode": 500,
-      "errorMessage": "HTTP 500",
-      "occurrences": [
-        {
-          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
-          "location": "officialDocLinks[0] ('K-RIDE Official Tenders Portal')"
-        }
-      ]
-    },
-    {
       "url": "https://citizenmatters.in/bellandur-varthur-lake-rejuvenation-causing-damage-desilting-bet-bangalore-environment-trust-open-letter-to-government/",
       "domain": "citizenmatters.in",
       "statusClass": "ok",
@@ -2151,34 +2084,6 @@
         {
           "projectSlug": "bellandur-lake-comprehensive-rejuvenation-bda",
           "location": "articles[2] ('Bellandur and Varthur lake rejuvenation causing damage, warns open letter')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.bengaluruairport.com",
-      "domain": "bengaluruairport.com",
-      "statusClass": "ok",
-      "statusCode": 206,
-      "occurrences": [
-        {
-          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
-          "location": "officialDocLinks[0] ('BIAL Official Portal')"
-        }
-      ]
-    },
-    {
-      "url": "https://swarajyamag.com/amp/story/news-brief%2Fbangalore-development-authority-invites-rs-3348-crore-bids-for-first-package-of-bengaluru-business-corridor-project",
-      "domain": "swarajyamag.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "articles[2] ('Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR')"
-        },
-        {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[1] ('Swarajya: ₹3,348 Cr bids for first package')"
         }
       ]
     },
@@ -2215,6 +2120,102 @@
       ]
     },
     {
+      "url": "https://swarajyamag.com/insta/bda-floats-a-250-crore-tender-for-desilting-rejuvenation-and-development-of-bellandur-lake-in-bengaluru",
+      "domain": "swarajyamag.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bellandur-lake-comprehensive-rejuvenation-bda",
+          "location": "articles[1] ('BDA floats a 250 crore tender for desilting, rejuvenation and development of Bellandur Lake')"
+        }
+      ]
+    },
+    {
+      "url": "https://metrorailtoday.com/news/ncc-awarded-50125-crore-civil-contract-for-bengaluru-suburban-rail-project",
+      "domain": "metrorailtoday.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "articles[2] ('NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project')"
+        },
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "dataQuality.fields.contractors.sources[0] ('Metro Rail Today: NCC awarded ₹501.25 Cr')"
+        }
+      ]
+    },
+    {
+      "url": "https://themetrorailguy.com/bangalore-metro-phase-2b-information-map",
+      "domain": "themetrorailguy.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "articles[2] ('Bangalore Metro Phase 2B Information and Stations Map')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "officialDocLinks[0] ('The Metro Rail Guy: Phase 2B tenders & updates')"
+        },
+        {
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Metro Rail Guy: Phase 2B')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bengaluruairport.com",
+      "domain": "bengaluruairport.com",
+      "statusClass": "ok",
+      "statusCode": 206,
+      "occurrences": [
+        {
+          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
+          "location": "officialDocLinks[0] ('BIAL Official Portal')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.oneindia.com/bengaluru/bengaluru-business-corridor-nears-execution-as-two-firms-bid-for-prr-package-1-8081733.html",
+      "domain": "oneindia.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "articles[3] ('Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.contractors.sources[0] ('OneIndia: two firms bid for Package 1')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142",
+      "domain": "constructionworld.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
+          "location": "articles[1] ('L&T advances structural works for Kempegowda Airport T2 Phase 2 piers')"
+        },
+        {
+          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
+          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: Bengaluru Airport T2 Phase 2 update')"
+        },
+        {
+          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
+          "location": "dataQuality.fields.contractors.sources[0] ('Construction World')"
+        }
+      ]
+    },
+    {
       "url": "https://www.etvbharat.com/en/state/bengaluru-business-corridor-global-tenders-floated-for-20k-first-phase-works-enn26033105183",
       "domain": "etvbharat.com",
       "statusClass": "ok",
@@ -2243,42 +2244,78 @@
       ]
     },
     {
-      "url": "https://www.oneindia.com/bengaluru/bengaluru-business-corridor-nears-execution-as-two-firms-bid-for-prr-package-1-8081733.html",
-      "domain": "oneindia.com",
+      "url": "https://themetrorailguy.com/?p=42789",
+      "domain": "themetrorailguy.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "articles[3] ('Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1')"
-        },
-        {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.contractors.sources[0] ('OneIndia: two firms bid for Package 1')"
+          "projectSlug": "namma-metro-phase-2b-airport-line",
+          "location": "dataQuality.fields.contractors.sources[0] ('The Metro Rail Guy: NCC wins airport line')"
         }
       ]
     },
     {
-      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fperipheral-ring-road-project-bda-issues-tender-for-3rd-time-2871899",
+      "url": "https://greentribunal.gov.in",
+      "domain": "greentribunal.gov.in",
+      "statusClass": "blocked",
+      "statusCode": 403,
+      "occurrences": [
+        {
+          "projectSlug": "varthur-lake-rejuvenation-project-bda",
+          "location": "officialDocLinks[0] ('National Green Tribunal (NGT) Principal Bench Orders')"
+        },
+        {
+          "projectSlug": "bellandur-lake-comprehensive-rejuvenation-bda",
+          "location": "officialDocLinks[0] ('NGT Principal Bench Case Records: O.A. No. 125/2017 (Bellandur Lake)')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-business-corridor-deadlock-over-as-bda-begins-issuing-awards-for-land-3809159",
       "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "redFlags[0].officialCitation ('Earlier tender rounds struggled with low participation')"
+          "location": "articles[0] ('Bengaluru Business Corridor deadlock over as BDA begins issuing awards for land')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "officialDocLinks[0] ('Deccan Herald: BDA issues land awards')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.status.sources[0] ('Deccan Herald: BDA begins issuing land awards')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Deccan Herald')"
         }
       ]
     },
     {
-      "url": "https://swarajyamag.com/amp/story/infrastructure/bengaluru-business-corridor-bda-initiates-global-tender-for-long-pending-peripheral-ring-road-project",
+      "url": "https://swarajyamag.com/amp/story/news-brief%2Fbangalore-development-authority-invites-rs-3348-crore-bids-for-first-package-of-bengaluru-business-corridor-project",
       "domain": "swarajyamag.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
           "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "milestones[0].source ('Tender re-issued as Bengaluru Business Corridor')"
+          "location": "articles[2] ('Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR')"
+        },
+        {
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[1] ('Swarajya: ₹3,348 Cr bids for first package')"
         }
       ]
     },
@@ -2323,78 +2360,38 @@
       ]
     },
     {
-      "url": "https://themetrorailguy.com/?p=42789",
-      "domain": "themetrorailguy.com",
+      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html",
+      "domain": "moneycontrol.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "dataQuality.fields.contractors.sources[0] ('The Metro Rail Guy: NCC wins airport line')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-business-corridor-deadlock-over-as-bda-begins-issuing-awards-for-land-3809159",
-      "domain": "deccanherald.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "articles[0] ('Bengaluru Business Corridor deadlock over as BDA begins issuing awards for land')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "articles[0] ('Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce')"
         },
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "officialDocLinks[0] ('Deccan Herald: BDA issues land awards')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "milestones[0].source ('Revised DPR submitted to State Government')"
         },
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Deccan Herald')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.announcedAmountCr.sources[0] ('Moneycontrol')"
         },
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.status.sources[0] ('Deccan Herald: BDA begins issuing land awards')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Moneycontrol')"
         },
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Deccan Herald')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
         },
         {
-          "projectSlug": "bda-peripheral-ring-road-business-corridor",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Deccan Herald')"
-        }
-      ]
-    },
-    {
-      "url": "https://themetrorailguy.com/bangalore-metro-phase-2b-information-map",
-      "domain": "themetrorailguy.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "articles[2] ('Bangalore Metro Phase 2B Information and Stations Map')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
         },
         {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "officialDocLinks[0] ('The Metro Rail Guy: Phase 2B tenders & updates')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-2b-airport-line",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Metro Rail Guy: Phase 2B')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.thenewsminute.com/karnataka/adani-group-lowest-bidder-for-both-packages-of-bengaluru-tunnel-road-project",
-      "domain": "thenewsminute.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bengaluru-twin-tunnel-road-hebbal-silk-board",
-          "location": "articles[1] ('Adani Group lowest bidder for both packages of Bengaluru tunnel road project')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
         }
       ]
     },
@@ -2455,150 +2452,6 @@
       ]
     },
     {
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html",
-      "domain": "moneycontrol.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "articles[0] ('Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "milestones[0].source ('Revised DPR submitted to State Government')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.announcedAmountCr.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.revisedEstimatedCostCr.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.thehindu.com/news/cities/bangalore/second-airport-in-bengaluru-will-be-within-50-70-km-from-city/article68411387.ece",
-      "domain": "thehindu.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "articles[0] ('Second airport in Bengaluru will be within 50-70 km from city')"
-        },
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "milestones[0].source ('Feasibility study tendered')"
-        },
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "redFlags[0].officialCitation ('150-km exclusivity clause with BIAL bars commercial operations until May 2033')"
-        },
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "dataQuality.fields.status.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142",
-      "domain": "constructionworld.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
-          "location": "articles[1] ('L&T advances structural works for Kempegowda Airport T2 Phase 2 piers')"
-        },
-        {
-          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
-          "location": "dataQuality.fields.physicalProgressPct.sources[0] ('Construction World: Bengaluru Airport T2 Phase 2 update')"
-        },
-        {
-          "projectSlug": "bial-kempegowda-airport-terminal-2-phase-2-expansion",
-          "location": "dataQuality.fields.contractors.sources[0] ('Construction World')"
-        }
-      ]
-    },
-    {
-      "url": "https://kppp.karnataka.gov.in",
-      "domain": "kppp.karnataka.gov.in",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "bengaluru-twin-tunnel-road-hebbal-silk-board",
-          "location": "officialDocLinks[0] ('KPPP Tender Portal - B-SMILE Tunnel Road')"
-        }
-      ]
-    },
-    {
-      "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html",
-      "domain": "moneycontrol.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "articles[0] ('Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints')"
-        },
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "milestones[0].source ('State Cabinet approval granted')"
-        },
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "dataQuality.fields.status.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
-        }
-      ]
-    },
-    {
-      "url": "https://timesofindia.indiatimes.com/city/bengaluru/bengalurus-2nd-international-airport-plans-accelerate-two-locations-shortlisted/articleshow/115424685.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "statusClass": "ok",
-      "statusCode": 200,
-      "occurrences": [
-        {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "articles[1] ('Bengaluru's 2nd international airport plans accelerate: two locations shortlisted')"
-        }
-      ]
-    },
-    {
       "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841",
       "domain": "deccanherald.com",
       "statusClass": "ok",
@@ -2647,6 +2500,106 @@
       ]
     },
     {
+      "url": "https://www.thehindu.com/news/cities/bangalore/second-airport-in-bengaluru-will-be-within-50-70-km-from-city/article68411387.ece",
+      "domain": "thehindu.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "articles[0] ('Second airport in Bengaluru will be within 50-70 km from city')"
+        },
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "milestones[0].source ('Feasibility study tendered')"
+        },
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "redFlags[0].officialCitation ('150-km exclusivity clause with BIAL bars commercial operations until May 2033')"
+        },
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "dataQuality.fields.status.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
+        }
+      ]
+    },
+    {
+      "url": "https://kppp.karnataka.gov.in",
+      "domain": "kppp.karnataka.gov.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bengaluru-twin-tunnel-road-hebbal-silk-board",
+          "location": "officialDocLinks[0] ('KPPP Tender Portal - B-SMILE Tunnel Road')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html",
+      "domain": "moneycontrol.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "articles[0] ('Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints')"
+        },
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "milestones[0].source ('State Cabinet approval granted')"
+        },
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "dataQuality.fields.status.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thenewsminute.com/karnataka/adani-group-lowest-bidder-for-both-packages-of-bengaluru-tunnel-road-project",
+      "domain": "thenewsminute.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bengaluru-twin-tunnel-road-hebbal-silk-board",
+          "location": "articles[1] ('Adani Group lowest bidder for both packages of Bengaluru tunnel road project')"
+        }
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/bengaluru/bengalurus-2nd-international-airport-plans-accelerate-two-locations-shortlisted/articleshow/115424685.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "articles[1] ('Bengaluru's 2nd international airport plans accelerate: two locations shortlisted')"
+        }
+      ]
+    },
+    {
       "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912",
       "domain": "deccanchronicle.com",
       "statusClass": "ok",
@@ -2675,70 +2628,66 @@
       ]
     },
     {
-      "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
-      "domain": "themetrorailguy.com",
+      "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fperipheral-ring-road-project-bda-issues-tender-for-3rd-time-2871899",
+      "domain": "deccanherald.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "namma-metro-phase-3-orange-line",
-          "location": "articles[1] ('Bangalore Metro Phase 3 Information, Routes and Station List')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3-orange-line",
-          "location": "dataQuality.fields.status.sources[0] ('The Metro Rail Guy: Phase 3 status')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "articles[1] ('Bangalore Metro Phase 3A Information and Alignment')"
-        },
-        {
-          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
-          "location": "dataQuality.fields.status.sources[0] ('The Metro Rail Guy: Bangalore Metro Phase 3A info')"
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "redFlags[0].officialCitation ('Earlier tender rounds struggled with low participation')"
         }
       ]
     },
     {
-      "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece",
-      "domain": "thehindu.com",
+      "url": "https://ksiidc.karnataka.gov.in",
+      "domain": "ksiidc.karnataka.gov.in",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "articles[0] ('RLDA moves forward on Bengaluru Majestic railway station makeover')"
-        },
-        {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "milestones[0].source ('Station redevelopment announced')"
-        },
-        {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "milestones[1].source ('RLDA floats ₹1,500 Cr EPC tender')"
-        },
-        {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu: RLDA moves forward on Bengaluru Majestic revamp')"
-        },
-        {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "dataQuality.fields.status.sources[0] ('The Hindu')"
-        },
-        {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
+          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
+          "location": "officialDocLinks[0] ('KSIIDC Tenders Portal')"
         }
       ]
     },
     {
-      "url": "https://rlda.indianrailways.gov.in",
-      "domain": "rlda.indianrailways.gov.in",
+      "url": "https://swarajyamag.com/amp/story/infrastructure/bengaluru-business-corridor-bda-initiates-global-tender-for-long-pending-peripheral-ring-road-project",
+      "domain": "swarajyamag.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
-          "location": "officialDocLinks[0] ('Rail Land Development Authority (RLDA) Tender Portal')"
+          "projectSlug": "bda-peripheral-ring-road-business-corridor",
+          "location": "milestones[0].source ('Tender re-issued as Bengaluru Business Corridor')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html",
+      "domain": "moneycontrol.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
+          "location": "articles[0] ('Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway')"
+        },
+        {
+          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
+          "location": "milestones[0].source ('Corridor conceptualized')"
+        },
+        {
+          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
+          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
+          "location": "dataQuality.fields.status.sources[0] ('Moneycontrol')"
+        },
+        {
+          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
         }
       ]
     },
@@ -2755,14 +2704,14 @@
       ]
     },
     {
-      "url": "https://ksiidc.karnataka.gov.in",
-      "domain": "ksiidc.karnataka.gov.in",
+      "url": "https://rlda.indianrailways.gov.in",
+      "domain": "rlda.indianrailways.gov.in",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "second-bengaluru-commercial-airport-feasibility",
-          "location": "officialDocLinks[0] ('KSIIDC Tenders Portal')"
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "officialDocLinks[0] ('Rail Land Development Authority (RLDA) Tender Portal')"
         }
       ]
     },
@@ -2799,30 +2748,26 @@
       ]
     },
     {
-      "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html",
-      "domain": "moneycontrol.com",
+      "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
+      "domain": "themetrorailguy.com",
       "statusClass": "ok",
       "statusCode": 200,
       "occurrences": [
         {
-          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
-          "location": "articles[0] ('Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway')"
+          "projectSlug": "namma-metro-phase-3-orange-line",
+          "location": "articles[1] ('Bangalore Metro Phase 3 Information, Routes and Station List')"
         },
         {
-          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
-          "location": "milestones[0].source ('Corridor conceptualized')"
+          "projectSlug": "namma-metro-phase-3-orange-line",
+          "location": "dataQuality.fields.status.sources[0] ('The Metro Rail Guy: Phase 3 status')"
         },
         {
-          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
-          "location": "dataQuality.fields.sanctionedAmountCr.sources[0] ('Moneycontrol')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "articles[1] ('Bangalore Metro Phase 3A Information and Alignment')"
         },
         {
-          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
-          "location": "dataQuality.fields.status.sources[0] ('Moneycontrol')"
-        },
-        {
-          "projectSlug": "bengaluru-pune-greenfield-expressway-nhai",
-          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('Moneycontrol')"
+          "projectSlug": "namma-metro-phase-3a-red-line-sarjapur-hebbal",
+          "location": "dataQuality.fields.status.sources[0] ('The Metro Rail Guy: Bangalore Metro Phase 3A info')"
         }
       ]
     },
@@ -2839,6 +2784,38 @@
       ]
     },
     {
+      "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece",
+      "domain": "thehindu.com",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "articles[0] ('RLDA moves forward on Bengaluru Majestic railway station makeover')"
+        },
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "milestones[0].source ('Station redevelopment announced')"
+        },
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "milestones[1].source ('RLDA floats ₹1,500 Cr EPC tender')"
+        },
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "dataQuality.fields.revisedDeadline.sources[0] ('The Hindu: RLDA moves forward on Bengaluru Majestic revamp')"
+        },
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "dataQuality.fields.status.sources[0] ('The Hindu')"
+        },
+        {
+          "projectSlug": "ksr-bengaluru-city-majestic-station-redevelopment",
+          "location": "dataQuality.fields.actualDisbursedCr.sources[0] ('The Hindu')"
+        }
+      ]
+    },
+    {
       "url": "https://karnataka.gov.in",
       "domain": "karnataka.gov.in",
       "statusClass": "ok",
@@ -2847,6 +2824,18 @@
         {
           "projectSlug": "hebbal-short-tunnel-mekhri-circle-elevated-corridor",
           "location": "officialDocLinks[0] ('Karnataka Cabinet Decisions Portal')"
+        }
+      ]
+    },
+    {
+      "url": "https://kride.in/tender",
+      "domain": "kride.in",
+      "statusClass": "ok",
+      "statusCode": 200,
+      "occurrences": [
+        {
+          "projectSlug": "k-ride-suburban-rail-corridor-2-mallige",
+          "location": "officialDocLinks[0] ('K-RIDE Official Tenders Portal')"
         }
       ]
     }

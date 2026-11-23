@@ -6,7 +6,8 @@
     "dev": "next dev",
     "validate-data": "tsx scripts/validate-data.ts",
     "check-links": "tsx scripts/check-links.ts",
-    "build": "npm run validate-data && next build",
+    "generate-exports": "tsx scripts/generate-exports.ts",
+    "build": "npm run generate-exports && npm run validate-data && next build",
     "start": "next start",
     "lint": "next lint"
   },
