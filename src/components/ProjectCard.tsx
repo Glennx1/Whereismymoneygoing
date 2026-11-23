@@ -91,21 +91,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-[#faf9f6] border border-neutral-200/60 p-3 text-center">
           <div>
             <div className="text-[10px] uppercase font-medium text-neutral-400">
-              {isCompleted ? "Final Cost" : "Cost"}
+              {isCompleted ? "Final Cost (Reported)" : "Reported Cost"}
             </div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
               {formatCrores(bestCostCr(project))}
             </div>
           </div>
           <div>
-            <div className="text-[10px] uppercase font-medium text-neutral-400">Paid Out</div>
+            <div className="text-[10px] uppercase font-medium text-neutral-400">
+              {isCompleted ? "Paid Out" : "Spent (Est.)"}
+            </div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
-              {project.actualDisbursedCr !== null ? (
+              {isCompleted ? (
+                formatCrores(bestCostCr(project))
+              ) : project.actualDisbursedCr !== null ? (
                 formatCrores(project.actualDisbursedCr)
               ) : estimatedSpent !== null ? (
-                <span title="Estimated from progress">~{formatCrores(estimatedSpent)}</span>
+                <span title="Estimated from cost × progress">~{formatCrores(estimatedSpent)}</span>
               ) : (
-                <span className="text-neutral-400 text-xs">Unpublished</span>
+                <span className="text-neutral-400 text-xs">Not available</span>
               )}
             </div>
           </div>

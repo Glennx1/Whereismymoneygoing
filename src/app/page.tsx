@@ -109,57 +109,57 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* 4 Clean Minimal Stat Cards (Requirement 2.2) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-2">
+        {/* 4 Clean Minimal Stat Cards (2x2 grid on mobile) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 pt-2">
           {/* Card 1: Projects Tracked with Split */}
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
-            <div className="text-xs font-medium text-neutral-500">
+          <div className="rounded-2xl border border-neutral-200/90 bg-white p-3.5 sm:p-5 shadow-xs">
+            <div className="text-[11px] sm:text-xs font-medium text-neutral-500">
               Projects Tracked
             </div>
-            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
+            <div className="mt-1 sm:mt-2 text-xl sm:text-3xl font-bold tracking-tight text-neutral-900">
               {projects.length}
             </div>
-            <div className="mt-1 text-xs text-neutral-500">
+            <div className="mt-1 text-[10px] sm:text-xs text-neutral-500 line-clamp-2">
               {completedProjects.length} completed • {ongoingProjects.length} in progress • {plannedProjects.length} planned
             </div>
           </div>
 
           {/* Card 2: Combined In-Progress Cost */}
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
-            <div className="text-xs font-medium text-neutral-500">
+          <div className="rounded-2xl border border-neutral-200/90 bg-white p-3.5 sm:p-5 shadow-xs">
+            <div className="text-[11px] sm:text-xs font-medium text-neutral-500">
               Active Projects Cost
             </div>
-            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
+            <div className="mt-1 sm:mt-2 text-xl sm:text-3xl font-bold tracking-tight text-neutral-900">
               {formatCrores(ongoingTotalCostCr)}
             </div>
-            <div className="mt-1 text-xs text-neutral-500">
+            <div className="mt-1 text-[10px] sm:text-xs text-neutral-500 line-clamp-2">
               {ongoingCostKnown.length} of {ongoingProjects.length} active works have a reported cost
             </div>
           </div>
 
           {/* Card 3: Projects Behind Schedule */}
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-xs">
-            <div className="text-xs font-medium text-neutral-500">
-              Behind Original Schedule
+          <div className="rounded-2xl border border-neutral-200/90 bg-white p-3.5 sm:p-5 shadow-xs">
+            <div className="text-[11px] sm:text-xs font-medium text-neutral-500">
+              Behind Schedule
             </div>
-            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-neutral-900">
+            <div className="mt-1 sm:mt-2 text-xl sm:text-3xl font-bold tracking-tight text-neutral-900">
               {delayedProjects.length} projects
             </div>
-            <div className="mt-1 text-xs text-neutral-500">
-              Comparing original work orders to current targets
+            <div className="mt-1 text-[10px] sm:text-xs text-neutral-500 line-clamp-2">
+              Measured from original contract target
             </div>
           </div>
 
           {/* Card 4: Sourced Notices */}
-          <div className="rounded-2xl border border-amber-200/80 bg-amber-50/40 p-5 shadow-xs">
-            <div className="text-xs font-medium text-amber-800">
+          <div className="rounded-2xl border border-amber-200/80 bg-amber-50/40 p-3.5 sm:p-5 shadow-xs">
+            <div className="text-[11px] sm:text-xs font-medium text-amber-800">
               Documented Notices
             </div>
-            <div className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-amber-900">
+            <div className="mt-1 sm:mt-2 text-xl sm:text-3xl font-bold tracking-tight text-amber-900">
               {totalRedFlagsCount}
             </div>
-            <div className="mt-1 text-xs text-amber-700/80">
-              Audit strikes, single-bid tenders &amp; major disputes
+            <div className="mt-1 text-[10px] sm:text-xs text-amber-700/80 line-clamp-2">
+              Audit strikes, single-bids &amp; disputes
             </div>
           </div>
         </div>
