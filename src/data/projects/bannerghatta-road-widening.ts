@@ -31,24 +31,6 @@ export const bannerghattaRoadWidening: Project = {
     "lat": 12.88,
     "lng": 77.595
   },
-  "routeCoordinates": [
-    [
-      12.915,
-      77.595
-    ],
-    [
-      12.895,
-      77.599
-    ],
-    [
-      12.875,
-      77.592
-    ],
-    [
-      12.855,
-      77.585
-    ]
-  ],
   "overview": "To alleviate crushing gridlock along South Bengaluru's prime educational and medical corridor, BBMP approved the 7.4-km widening of Bannerghatta Road (State Highway 87) from JD Mara Junction to the NICE Road intersection. The road width is planned to expand from 20 metres to 45 metres to accommodate dedicated bus lanes, utility ducts, and the elevated Namma Metro Pink Line. Civil works were sanctioned at ₹152 Cr, while land acquisition through Transferable Development Rights (TDR) was valued at approximately ₹600 Cr. The project suffered over six years of delays due to property owners rejecting TDR in favor of cash compensation, High Court litigation, and delay in cutting 149 heritage trees.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

@@ -32,28 +32,6 @@ export const koramangalaValleyK100: Project = {
     "lat": 12.955,
     "lng": 77.61
   },
-  "routeCoordinates": [
-    [
-      12.964,
-      77.575
-    ],
-    [
-      12.958,
-      77.592
-    ],
-    [
-      12.945,
-      77.615
-    ],
-    [
-      12.935,
-      77.64
-    ],
-    [
-      12.935,
-      77.67
-    ]
-  ],
   "overview": "The K-100 Citizen's Waterway project was designed as a landmark model to reclaim Bengaluru's neglected stormwater canal network (Raja Kaluves). Conceptualized with urban designers at Jana Urban Space Foundation and executed by BBMP at a cost of ₹175 Cr, the project transformed an 11.5-km polluted open drain stretching from KR Market to Bellandur Lake. Interventions included laying subterranean interceptor sewer pipes along both canal banks to capture sewage before it enters the drain, desilting the stormwater bed, building pedestrian promenades, planting thousands of native riverine trees, and installing public recreation plazas. Inaugurated in 2023, it serves as a global benchmark for urban blue-green infrastructure.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

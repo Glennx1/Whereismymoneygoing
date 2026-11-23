@@ -32,24 +32,6 @@ export const strrDobbaspetHoskote: Project = {
     "lat": 13.245,
     "lng": 77.58
   },
-  "routeCoordinates": [
-    [
-      13.235,
-      77.24
-    ],
-    [
-      13.295,
-      77.54
-    ],
-    [
-      13.245,
-      77.71
-    ],
-    [
-      13.07,
-      77.795
-    ]
-  ],
   "overview": "The 80-km northern arc of the Satellite Town Ring Road (STRR / NH-648) links Dobbaspet on Tumakuru Road (NH-48) to Doddaballapur, Devanahalli (NH-44), and Hoskote (NH-75). Built by NHAI in multiple packages at a cost of roughly ₹3,400 Cr, the access-controlled expressway allows commercial freight traveling between Chennai, Hyderabad, and Mumbai to completely bypass Bengaluru's choked city core and Outer Ring Road. Dedicated in March 2024.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

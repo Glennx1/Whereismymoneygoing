@@ -25,28 +25,6 @@ export const bdaPeripheralRingRoad: Project = {
     "lat": 13.0645,
     "lng": 77.7214
   },
-  "routeCoordinates": [
-    [
-      13.045,
-      77.49
-    ],
-    [
-      13.11,
-      77.58
-    ],
-    [
-      13.08,
-      77.72
-    ],
-    [
-      12.98,
-      77.76
-    ],
-    [
-      12.87,
-      77.67
-    ]
-  ],
   "overview": "A planned ring expressway around Bengaluru, now branded the Bengaluru Business Corridor. Tenders in 2022 drew no response, partly because farmer compensation was unsettled; a 2024 re-tender drew only one bidder. Global tenders for the first phase (about 19.8 km between Tumakuru and Ballari roads) were floated in early 2026. A Letter of Acceptance for Package 1 (about 21 km, Madavara to Ballari Road; package estimate ₹3,348 Cr) has reportedly been issued to Shankaranarayana Constructions after two firms bid. The whole corridor is estimated at roughly ₹27,000 Cr, of which about ₹21,000 Cr is earmarked for land acquisition.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

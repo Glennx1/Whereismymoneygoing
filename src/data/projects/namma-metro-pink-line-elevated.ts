@@ -42,32 +42,6 @@ export const nammaMetroPinkLineElevated: Project = {
     "lat": 12.895,
     "lng": 77.599
   },
-  "routeCoordinates": [
-    [
-      12.868,
-      77.595
-    ],
-    [
-      12.882,
-      77.5975
-    ],
-    [
-      12.895,
-      77.599
-    ],
-    [
-      12.908,
-      77.601
-    ],
-    [
-      12.9167,
-      77.5925
-    ],
-    [
-      12.925,
-      77.608
-    ]
-  ],
   "overview": "The elevated section of Namma Metro Pink Line (Reach 6) spans 7.5 km along Bannerghatta Road from Kalena Agrahara to Tavarekere. Built by GR Infraprojects after original contractor Simplex was replaced, the stretch includes 6 elevated stations and key interchanges at Jayadeva Hospital. After trial runs were conducted in mid-2026, the line was officially flagged off for passenger operations on 13 November 2026, with full commercial service commencing the next day.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

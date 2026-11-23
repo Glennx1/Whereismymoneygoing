@@ -5,14 +5,14 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Project } from "@/lib/types";
 import { formatCrores, formatPct, statusLabel, bestCostCr, calculateEstimatedSpentCr } from "@/lib/utils";
-import { ArrowRight, MapPin, Layers, Search, Clock, TrendingUp } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
 // Dynamically import Leaflet map with no SSR
 const LeafletMapInner = dynamic(() => import("./LeafletMapInner"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full min-h-[440px] rounded-xl bg-neutral-100 flex items-center justify-center text-xs text-neutral-400">
-      Loading interactive map...
+    <div className="w-full h-full min-h-[60vh] lg:min-h-[460px] rounded-xl bg-neutral-100 flex items-center justify-center text-xs text-neutral-400">
+      Loading OpenStreetMap alignments...
     </div>
   ),
 });
@@ -37,13 +37,13 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
     filteredProjects[0] ||
     null;
 
-  const estimatedSpent = selectedProject ? calculateEstimatedSpentCr(selectedProject) : null;
-  const isCompleted = selectedProject?.status === "completed";
+  const isCompleted = selectedProject?.category === "completed" || selectedProject?.status === "completed";
+  const estimatedSpent = selectedProject && !isCompleted ? calculateEstimatedSpentCr(selectedProject) : null;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 rounded-2xl border border-neutral-200/90 bg-white p-4 sm:p-5 shadow-xs">
+    <div className="flex flex-col lg:grid lg:grid-cols-3 gap-5 rounded-2xl border border-neutral-200/90 bg-white p-3 sm:p-5 shadow-xs">
       {/* Map Area */}
-      <div className="lg:col-span-2 relative rounded-xl border border-neutral-200/80 overflow-hidden flex flex-col justify-between min-h-[460px]">
+      <div className="lg:col-span-2 relative rounded-xl border border-neutral-200/80 overflow-hidden flex flex-col justify-between min-h-[60vh] lg:min-h-[500px]">
         {/* Map Header / Filters & Legend */}
         <div className="z-10 bg-white/95 border-b border-neutral-200 p-3 backdrop-blur-sm flex flex-wrap items-center justify-between gap-2.5">
           {/* Stage Filters */}
@@ -82,8 +82,8 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
           </div>
         </div>
 
-        {/* Real Leaflet Map */}
-        <div className="relative w-full h-[440px] flex-1">
+        {/* Real Leaflet Map with OSM Tiles & Real GeoJSON */}
+        <div className="relative w-full min-h-[60vh] lg:min-h-[460px] flex-1">
           <LeafletMapInner
             projects={filteredProjects}
             selectedProject={selectedProject}
@@ -92,14 +92,14 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
         </div>
 
         {/* Map Footer Note */}
-        <div className="z-10 bg-white/90 border-t border-neutral-200/80 px-3 py-1.5 text-[11px] text-neutral-500 flex items-center justify-between">
+        <div className="z-10 bg-white/95 border-t border-neutral-200/80 px-3 py-1.5 text-[11px] text-neutral-500 flex items-center justify-between">
           <span>Click any marker or line to inspect spending and delays</span>
           <span>{filteredProjects.length} shown</span>
         </div>
       </div>
 
-      {/* Project Inspector Sidebar */}
-      <div className="rounded-xl border border-neutral-200/80 bg-[#faf9f6] p-4 sm:p-5 flex flex-col justify-between space-y-4">
+      {/* Project Inspector: Bottom Sheet on Mobile / Sidebar on Desktop */}
+      <div className="rounded-2xl lg:rounded-xl border border-neutral-200/90 bg-[#faf9f6] p-4 sm:p-5 flex flex-col justify-between space-y-4 shadow-sm lg:shadow-none">
         {selectedProject ? (
           <div className="space-y-4">
             <div className="flex items-center justify-between gap-1 flex-wrap">
@@ -129,21 +129,25 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
             <div className="grid grid-cols-3 gap-2 rounded-lg bg-white border border-neutral-200/70 p-3 text-center">
               <div>
                 <div className="text-[10px] uppercase font-medium text-neutral-400">
-                  {isCompleted ? "Final Cost" : "Cost"}
+                  {isCompleted ? "Final Cost (Reported)" : "Reported Cost"}
                 </div>
                 <div className="text-xs font-semibold text-neutral-900 mt-0.5 truncate">
                   {formatCrores(bestCostCr(selectedProject))}
                 </div>
               </div>
               <div>
-                <div className="text-[10px] uppercase font-medium text-neutral-400">Paid Out</div>
+                <div className="text-[10px] uppercase font-medium text-neutral-400">
+                  {isCompleted ? "Paid Out" : "Spent (Est.)"}
+                </div>
                 <div className="text-xs font-semibold text-neutral-900 mt-0.5 truncate">
-                  {selectedProject.actualDisbursedCr !== null ? (
+                  {isCompleted ? (
+                    formatCrores(bestCostCr(selectedProject))
+                  ) : selectedProject.actualDisbursedCr !== null ? (
                     formatCrores(selectedProject.actualDisbursedCr)
                   ) : estimatedSpent !== null ? (
-                    <span title="Estimated from progress">~{formatCrores(estimatedSpent)}</span>
+                    <span title="Estimated from cost × progress">~{formatCrores(estimatedSpent)}</span>
                   ) : (
-                    "Unpublished"
+                    "Not available"
                   )}
                 </div>
               </div>
@@ -159,7 +163,7 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
             <div className="space-y-1.5 text-xs text-neutral-600 pt-1">
               <div className="flex items-center justify-between">
                 <span className="text-neutral-400">
-                  {isCompleted ? "Completion:" : "Target Date:"}
+                  {isCompleted ? "Opened On:" : "Current Target:"}
                 </span>
                 <span className="font-medium text-neutral-900">
                   {selectedProject.completionDate
@@ -175,6 +179,14 @@ export function BengaluruMap({ projects }: BengaluruMapProps) {
                   {selectedProject.redFlags.length} notice{selectedProject.redFlags.length === 1 ? "" : "s"}
                 </span>
               </div>
+              {selectedProject.geometrySource && (
+                <div className="flex items-center justify-between text-[11px] text-neutral-400 pt-1 border-t border-neutral-200/50">
+                  <span>Alignment:</span>
+                  <span className="truncate max-w-[180px] font-mono text-[10px]">
+                    OSM verified
+                  </span>
+                </div>
+              )}
             </div>
 
             {selectedProject.redFlags.length > 0 && (

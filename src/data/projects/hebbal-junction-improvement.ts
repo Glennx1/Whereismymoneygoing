@@ -31,24 +31,6 @@ export const hebbalJunctionImprovement: Project = {
     "lat": 13.03,
     "lng": 77.59
   },
-  "routeCoordinates": [
-    [
-      13.045,
-      77.592
-    ],
-    [
-      13.035,
-      77.59
-    ],
-    [
-      13.02,
-      77.588
-    ],
-    [
-      13.008,
-      77.585
-    ]
-  ],
   "overview": "To resolve perpetual choke-points at Hebbal junction—where the Airport Expressway, Outer Ring Road, and city traffic converge—the Karnataka State Cabinet sanctioned a comprehensive ₹2,215 Cr plan in August 2024. The project features a short underground tunnel at Hebbal junction (estimated at ₹1,385 Cr) combined with an elevated unidirectional corridor extending towards Mekhri Circle (₹830 Cr). The design aims to integrate seamlessly with the upcoming Blue Line and Orange Line metro piers, allowing signal-free movement for airport-bound and city-bound vehicular traffic.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

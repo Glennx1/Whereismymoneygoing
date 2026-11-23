@@ -32,32 +32,6 @@ export const bengaluruTwinTunnel: Project = {
     "lat": 12.97,
     "lng": 77.6
   },
-  "routeCoordinates": [
-    [
-      13.035,
-      77.59
-    ],
-    [
-      13.008,
-      77.585
-    ],
-    [
-      12.98,
-      77.595
-    ],
-    [
-      12.95,
-      77.605
-    ],
-    [
-      12.93,
-      77.615
-    ],
-    [
-      12.9172,
-      77.6235
-    ]
-  ],
   "overview": "Branded the Bengaluru Smart Mobility Infrastructure for Long-term Urban Equilibrium (B-SMILE), this ambitious 16.75-km twin-tube underground expressway is planned to connect Hebbal in the north to Central Silk Board / St. John's Hospital in the south. The project envisions two parallel 3-lane tunnels drilled at depths of 25 to 40 metres beneath the central business district. The state cabinet approved an estimate of ₹17,780 Cr, and global tenders were invited across two civil packages (North package: ₹8,770 Cr; South package: ₹8,928 Cr; total ₹17,698 Cr) with a 50-month execution timeframe. Adani Enterprises emerged as the lowest bidder for both packages, though bids came in above government benchmarks, prompting review.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

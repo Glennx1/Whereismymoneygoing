@@ -25,24 +25,6 @@ export const bbmpStormwaterDrain: Project = {
     "lat": 12.9345,
     "lng": 77.689
   },
-  "routeCoordinates": [
-    [
-      12.97,
-      77.58
-    ],
-    [
-      12.95,
-      77.62
-    ],
-    [
-      12.9345,
-      77.689
-    ],
-    [
-      12.92,
-      77.74
-    ]
-  ],
   "overview": "This entry covers the city's stormwater drain (SWD) programme across primary and secondary valleys. The Comptroller and Auditor General (CAG) audited the department and found records unreliable, with significant delays in clearing encroachments. At one point 2,626 encroachments were identified, of which 714 remained to be cleared. Remodelling the whole 842 km primary and secondary drain network has been estimated at over ₹6,000 Cr across various phases, with ongoing civil packages across flood-prone zones.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

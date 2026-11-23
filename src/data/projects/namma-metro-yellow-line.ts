@@ -52,36 +52,6 @@ export const nammaMetroYellowLine: Project = {
     "lat": 12.871,
     "lng": 77.653
   },
-  "routeCoordinates": [
-    [
-      12.9215,
-      77.58
-    ],
-    [
-      12.9167,
-      77.5925
-    ],
-    [
-      12.9172,
-      77.6235
-    ],
-    [
-      12.905,
-      77.632
-    ],
-    [
-      12.871,
-      77.653
-    ],
-    [
-      12.842,
-      77.674
-    ],
-    [
-      12.816,
-      77.691
-    ]
-  ],
   "overview": "The 19.14 km Yellow Line (Reach 5 of Namma Metro Phase 2) connects RV Road to the industrial and technology hub of Bommasandra via Central Silk Board and Electronic City. The line features 16 elevated stations, including Bengaluru's tallest multi-level interchange at Jayadeva Hospital and a road-cum-rail flyover between Ragigudda and Central Silk Board. Construction commenced in 2017 with an original target of late 2021, but faced prolonged delays due to coach manufacturing supply-chain issues with CRRC Nanjing Puzhen and Titagarh Rail Systems. Commercial service opened in August 2025.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -295,5 +265,7 @@ export const nammaMetroYellowLine: Project = {
       "url": "https://themetrorailguy.com/bangalore-metro-phase-2-information-map/",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - Hosur Road elevated viaduct corridor)",
+  "geometryFetchDate": "2026-11-23"
 };

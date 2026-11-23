@@ -33,24 +33,6 @@ export const bwssbCauveryStageV: Project = {
     "lat": 12.9815,
     "lng": 77.4982
   },
-  "routeCoordinates": [
-    [
-      12.55,
-      77.2
-    ],
-    [
-      12.75,
-      77.42
-    ],
-    [
-      12.92,
-      77.51
-    ],
-    [
-      12.9815,
-      77.4982
-    ]
-  ],
   "overview": "Adds 775 million litres per day (MLD) of raw Cauvery water to Bengaluru, treated at a state-of-the-art plant at Thorekadanahalli (TK Halli) and pumped through three stages (TK Halli, Harohalli, and Tataguni) over a 450-metre lift. The scheme is funded mostly by JICA (which lent about 85% of the ₹5,550 Cr outlay). Chief Minister Siddaramaiah officially dedicated Stage V on 16 October 2024, providing tap water connections across 110 peripheral villages.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

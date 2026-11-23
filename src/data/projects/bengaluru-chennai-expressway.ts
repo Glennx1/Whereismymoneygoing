@@ -31,24 +31,6 @@ export const bengaluruChennaiExpressway: Project = {
     "lat": 13.01,
     "lng": 78.15
   },
-  "routeCoordinates": [
-    [
-      13.07,
-      77.8
-    ],
-    [
-      13.02,
-      77.94
-    ],
-    [
-      12.98,
-      78.2
-    ],
-    [
-      12.96,
-      78.36
-    ]
-  ],
   "overview": "The Bengaluru-Chennai Expressway (National Expressway 7, NE-7) is a 258-km four-lane access-controlled greenfield highway designed for 120 km/h speeds, cutting road journey times between the two southern metros from over 6 hours to 2.5–3 hours. The Karnataka stretch comprises 71 km across three civil packages (Hoskote to Malur, Malur to Bangarapet, and Bangarapet to the Andhra Pradesh border) with a sanctioned cost of approximately ₹5,200 Cr. Originally targeted for March 2024, completion has been delayed to late 2026 due to aggregate shortages, stone-quarry leasing litigation in Kolar, and contractor cash-flow hurdles.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

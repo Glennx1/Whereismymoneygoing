@@ -31,32 +31,6 @@ export const strrHoskoteHosurRemaining: Project = {
     "lat": 12.82,
     "lng": 77.79
   },
-  "routeCoordinates": [
-    [
-      13.07,
-      77.795
-    ],
-    [
-      12.98,
-      77.85
-    ],
-    [
-      12.82,
-      77.79
-    ],
-    [
-      12.72,
-      77.68
-    ],
-    [
-      12.75,
-      77.45
-    ],
-    [
-      12.96,
-      77.3
-    ]
-  ],
   "overview": "While the northern arc (Dobbaspet to Hoskote) is fully operational, NHAI is actively executing the remaining 144.25 km of the 280-km Satellite Town Ring Road across five civil packages valued at ₹4,749.74 Cr. This critical southern and eastern arc connects Hoskote through Malur, Attibele, and Anekal to the Tamil Nadu industrial border near Hosur, continuing onward towards Kanakapura Road and Magadi. Construction includes major railway overbridges (ROBs) and elevated interchanges. Target completion is March 2027.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

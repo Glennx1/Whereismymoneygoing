@@ -25,20 +25,6 @@ export const ejipuraFlyover: Project = {
     "lat": 12.9352,
     "lng": 77.6245
   },
-  "routeCoordinates": [
-    [
-      12.9385,
-      77.619
-    ],
-    [
-      12.9352,
-      77.6245
-    ],
-    [
-      12.9315,
-      77.631
-    ]
-  ],
   "overview": "A 2.5 km flyover meant to ease traffic at the Ejipura / Sony World junction. The work was first awarded to Simplex Infrastructures in 2017 with a November 2019 deadline. The original contract was cancelled in March 2022 and the remaining work was re-tendered; reports say BSCPL Infrastructure was the sole bidder on the fourth attempt. Reported causes of delay include late payments to the contractor, transfer of defence and private land, and encroachments by 46 private buildings and 3 government properties. Recent reports give several different completion promises (June 2026, July 2026, December 2026), so the current target is unclear.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -248,5 +234,7 @@ export const ejipuraFlyover: Project = {
       "url": "https://swarajyamag.com/amp/story/infrastructure/bengaluru-bbmp-finds-sole-bidder-for-long-delayed-ejipura-flyover-on-fourth-attempt-cost-escalation-raises-concerns",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - Intermediate Ring Road corridor)",
+  "geometryFetchDate": "2026-11-23"
 };

@@ -62,28 +62,6 @@ export const nammaMetroPhase3OrangeLine: Project = {
     "lat": 12.98,
     "lng": 77.52
   },
-  "routeCoordinates": [
-    [
-      12.905,
-      77.585
-    ],
-    [
-      12.92,
-      77.54
-    ],
-    [
-      12.955,
-      77.515
-    ],
-    [
-      13.01,
-      77.525
-    ],
-    [
-      13.045,
-      77.592
-    ]
-  ],
   "overview": "Namma Metro Phase 3 was formally approved by the Union Cabinet in August 2024 at a total capital outlay of ₹15,611 Cr. Spanning 44.65 km with 31 elevated stations, it comprises two major lines: Corridor 1 (32.15 km) completing the western semi-circle of the Outer Ring Road from JP Nagar 4th Phase to Kempapura/Hebbal, and Corridor 2 (12.5 km) extending along Magadi Road from Hosahalli to Kadabagere. Land acquisition surveys and utility shifting tenders commenced in late 2024, with full commercial opening projected for May 2031.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

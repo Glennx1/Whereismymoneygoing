@@ -48,28 +48,6 @@ export const nammaMetroPhase2a: Project = {
     "lat": 12.9237,
     "lng": 77.6835
   },
-  "routeCoordinates": [
-    [
-      12.9175,
-      77.6235
-    ],
-    [
-      12.9255,
-      77.6495
-    ],
-    [
-      12.936,
-      77.68
-    ],
-    [
-      12.956,
-      77.699
-    ],
-    [
-      12.998,
-      77.678
-    ]
-  ],
   "overview": "Elevated metro line from Central Silk Board to KR Puram along the Outer Ring Road, built in two civil packages. Together with Phase 2B (KR Puram to the airport) it forms the Blue Line, approved at about ₹14,788 Cr combined. Trial runs were expected from October 2026, but reports say some stations (Marathahalli, Silk Board) will be delayed by pending work.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -275,5 +253,7 @@ export const nammaMetroPhase2a: Project = {
       "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - Outer Ring Road primary highway corridor)",
+  "geometryFetchDate": "2026-11-23"
 };

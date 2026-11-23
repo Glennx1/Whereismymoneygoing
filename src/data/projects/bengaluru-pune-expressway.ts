@@ -31,32 +31,6 @@ export const bengaluruPuneExpressway: Project = {
     "lat": 14.5,
     "lng": 75.8
   },
-  "routeCoordinates": [
-    [
-      13.235,
-      77.24
-    ],
-    [
-      13.7,
-      76.8
-    ],
-    [
-      14.45,
-      75.9
-    ],
-    [
-      15.36,
-      75.12
-    ],
-    [
-      15.85,
-      74.5
-    ],
-    [
-      18.52,
-      73.85
-    ]
-  ],
   "overview": "Envisioned as a primary economic spine connecting Karnataka and Maharashtra, the 700-km Bengaluru-Pune Greenfield Expressway is planned by NHAI as an 8-lane access-controlled highway. It will run east of the existing congested NH-48 (Bengaluru-Tumakuru-Dharwad-Pune highway), terminating on the Bengaluru side at the Satellite Town Ring Road (STRR) near Dobbaspet. Designed for 120 km/h speeds, it is projected to reduce driving time between Bengaluru and Pune from 15 hours to 7–8 hours. The project is currently at the DPR alignment and environmental survey stage; no formal construction budget has been sanctioned yet.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

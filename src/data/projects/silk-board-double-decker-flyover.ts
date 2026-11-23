@@ -31,24 +31,6 @@ export const silkBoardDoubleDeckerFlyover: Project = {
     "lat": 12.9172,
     "lng": 77.6235
   },
-  "routeCoordinates": [
-    [
-      12.9167,
-      77.5925
-    ],
-    [
-      12.917,
-      77.61
-    ],
-    [
-      12.9172,
-      77.6235
-    ],
-    [
-      12.918,
-      77.635
-    ]
-  ],
   "overview": "Built by BMRCL in coordination with BBMP at a cost of ₹449 Cr, this innovative 5.12 km double-decker infrastructure features a 4-lane elevated vehicular roadway on the lower deck and the Namma Metro Yellow Line viaduct on the upper deck. It eliminates several signalized bottlenecks between Ragigudda and Central Silk Board. The main vehicular carriageway was inaugurated on 17 July 2024, enabling motorists from Jayanagar and BTM to reach Silk Board signal-free. Five dedicated loop ramps connecting directly into HSR Layout, Hosur Road, and Electronic City are currently being completed.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -182,5 +164,7 @@ export const silkBoardDoubleDeckerFlyover: Project = {
       "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - Central Silk Board elevated bridge ways)",
+  "geometryFetchDate": "2026-11-23"
 };

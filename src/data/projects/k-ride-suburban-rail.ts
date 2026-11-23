@@ -48,28 +48,6 @@ export const kRideSuburbanRail: Project = {
     "lat": 13.028,
     "lng": 77.562
   },
-  "routeCoordinates": [
-    [
-      12.992,
-      77.652
-    ],
-    [
-      13.012,
-      77.625
-    ],
-    [
-      13.035,
-      77.59
-    ],
-    [
-      13.024,
-      77.55
-    ],
-    [
-      13.08,
-      77.49
-    ]
-  ],
   "overview": "Corridor 2 (the Mallige Line) is one of four corridors of the 149 km Bengaluru Suburban Rail Project (BSRP). L&T received the initial civil work order in August 2022 (about ₹859 Cr, 24-month deadline), but halted work and terminated the agreement due to right-of-way handovers; K-RIDE re-tendered the remaining civil work in three packages in late 2025. NCC has been awarded about ₹501 Cr for the 12-station package, and Rahee Infratech about ₹104 Cr for track work. K-RIDE now aims to open Corridor 2 by December 2028 and the full 149 km project by March 2030.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

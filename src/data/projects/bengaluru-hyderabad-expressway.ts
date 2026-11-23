@@ -31,28 +31,6 @@ export const bengaluruHyderabadExpressway: Project = {
     "lat": 13.5,
     "lng": 77.75
   },
-  "routeCoordinates": [
-    [
-      13.1,
-      77.6
-    ],
-    [
-      13.5,
-      77.75
-    ],
-    [
-      14.68,
-      77.6
-    ],
-    [
-      15.82,
-      78.03
-    ],
-    [
-      17.38,
-      78.48
-    ]
-  ],
   "overview": "Proposed by the National Highways Authority of India (NHAI) under Bharatmala Pariyojana Phase 2, the 512-km Bengaluru-Hyderabad Greenfield Expressway is designed as a 6-to-8 lane access-controlled corridor. Running parallel to existing NH-44 through Kurnool, Anantapur, and entering Karnataka near Bagepalli to terminate at the Satellite Town Ring Road (STRR) north of Bengaluru, the highway aims to cut vehicular travel time from 10 hours down to roughly 5.5 hours. Detailed alignment studies, traffic simulations, and environmental impact assessments are ongoing at the DPR stage; no construction outlay has been officially sanctioned yet.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

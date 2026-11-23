@@ -26,20 +26,6 @@ export const hebbalFlyoverNewLoop: Project = {
     "lat": 13.0358,
     "lng": 77.597
   },
-  "routeCoordinates": [
-    [
-      13.038,
-      77.601
-    ],
-    [
-      13.0358,
-      77.597
-    ],
-    [
-      13.032,
-      77.59
-    ]
-  ],
   "overview": "Constructed by the Bangalore Development Authority (BDA) at an estimated cost of ₹80 Cr, this 700-metre 2-lane unidirectional flyover ramp bypasses the congested ground-level junction at Hebbal for vehicles moving from the KR Puram/Nagawara side onto Ballari Road towards Mekhri Circle and Bengaluru city centre. It opened to regular vehicular traffic in late 2024, providing substantial relief to the notorious Hebbal junction bottleneck.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -156,5 +142,7 @@ export const hebbalFlyoverNewLoop: Project = {
       "url": "https://bdakarnataka.in",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - Hebbal flyover elevated loop ways)",
+  "geometryFetchDate": "2026-11-23"
 };

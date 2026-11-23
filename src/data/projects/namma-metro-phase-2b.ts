@@ -53,36 +53,6 @@ export const nammaMetroPhase2b: Project = {
     "lat": 13.0827,
     "lng": 77.6006
   },
-  "routeCoordinates": [
-    [
-      12.998,
-      77.678
-    ],
-    [
-      13.018,
-      77.652
-    ],
-    [
-      13.036,
-      77.62
-    ],
-    [
-      13.045,
-      77.592
-    ],
-    [
-      13.1,
-      77.595
-    ],
-    [
-      13.15,
-      77.61
-    ],
-    [
-      13.198,
-      77.706
-    ]
-  ],
   "overview": "Elevated line connecting KR Puram to Kempegowda International Airport, built in three civil packages. NCC Ltd. was the lowest bidder for all three packages (about 15 of the 17 stations). RITES is the project management consultant. An earlier report warned the line might miss a June 2027 target; the latest reports say December 2027.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

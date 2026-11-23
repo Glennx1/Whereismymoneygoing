@@ -194,7 +194,8 @@ export interface Project {
     lat: number;
     lng: number;
   };
-  routeCoordinates?: [number, number][];
+  geometrySource?: string;
+  geometryFetchDate?: string;
 
   overview: string;
   dataQuality: DataQuality;

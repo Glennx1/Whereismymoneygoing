@@ -33,36 +33,6 @@ export const nammaMetroPhase3aRedLine: Project = {
     "lat": 12.93,
     "lng": 77.65
   },
-  "routeCoordinates": [
-    [
-      12.86,
-      77.78
-    ],
-    [
-      12.905,
-      77.68
-    ],
-    [
-      12.925,
-      77.64
-    ],
-    [
-      12.935,
-      77.62
-    ],
-    [
-      12.975,
-      77.605
-    ],
-    [
-      13.01,
-      77.595
-    ],
-    [
-      13.035,
-      77.59
-    ]
-  ],
   "overview": "Phase 3A (Red Line) is planned as a critical 37-km north-south transit spine connecting the rapidly expanding IT corridor of Sarjapur in Southeast Bengaluru to Hebbal in the north. The line includes an underground section beneath central commercial areas (Koramangala, Dairy Circle, and Cantonment) and elevated sections at both ends. BMRCL revised the Detailed Project Report (DPR) cost from an initial ₹28,405 Cr down to ₹25,999 Cr following alignment optimizations. State cabinet review is underway, with target completion around April 2033.",
   "dataQuality": {
     "lastAudited": "2026-11-21",

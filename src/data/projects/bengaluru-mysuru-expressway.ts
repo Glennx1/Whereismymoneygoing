@@ -32,36 +32,6 @@ export const bengaluruMysuruExpressway: Project = {
     "lat": 12.72,
     "lng": 77.28
   },
-  "routeCoordinates": [
-    [
-      12.905,
-      77.48
-    ],
-    [
-      12.8,
-      77.38
-    ],
-    [
-      12.72,
-      77.28
-    ],
-    [
-      12.58,
-      77.1
-    ],
-    [
-      12.52,
-      76.9
-    ],
-    [
-      12.42,
-      76.7
-    ],
-    [
-      12.35,
-      76.65
-    ]
-  ],
   "overview": "The 118-km Bengaluru-Mysuru Expressway (NH-275) is a 10-lane access-controlled corridor comprising a 6-lane elevated/at-grade carriageway and 2-lane service roads on both sides. Executed by the National Highways Authority of India (NHAI) in two packages (Bengaluru to Nidaghatta, 56 km; Nidaghatta to Mysuru, 61 km), it bypasses six busy towns (Bidadi, Ramanagara, Channapatna, Maddur, Mandya, and Srirangapatna), cutting travel time between Bengaluru and Mysuru from over 3 hours to approximately 75 minutes. Dedicated on 12 March 2023 by Prime Minister Narendra Modi.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
@@ -225,5 +195,7 @@ export const bengaluruMysuruExpressway: Project = {
       "url": "https://nhai.gov.in",
       "type": "NEWS_REPORT"
     }
-  ]
+  ],
+  "geometrySource": "OpenStreetMap (Overpass API - NH 275 motorway alignment)",
+  "geometryFetchDate": "2026-11-23"
 };

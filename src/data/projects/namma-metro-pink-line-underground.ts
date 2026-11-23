@@ -47,40 +47,6 @@ export const nammaMetroPinkLineUnderground: Project = {
     "lat": 12.985,
     "lng": 77.608
   },
-  "routeCoordinates": [
-    [
-      12.93,
-      77.6
-    ],
-    [
-      12.945,
-      77.599
-    ],
-    [
-      12.96,
-      77.602
-    ],
-    [
-      12.975,
-      77.606
-    ],
-    [
-      12.988,
-      77.604
-    ],
-    [
-      13.002,
-      77.602
-    ],
-    [
-      13.018,
-      77.618
-    ],
-    [
-      13.045,
-      77.625
-    ]
-  ],
   "overview": "The 13.76-km underground section of Namma Metro's Pink Line is the largest subterranean infrastructure endeavour in Bengaluru's history. Running from the south portal near Tavarekere/Dairy Circle through central landmarks like MG Road and Shivajinagar to Nagawara in the north, the project involved 9 Tunnel Boring Machines (TBMs) navigating dense rock and loose soil layers. All 20.9 km of tunnel drives (twin tunnels) successfully completed breakthroughs by early 2025. Civil packages are being executed by Afcons, L&T, and ITD Cementation, with overall commercial launch targeted for 2027.",
   "dataQuality": {
     "lastAudited": "2026-11-21",
