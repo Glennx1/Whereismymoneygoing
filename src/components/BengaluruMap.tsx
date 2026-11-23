@@ -1,206 +1,206 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Project } from "@/lib/types";
-import { formatCrores, formatPct, statusLabel } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { formatCrores, formatPct, statusLabel, bestCostCr, calculateEstimatedSpentCr } from "@/lib/utils";
+import { ArrowRight, MapPin, Layers, Search, Clock, TrendingUp } from "lucide-react";
+
+// Dynamically import Leaflet map with no SSR
+const LeafletMapInner = dynamic(() => import("./LeafletMapInner"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full min-h-[440px] rounded-xl bg-neutral-100 flex items-center justify-center text-xs text-neutral-400">
+      Loading interactive map...
+    </div>
+  ),
+});
 
 interface BengaluruMapProps {
   projects: Project[];
 }
 
 export function BengaluruMap({ projects }: BengaluruMapProps) {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(projects[0] || null);
+  const [selectedProjectId, setSelectedProjectId] = useState<string>(
+    projects[0]?.id || ""
+  );
+  const [filterStage, setFilterStage] = useState<string>("ALL");
 
-  const minLat = 12.85;
-  const maxLat = 13.22;
-  const minLng = 77.45;
-  const maxLng = 77.80;
+  const filteredProjects = projects.filter((p) => {
+    if (filterStage === "ALL") return true;
+    return p.category === filterStage;
+  });
 
-  const projectToSvgCoords = (lat: number, lng: number) => {
-    const x = ((lng - minLng) / (maxLng - minLng)) * 800;
-    const y = ((maxLat - lat) / (maxLat - minLat)) * 600;
-    return { x, y };
-  };
+  const selectedProject =
+    filteredProjects.find((p) => p.id === selectedProjectId) ||
+    filteredProjects[0] ||
+    null;
+
+  const estimatedSpent = selectedProject ? calculateEstimatedSpentCr(selectedProject) : null;
+  const isCompleted = selectedProject?.status === "completed";
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-sm">
-      {/* Map Visualizer */}
-      <div className="lg:col-span-2 relative rounded-xl border border-neutral-200/70 bg-[#f9f9fb] overflow-hidden min-h-[460px] flex flex-col justify-between p-4">
-        {/* Map Header / Legend */}
-        <div className="z-10 flex flex-wrap items-center justify-between gap-3 bg-white/90 border border-neutral-200/80 rounded-lg p-3 backdrop-blur-sm shadow-xs">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-neutral-900" />
-            <span className="text-xs font-semibold text-neutral-900">
-              Bengaluru City Map
-            </span>
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 rounded-2xl border border-neutral-200/90 bg-white p-4 sm:p-5 shadow-xs">
+      {/* Map Area */}
+      <div className="lg:col-span-2 relative rounded-xl border border-neutral-200/80 overflow-hidden flex flex-col justify-between min-h-[460px]">
+        {/* Map Header / Filters & Legend */}
+        <div className="z-10 bg-white/95 border-b border-neutral-200 p-3 backdrop-blur-sm flex flex-wrap items-center justify-between gap-2.5">
+          {/* Stage Filters */}
+          <div className="flex items-center gap-1 overflow-x-auto text-xs scrollbar-none">
+            {[
+              { id: "ALL", label: "All" },
+              { id: "ongoing", label: "In Progress" },
+              { id: "completed", label: "Completed" },
+              { id: "planned", label: "Planned" },
+            ].map((st) => (
+              <button
+                key={st.id}
+                onClick={() => setFilterStage(st.id)}
+                className={`rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors shrink-0 ${
+                  filterStage === st.id
+                    ? "bg-neutral-900 text-white"
+                    : "bg-neutral-100 text-neutral-600 hover:text-neutral-900"
+                }`}
+              >
+                {st.label}
+              </button>
+            ))}
           </div>
-          <div className="flex items-center gap-3 text-xs text-neutral-500">
-            <span className="flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full bg-rose-500" /> Stalled
+
+          {/* Color Legend */}
+          <div className="flex items-center gap-3 text-[11px] text-neutral-500">
+            <span className="flex items-center gap-1">
+              <span className="h-2 w-2 rounded-full bg-emerald-500" /> Completed
             </span>
-            <span className="flex items-center gap-1.5">
+            <span className="flex items-center gap-1">
               <span className="h-2 w-2 rounded-full bg-amber-500" /> In Progress
             </span>
-            <span className="flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full bg-emerald-500" /> Finished
+            <span className="flex items-center gap-1">
+              <span className="h-2 w-2 rounded-full bg-blue-500" /> Planned
             </span>
           </div>
         </div>
 
-        {/* SVG Canvas */}
-        <div className="relative w-full h-[400px] my-auto">
-          <svg viewBox="0 0 800 600" className="w-full h-full select-none">
-            <defs>
-              <pattern id="light-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f2" strokeWidth="1" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#light-grid)" />
-
-            {/* Outer Ring Road outline */}
-            <ellipse
-              cx="410"
-              cy="340"
-              rx="210"
-              ry="170"
-              fill="none"
-              stroke="#d1d1d6"
-              strokeWidth="2"
-              strokeDasharray="6 4"
-            />
-            <text x="430" y="525" fill="#8e8e93" fontSize="11" fontFamily="sans-serif">
-              Outer Ring Road (ORR)
-            </text>
-
-            {/* Airport Expressway Corridor line */}
-            <line
-              x1="410"
-              y1="300"
-              x2="480"
-              y2="50"
-              stroke="#cbd5e1"
-              strokeWidth="2"
-              strokeDasharray="4 2"
-            />
-            <text x="490" y="60" fill="#64748b" fontSize="11" fontWeight="bold">
-              Airport (KIA)
-            </text>
-
-            {/* Project Nodes */}
-            {projects.map((proj) => {
-              const { x, y } = projectToSvgCoords(proj.coordinates.lat, proj.coordinates.lng);
-              const isSelected = selectedProject?.id === proj.id;
-
-              let nodeColor = "#f59e0b"; // amber
-              if (proj.status === "stalled") nodeColor = "#e11d48"; // rose
-              if (proj.status === "completed" || proj.status === "partially_operational") nodeColor = "#10b981"; // emerald
-
-              return (
-                <g
-                  key={proj.id}
-                  className="cursor-pointer"
-                  onClick={() => setSelectedProject(proj)}
-                >
-                  {isSelected && (
-                    <circle
-                      cx={x}
-                      cy={y}
-                      r="16"
-                      fill={nodeColor}
-                      opacity="0.15"
-                    />
-                  )}
-                  <circle
-                    cx={x}
-                    cy={y}
-                    r={isSelected ? "9" : "6"}
-                    fill={nodeColor}
-                    stroke="#ffffff"
-                    strokeWidth="2"
-                  />
-                  <text
-                    x={x + 10}
-                    y={y + 4}
-                    fill={isSelected ? "#1d1d1f" : "#6e6e73"}
-                    fontSize={isSelected ? "12" : "11"}
-                    fontWeight={isSelected ? "600" : "500"}
-                  >
-                    {proj.title.split("(")[0].trim().slice(0, 22)}
-                  </text>
-                </g>
-              );
-            })}
-          </svg>
+        {/* Real Leaflet Map */}
+        <div className="relative w-full h-[440px] flex-1">
+          <LeafletMapInner
+            projects={filteredProjects}
+            selectedProject={selectedProject}
+            onSelectProject={(p) => setSelectedProjectId(p.id)}
+          />
         </div>
 
-        <div className="z-10 text-[11px] text-neutral-400 text-center">
-          Click any point to view money spent and delays.
+        {/* Map Footer Note */}
+        <div className="z-10 bg-white/90 border-t border-neutral-200/80 px-3 py-1.5 text-[11px] text-neutral-500 flex items-center justify-between">
+          <span>Click any marker or line to inspect spending and delays</span>
+          <span>{filteredProjects.length} shown</span>
         </div>
       </div>
 
-      {/* Inspector Sidebar */}
-      <div className="rounded-xl border border-neutral-200/70 bg-[#faf9f6] p-5 flex flex-col justify-between">
+      {/* Project Inspector Sidebar */}
+      <div className="rounded-xl border border-neutral-200/80 bg-[#faf9f6] p-4 sm:p-5 flex flex-col justify-between space-y-4">
         {selectedProject ? (
           <div className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-1 flex-wrap">
               <span className="rounded bg-white px-2 py-0.5 text-xs font-semibold text-neutral-800 border border-neutral-200">
                 {selectedProject.agencyCode} • {selectedProject.sector}
               </span>
-              <span className="text-xs text-neutral-500 font-medium">
+              <span className="text-[11px] font-medium text-neutral-500 capitalize">
                 {statusLabel(selectedProject.status)}
               </span>
             </div>
 
             <div>
-              <h4 className="text-base font-semibold text-neutral-900 leading-snug">
+              <h3 className="text-base font-semibold text-neutral-900 leading-snug">
                 {selectedProject.title}
-              </h4>
+              </h3>
               <p className="mt-1 text-xs text-neutral-500 line-clamp-3 leading-relaxed">
                 {selectedProject.tagline}
               </p>
             </div>
 
-            <div className="rounded-xl bg-white border border-neutral-200/80 p-3.5 space-y-2 text-xs">
-              <div className="flex justify-between">
-                <span className="text-neutral-500">Approved / Estimated:</span>
-                <span className="font-semibold text-neutral-900">{formatCrores(selectedProject.sanctionedAmountCr)}</span>
+            <div className="flex items-center gap-1.5 text-xs text-neutral-500">
+              <MapPin className="h-3.5 w-3.5 shrink-0 text-neutral-400" />
+              <span className="truncate">{selectedProject.wardOrZone}</span>
+            </div>
+
+            {/* 3 Metric Mini Grid */}
+            <div className="grid grid-cols-3 gap-2 rounded-lg bg-white border border-neutral-200/70 p-3 text-center">
+              <div>
+                <div className="text-[10px] uppercase font-medium text-neutral-400">
+                  {isCompleted ? "Final Cost" : "Cost"}
+                </div>
+                <div className="text-xs font-semibold text-neutral-900 mt-0.5 truncate">
+                  {formatCrores(bestCostCr(selectedProject))}
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500">Paid Out So Far:</span>
-                <span className="font-semibold text-neutral-900">{formatCrores(selectedProject.actualDisbursedCr)}</span>
+              <div>
+                <div className="text-[10px] uppercase font-medium text-neutral-400">Paid Out</div>
+                <div className="text-xs font-semibold text-neutral-900 mt-0.5 truncate">
+                  {selectedProject.actualDisbursedCr !== null ? (
+                    formatCrores(selectedProject.actualDisbursedCr)
+                  ) : estimatedSpent !== null ? (
+                    <span title="Estimated from progress">~{formatCrores(estimatedSpent)}</span>
+                  ) : (
+                    "Unpublished"
+                  )}
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500">Current Cost Estimate:</span>
-                <span className="font-semibold text-neutral-900">{formatCrores(selectedProject.revisedEstimatedCostCr)}</span>
+              <div>
+                <div className="text-[10px] uppercase font-medium text-neutral-400">Work Done</div>
+                <div className="text-xs font-semibold text-neutral-900 mt-0.5">
+                  {isCompleted ? "100%" : formatPct(selectedProject.physicalProgressPct)}
+                </div>
               </div>
-              <div className="flex justify-between pt-1 border-t border-neutral-100">
-                <span className="text-neutral-500">Work Finished:</span>
-                <span className="font-semibold text-neutral-900">{formatPct(selectedProject.physicalProgressPct)}</span>
+            </div>
+
+            {/* Target and Notices info */}
+            <div className="space-y-1.5 text-xs text-neutral-600 pt-1">
+              <div className="flex items-center justify-between">
+                <span className="text-neutral-400">
+                  {isCompleted ? "Completion:" : "Target Date:"}
+                </span>
+                <span className="font-medium text-neutral-900">
+                  {selectedProject.completionDate
+                    ? new Date(selectedProject.completionDate).toLocaleDateString("en-IN", { month: "short", year: "numeric" })
+                    : selectedProject.revisedDeadline
+                    ? new Date(selectedProject.revisedDeadline).toLocaleDateString("en-IN", { month: "short", year: "numeric" })
+                    : "Not confirmed"}
+                </span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-neutral-400">Sourced Notices:</span>
+                <span className="font-medium text-neutral-900">
+                  {selectedProject.redFlags.length} notice{selectedProject.redFlags.length === 1 ? "" : "s"}
+                </span>
               </div>
             </div>
 
             {selectedProject.redFlags.length > 0 && (
-              <div className="rounded-lg bg-rose-50 border border-rose-200/60 p-3 text-xs space-y-1">
-                <div className="font-semibold text-rose-900">{selectedProject.redFlags[0].title}</div>
-                <div className="text-rose-700 text-[11px] leading-relaxed">{selectedProject.redFlags[0].summary}</div>
+              <div className="p-2.5 rounded-lg bg-amber-50/70 border border-amber-200/80 space-y-1">
+                <div className="text-[11px] font-semibold text-amber-900">Top Notice:</div>
+                <p className="text-[11px] text-amber-900/90 line-clamp-2 leading-relaxed">
+                  {selectedProject.redFlags[0].title}
+                </p>
               </div>
             )}
-
-            <div className="pt-2">
-              <Link
-                href={`/projects/${selectedProject.slug}`}
-                className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-neutral-900 py-2.5 px-4 text-xs font-medium text-white hover:bg-neutral-800 transition-colors"
-              >
-                <span>View Full Details</span>
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
           </div>
         ) : (
-          <div className="text-center text-xs text-neutral-400 py-10">
-            Select a project on the map.
+          <div className="p-8 text-center text-xs text-neutral-400">
+            No projects in this stage filter.
+          </div>
+        )}
+
+        {selectedProject && (
+          <div className="pt-3 border-t border-neutral-200">
+            <Link
+              href={`/projects/${selectedProject.slug}`}
+              className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-neutral-900 px-4 py-2.5 text-xs font-medium text-white hover:bg-neutral-800 transition-colors"
+            >
+              <span>View Full Project Dossier</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
         )}
       </div>

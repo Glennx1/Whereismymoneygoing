@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CheckCircle2, ShieldAlert, Clock, Database, Search } from "lucide-react";
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 
 export const metadata = {
-  title: "How we check data • NammaKharcha",
+  title: "Methodology & Data Sourcing Standards • NammaKharcha",
 };
 
 export default function MethodologyPage() {
@@ -19,51 +19,79 @@ export default function MethodologyPage() {
 
       <div className="space-y-2">
         <h1 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
-          How we check data
+          How we source and verify project data
         </h1>
         <p className="text-sm text-neutral-600 leading-relaxed">
-          Public project data in India is scattered, often out of date, and sometimes contradictory. This page explains what the labels on this site mean and what we do when sources disagree.
+          Public infrastructure data in India is fragmented across disparate departmental orders, press briefings, and tribunal affidavits. This page explains our data tiering, verification standards, and what we do when official sources disagree.
         </p>
       </div>
 
+      {/* Confidence tiers */}
       <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 space-y-4 shadow-xs">
-        <h2 className="text-base font-semibold text-neutral-900">Confidence labels</h2>
-        <ul className="space-y-3 text-sm text-neutral-600">
+        <h2 className="text-base font-semibold text-neutral-900">Confidence Labels</h2>
+        <ul className="space-y-3.5 text-xs sm:text-sm text-neutral-600">
           <li className="flex items-start gap-3">
             <ConfidenceBadge confidence="verified" />
-            <span>Matches a primary official document, such as a government order, tender record or audit report.</span>
+            <div>
+              <strong className="text-neutral-900 block font-medium">Verified (Primary Official Record)</strong>
+              <span>Matches an unedited primary government document, such as a Union Cabinet sanction order, PIB notification, KPPP tender award, Comptroller and Auditor General (CAG) audit report, or court affidavit.</span>
+            </div>
           </li>
           <li className="flex items-start gap-3">
             <ConfidenceBadge confidence="reported" />
-            <span>Stated in news coverage or a third-party tracker, with a link. Not yet matched to an official document.</span>
+            <div>
+              <strong className="text-neutral-900 block font-medium">Reported (Credible Media / Industry Trackers)</strong>
+              <span>Stated in published investigative coverage by reputed national and local outlets (The Hindu, Deccan Herald, Times of India, Indian Express, Moneycontrol) or technical infrastructure trackers (The Metro Rail Guy). Every reported number links directly to its source.</span>
+            </div>
           </li>
           <li className="flex items-start gap-3">
             <ConfidenceBadge confidence="unverified" />
-            <span>No source found yet. Shown only with a warning.</span>
+            <div>
+              <strong className="text-neutral-900 block font-medium">Unverified / Explanatory Note</strong>
+              <span>Where figures are conflicting, contested, or pending documentary verification, we document the range of claims in the field audit drawer.</span>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 space-y-3 shadow-xs text-sm text-neutral-600 leading-relaxed">
-        <h2 className="text-base font-semibold text-neutral-900">Our rules</h2>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>A number without a source is not shown. &quot;Not available&quot; is never the same as zero.</li>
-          <li>When sources disagree, we say so and list the different figures instead of picking one silently.</li>
-          <li>Money &quot;paid out&quot; needs a document that states it. Project-wise payment data is rarely published, so most projects show &quot;Not available&quot; today.</li>
-          <li>Every warning notice links to a report. Severity labels (low, medium, high, critical) are our own judgement.</li>
-          <li>Derived figures, such as delay length and cost increase, are calculated from the dates and amounts shown, and only when both inputs are known.</li>
-          <li>Each project page lists what was corrected in the latest audit.</li>
+      {/* Data Rules */}
+      <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 space-y-4 shadow-xs text-xs sm:text-sm text-neutral-600 leading-relaxed">
+        <h2 className="text-base font-semibold text-neutral-900">Our Strict Data Rules</h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            <strong className="text-neutral-800">No memory or assumptions:</strong> Never put a number, date, or claim from memory. Every non-null value requires a verified source that was opened, read, and cited.
+          </li>
+          <li>
+            <strong className="text-neutral-800">&quot;Not available&quot; is never zero:</strong> When a government body has not published cumulative project disbursements or contract values, we display &quot;Not available&quot;.
+          </li>
+          <li>
+            <strong className="text-neutral-800">Clear spend tiering:</strong>
+            <ul className="list-circle pl-5 mt-1 space-y-1">
+              <li><strong>Reported Disbursal:</strong> Only when an explicit payment voucher or budget expenditure document states it.</li>
+              <li><strong>Derived Estimated Spend:</strong> When physical progress % and a verified cost are both sourced, we compute <code className="text-neutral-800 font-mono text-[11px] bg-neutral-100 px-1 py-0.5 rounded">estimatedSpent = cost × progress%</code> and explicitly label it &quot;Estimate (cost × reported progress). Not an official payment figure.&quot;</li>
+            </ul>
+          </li>
+          <li>
+            <strong className="text-neutral-800">Staleness tracking:</strong> Every sourced figure carries an <code className="text-neutral-800 font-mono text-[11px] bg-neutral-100 px-1 py-0.5 rounded">asOf</code> date. Figures older than 12 months are visibly flagged as stale.
+          </li>
+          <li>
+            <strong className="text-neutral-800">Conflict transparency:</strong> When sources conflict (e.g. Yellow Line cost reported as ₹5,745 Cr, ₹7,160 Cr, or ₹7,610 Cr), we do not pick silently. We record the conflicting figures in the field note and display the best-supported value as reported.
+          </li>
+          <li>
+            <strong className="text-neutral-800">Automated build-time validation:</strong> A comprehensive validation script (<code className="text-neutral-800 font-mono text-[11px] bg-neutral-100 px-1 py-0.5 rounded">npm run validate-data</code>) validates all 32 project records before every build.
+          </li>
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-amber-200/80 bg-amber-50/50 p-6 space-y-3 text-sm text-amber-900 leading-relaxed">
-        <h2 className="text-base font-semibold">Current limits</h2>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>Only seven projects are tracked. This is a starter set, not a complete list of Bengaluru projects.</li>
-          <li>No figure has yet been matched to a primary government document, so none is labelled Verified.</li>
-          <li>Source links point to news articles found during the audit; some may need re-checking for the exact figure quoted.</li>
-          <li>Citizen photo reports are not yet saved or published.</li>
-        </ul>
+      {/* Audit Scope */}
+      <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 space-y-3 text-xs sm:text-sm text-neutral-600 leading-relaxed shadow-xs">
+        <h2 className="text-base font-semibold text-neutral-900">Coverage Scope</h2>
+        <p>
+          NammaKharcha currently tracks 32 major public works spanning Metro Rail, Suburban Rail, National Expressways, Arterial Flyovers, Water Supply, Stormwater Drain Remodelling, and Lake Rejuvenation across the Bengaluru metropolitan region.
+        </p>
+        <p>
+          Our full audit trail documenting every corrected figure and citation is maintained in the <code className="text-neutral-800 font-mono text-[11px] bg-neutral-100 px-1 py-0.5 rounded">docs/data-audit-log.md</code> file in our repository.
+        </p>
       </section>
     </div>
   );

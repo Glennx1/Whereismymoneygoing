@@ -1,12 +1,15 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import type { Confidence, Project } from "./types";
+import type { Confidence, Project, ProjectCategory, ProjectStatus } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
 export const NOT_AVAILABLE = "Not available";
+
+/** Reference audit date: November 2026 */
+export const REFERENCE_DATE = "2026-11-21";
 
 /**
  * Format amounts in Indian Crores with ₹ symbol.
@@ -27,6 +30,17 @@ export function formatMonthYear(dateStr: string | null | undefined): string {
 
 export function formatPct(pct: number | null | undefined): string {
   return pct === null || pct === undefined ? NOT_AVAILABLE : `${pct}%`;
+}
+
+/**
+ * Checks if a sourced figure is older than 12 months relative to November 2026.
+ */
+export function isStale(asOf?: string | null): boolean {
+  if (!asOf) return false;
+  const ref = new Date(REFERENCE_DATE).getTime();
+  const date = new Date(asOf).getTime();
+  const diffDays = (ref - date) / (1000 * 60 * 60 * 24);
+  return diffDays > 365;
 }
 
 /**
@@ -71,8 +85,27 @@ export function bestCostCr(p: Project): number | null {
   return p.revisedEstimatedCostCr ?? p.sanctionedAmountCr ?? null;
 }
 
+/**
+ * Derived estimated spend: cost × progress%.
+ * Labeled in UI: "Estimate (cost × reported progress). Not an official payment figure."
+ * Returns null if either cost or progress% is null.
+ */
+export function calculateEstimatedSpentCr(p: Project): number | null {
+  const cost = bestCostCr(p);
+  if (cost === null || p.physicalProgressPct === null || p.physicalProgressPct === undefined) {
+    return null;
+  }
+  return Math.round(((cost * p.physicalProgressPct) / 100) * 10) / 10;
+}
+
 export function confidenceOf(p: Project, field: keyof Project["dataQuality"]["fields"]): Confidence {
   return p.dataQuality.fields[field]?.confidence ?? "unverified";
+}
+
+export function categoryOf(status: ProjectStatus): ProjectCategory {
+  if (status === "completed") return "completed";
+  if (status === "announced" || status === "tendering") return "planned";
+  return "ongoing"; // 'under_construction', 'partially_operational', 'stalled'
 }
 
 export function statusLabel(status: Project["status"]): string {

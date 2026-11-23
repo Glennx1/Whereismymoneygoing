@@ -5,9 +5,20 @@ export type Sector =
   | 'Water Supply & Sewage'
   | 'Suburban Rail'
   | 'Smart City'
-  | 'Lake Rejuvenation';
+  | 'Lake Rejuvenation'
+  | 'Aviation'
+  | 'Public Transit';
 
-export type AgencyCode = 'BMRCL' | 'BBMP' | 'BDA' | 'BWSSB' | 'K-RIDE' | 'BENGALURU_SMART_CITY';
+export type AgencyCode =
+  | 'BMRCL'
+  | 'BBMP'
+  | 'BDA'
+  | 'BWSSB'
+  | 'K-RIDE'
+  | 'BENGALURU_SMART_CITY'
+  | 'NHAI'
+  | 'BMTC'
+  | 'SWR';
 
 export interface Agency {
   id: string;
@@ -28,6 +39,8 @@ export type ProjectStatus =
   | 'stalled'
   | 'partially_operational'
   | 'completed';
+
+export type ProjectCategory = 'completed' | 'ongoing' | 'planned';
 
 export type RedFlagSeverity = 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';
 
@@ -69,6 +82,8 @@ export interface FieldCheck {
   /** What we found, including conflicts between sources */
   note: string;
   sources: SourceRef[];
+  /** When the figure was stated / recorded (ISO date YYYY-MM-DD) */
+  asOf?: string;
 }
 
 export interface DataQuality {
@@ -118,18 +133,21 @@ export interface Contractor {
   kpppTenderId?: string;
 }
 
-export interface CitizenVerification {
-  id: string;
-  submittedAt: string;
-  authorAlias: string;
-  locationName: string;
-  lat: number;
-  lng: number;
-  photoUrl: string;
-  caption: string;
-  reportedStatus: 'zero_work_visible' | 'slow_progress' | 'active_work' | 'blocked_by_debris' | 'completed';
-  upvotes: number;
-  isVerifiedByModerator: boolean;
+export interface Article {
+  title: string;
+  outlet: string;
+  publishedDate: string; // ISO date YYYY-MM-DD
+  url: string;
+  claim: string; // Which fact or figure it supports
+  isOfficial?: boolean;
+}
+
+export interface FundingSplit {
+  centralPct?: number;
+  statePct?: number;
+  loanPct?: number;
+  loanSource?: string;
+  notes?: string;
 }
 
 export interface Project {
@@ -140,6 +158,13 @@ export interface Project {
   agencyCode: AgencyCode;
   sector: Sector;
   status: ProjectStatus;
+  category: ProjectCategory;
+
+  // Linear / scale attributes
+  lengthKm?: number | null;
+  stationsCount?: number | null;
+  stationNames?: string[];
+  fundingSplit?: FundingSplit;
 
   // Financial figures (INR Crores). null = no confirmed figure yet.
   announcedAmountCr: number | null;
@@ -153,6 +178,7 @@ export interface Project {
   sanctionedDate: string | null;
   originalDeadline: string | null;
   revisedDeadline: string | null;
+  completionDate?: string | null;
 
   // Progress. null = no source.
   financialProgressPct: number | null;
@@ -172,7 +198,7 @@ export interface Project {
   contractorsNote?: string;
   milestones: Milestone[];
   redFlags: RedFlag[];
-  citizenReports: CitizenVerification[];
+  articles: Article[];
   officialDocLinks: {
     label: string;
     url: string;
