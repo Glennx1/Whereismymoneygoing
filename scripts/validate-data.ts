@@ -14,8 +14,11 @@ const seenIds = new Set<string>();
 
 const ISO_DATE_REGEX = /^\d{4}-\d{2}(-\d{2})?$/;
 
-// Load dead-links denylist if present
-const deadLinksPath = path.resolve(process.cwd(), "docs", "dead-links.json");
+// Load dead-links denylist
+// Uses docs/dead-links.json, falling back to phase 1 dead links if pending replacement
+const deadLinksPath = fs.existsSync(path.resolve(process.cwd(), "docs", "dead-links-phase1.json"))
+  ? path.resolve(process.cwd(), "docs", "dead-links-phase1.json")
+  : path.resolve(process.cwd(), "docs", "dead-links.json");
 const deadLinksSet = new Set<string>();
 if (fs.existsSync(deadLinksPath)) {
   try {
