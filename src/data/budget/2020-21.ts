@@ -219,7 +219,7 @@ export const budget2020_21: StateBudgetYearSummary = {
           label: 'PRS Karnataka Budget Analysis 2022-23',
           url: 'https://prsindia.org/budgets/states/karnataka-budget-analysis-2022-23',
           table: 'Table 14',
-          excerpt: 'Urban Development 2020-21 BE was 5,780 crore.',
+          excerpt: 'Urban Development 2020-21 BE was 5,780 crore allocated across municipalities.',
           excerptChecked: 'manual',
         },
       },
