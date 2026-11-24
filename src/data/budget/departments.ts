@@ -42,7 +42,7 @@ export const departmentMappings: DepartmentMap = [
     demandNumber: '20',
     sector: 'Transport and Roads',
     sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
-    notes: 'Covers State Highways, Major District Roads (MDRs), bridges, and road communications capital outlays.',
+    notes: 'Public Works department only (Demand 20): state highways, major district roads and bridges. Does NOT include metro funding, BMTC/KSRTC subsidies or the Transport department.',
   },
 
   // --- WATER RESOURCES ---

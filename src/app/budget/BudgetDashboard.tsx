@@ -26,6 +26,10 @@ import {
   Scale,
 } from 'lucide-react';
 
+/** Display names. Keys stay stable; labels say exactly what the demand covers. */
+const sectorLabel = (sector: string): string =>
+  sector === 'Transport and Roads' ? 'Public Works (roads & buildings)' : sector;
+
 export default function BudgetDashboard() {
   const [selectedYear, setSelectedYear] = useState<string>('2024-25');
   const [selectedSector, setSelectedSector] = useState<string>('all');
@@ -384,10 +388,10 @@ export default function BudgetDashboard() {
                       </div>
                       <div>
                         <h2 className="text-base sm:text-lg font-bold text-neutral-900">
-                          {sectorYear.sector}
+                          {sectorLabel(sectorYear.sector)}
                         </h2>
                         <p className="text-xs text-neutral-500">
-                          {sectorYear.notes || `State budgetary allocations for ${sectorYear.sector.toLowerCase()}`}
+                          {sectorYear.notes || `State budgetary allocations for ${sectorLabel(sectorYear.sector).toLowerCase()}`}{' '}Figures are net voted expenditure (after recoveries and transfers), so gross demand is higher.
                         </p>
                       </div>
                     </div>
@@ -627,10 +631,10 @@ export default function BudgetDashboard() {
                         <div className="space-y-2 pt-1">
                           <div className="flex items-center justify-between">
                             <span className="font-semibold text-neutral-900">
-                              Linked Infrastructure Projects in Tracker ({linkedProjects.length})
+                              Related projects in tracker ({linkedProjects.length})
                             </span>
                             <span className="text-[11px] text-neutral-500">
-                              Funded in whole or part via {sectorYear.sector}
+                              Topic match only. Not confirmed as funded from this budget line
                             </span>
                           </div>
                           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
@@ -681,7 +685,7 @@ export default function BudgetDashboard() {
               return (
                 <div key={sector} className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-bold text-neutral-900">{sector}</h3>
+                    <h3 className="text-sm font-bold text-neutral-900">{sectorLabel(sector)}</h3>
                     <span className="text-xs text-neutral-400">Nominal ₹ Crore</span>
                   </div>
 
@@ -884,7 +888,7 @@ export default function BudgetDashboard() {
                       Demand {d.demandNumber || '—'}
                     </td>
                     <td className="py-2.5 px-3 font-semibold text-neutral-900 whitespace-nowrap">
-                      {d.sector}
+                      {sectorLabel(d.sector)}
                     </td>
                     <td className="py-2.5 px-3 font-medium text-neutral-800">
                       {d.departmentName}
