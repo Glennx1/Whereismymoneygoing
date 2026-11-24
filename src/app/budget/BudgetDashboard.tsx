@@ -17,15 +17,13 @@ import {
   Building2,
   ExternalLink,
   AlertCircle,
-  HelpCircle,
-  TrendingUp,
-  Scale,
   Users,
   ChevronDown,
   ChevronUp,
   ArrowRight,
   ShieldCheck,
   Flag,
+  Scale,
 } from 'lucide-react';
 
 export default function BudgetDashboard() {
@@ -33,8 +31,12 @@ export default function BudgetDashboard() {
   const [selectedSector, setSelectedSector] = useState<string>('all');
   const [perCapita, setPerCapita] = useState<boolean>(false);
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({
-    'Urban Development': true,
-    'Transport and Roads': true,
+    'Education': true,
+    'Health': true,
+  });
+  const [expandedSourceRows, setExpandedSourceRows] = useState<Record<string, boolean>>({
+    'Education-BE': true,
+    'Health-BE': true,
   });
   const [activeTab, setActiveTab] = useState<'sectors' | 'trends' | 'centre-state' | 'departments'>('sectors');
 
@@ -45,6 +47,13 @@ export default function BudgetDashboard() {
     setExpandedSectors((prev) => ({
       ...prev,
       [sector]: !prev[sector],
+    }));
+  };
+
+  const toggleSourceRows = (key: string) => {
+    setExpandedSourceRows((prev) => ({
+      ...prev,
+      [key]: !prev[key],
     }));
   };
 
@@ -88,6 +97,14 @@ export default function BudgetDashboard() {
     1
   );
 
+  // Centre vs State calculations
+  const centralTransfers = yearSummary.revenueReceipts.totalCentralTransfers.amountCr;
+  const stateOwn = yearSummary.revenueReceipts.totalStateOwn.amountCr;
+  const totalRevenueReceipts = centralTransfers !== null && stateOwn !== null ? centralTransfers + stateOwn : null;
+  const centralPct = centralTransfers !== null && totalRevenueReceipts && totalRevenueReceipts > 0
+    ? ((centralTransfers / totalRevenueReceipts) * 100).toFixed(1)
+    : null;
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 space-y-8">
       {/* Page Header */}
@@ -98,13 +115,13 @@ export default function BudgetDashboard() {
               <span className="rounded-md bg-neutral-900 px-2 py-0.5 text-[11px] font-semibold text-white">
                 Official Fiscal Data
               </span>
-              <span className="text-xs text-neutral-500">Finance Dept & CAG Audits</span>
+              <span className="text-xs text-neutral-500">Finance Dept (Overview & Demands)</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1.5">
               Karnataka Budget vs Actual
             </h1>
             <p className="text-xs sm:text-sm text-neutral-600 max-w-3xl mt-1 leading-relaxed">
-              Compare Karnataka&apos;s Budget Estimates (BE), Revised Estimates (RE), and actual CAG-audited expenditure across key infrastructure and social sectors.
+              Compare Karnataka&apos;s Budget Estimates (BE), Revised Estimates (RE), and audited Actuals from primary Finance Department publications. Every figure is verified against extracted source text or explicitly marked derived or null.
             </p>
           </div>
 
@@ -123,7 +140,7 @@ export default function BudgetDashboard() {
             </button>
             {perCapita && (
               <span className="text-[11px] text-neutral-500 pr-1">
-                Pop: <strong className="text-neutral-800">{populationCr} Cr</strong> (MoHFW)
+                Pop: <strong className="text-neutral-800">{populationCr} Cr</strong> (Projected)
               </span>
             )}
           </div>
@@ -148,7 +165,7 @@ export default function BudgetDashboard() {
                 }`}
               >
                 FY {yr.fiscalYear}
-                {yr.totalExpenditure.actual.amountCr === null ? ' (BE)' : ' (Audited)'}
+                {yr.totalExpenditure.actual.amountCr !== null ? ' (Audited)' : ' (BE)'}
               </button>
             ))}
         </div>
@@ -162,11 +179,11 @@ export default function BudgetDashboard() {
               State Macro Finances (FY {yearSummary.fiscalYear})
             </span>
             <div className="text-lg font-bold text-neutral-900">
-              Total Budget Outlay & Revenue Profile
+              Total Budget Outlay & Revenue Receipts
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <ConfidenceBadge confidence="verified" />
+            <ConfidenceBadge confidence={yearSummary.totalExpenditure.budgetEstimate.confidence} />
             <Link
               href={`/feedback?category=budget&year=${selectedYear}&field=StateMacro`}
               className="text-xs text-neutral-400 hover:text-neutral-700 inline-flex items-center gap-1"
@@ -196,8 +213,8 @@ export default function BudgetDashboard() {
               <div className="flex justify-between items-baseline text-xs pt-1 border-t border-neutral-200/60">
                 <span className="text-neutral-600 font-medium">Audited Actual:</span>
                 {yearSummary.totalExpenditure.actual.amountCr === null ? (
-                  <span className="text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] font-medium border border-amber-200">
-                    Lagging by 1-2 years
+                  <span className="text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded text-[10px] font-medium border border-neutral-200">
+                    Not published in volume
                   </span>
                 ) : (
                   <span className="font-bold text-emerald-900">
@@ -210,7 +227,10 @@ export default function BudgetDashboard() {
 
           {/* Revenue Receipts: State Own */}
           <div className="rounded-xl bg-[#faf9f6] p-4 border border-neutral-200/70 space-y-2">
-            <span className="text-xs text-neutral-500 font-medium">State&apos;s Own Revenue</span>
+            <div className="flex justify-between items-center">
+              <span className="text-xs text-neutral-500 font-medium">State&apos;s Own Revenue</span>
+              <ConfidenceBadge confidence={yearSummary.revenueReceipts.totalStateOwn.confidence} />
+            </div>
             <div className="text-base font-bold text-neutral-900">
               {formatAmount(yearSummary.revenueReceipts.totalStateOwn.amountCr)}
             </div>
@@ -232,7 +252,10 @@ export default function BudgetDashboard() {
 
           {/* Revenue Receipts: Central Transfers */}
           <div className="rounded-xl bg-[#faf9f6] p-4 border border-neutral-200/70 space-y-2">
-            <span className="text-xs text-neutral-500 font-medium">Central Transfers (Centre to State)</span>
+            <div className="flex justify-between items-center">
+              <span className="text-xs text-neutral-500 font-medium">Central Transfers (Centre to State)</span>
+              <ConfidenceBadge confidence={yearSummary.revenueReceipts.totalCentralTransfers.confidence} />
+            </div>
             <div className="text-base font-bold text-neutral-900">
               {formatAmount(yearSummary.revenueReceipts.totalCentralTransfers.amountCr)}
             </div>
@@ -254,10 +277,10 @@ export default function BudgetDashboard() {
         </div>
 
         {/* Navigation Tabs inside Budget page */}
-        <div className="flex items-center gap-2 border-t border-neutral-100 pt-3 text-xs">
+        <div className="flex items-center gap-2 border-t border-neutral-100 pt-3 text-xs overflow-x-auto no-scrollbar">
           <button
             onClick={() => setActiveTab('sectors')}
-            className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
               activeTab === 'sectors'
                 ? 'bg-neutral-100 text-neutral-900 font-semibold'
                 : 'text-neutral-500 hover:text-neutral-900'
@@ -267,7 +290,7 @@ export default function BudgetDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('trends')}
-            className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
               activeTab === 'trends'
                 ? 'bg-neutral-100 text-neutral-900 font-semibold'
                 : 'text-neutral-500 hover:text-neutral-900'
@@ -277,7 +300,7 @@ export default function BudgetDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('centre-state')}
-            className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
               activeTab === 'centre-state'
                 ? 'bg-neutral-100 text-neutral-900 font-semibold'
                 : 'text-neutral-500 hover:text-neutral-900'
@@ -287,7 +310,7 @@ export default function BudgetDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('departments')}
-            className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
               activeTab === 'departments'
                 ? 'bg-neutral-100 text-neutral-900 font-semibold'
                 : 'text-neutral-500 hover:text-neutral-900'
@@ -338,6 +361,7 @@ export default function BudgetDashboard() {
               const spentPct = be && actual ? Math.round((actual / be) * 100) : null;
               const isExpanded = !!expandedSectors[sectorYear.sector];
               const linkedProjects = getLinkedProjects(sectorYear.sector);
+              const beSourceRowsKey = `${sectorYear.sector}-BE`;
 
               return (
                 <div
@@ -369,7 +393,13 @@ export default function BudgetDashboard() {
                     </div>
 
                     <div className="flex items-center gap-2">
-                      <ConfidenceBadge confidence={sectorYear.budgetEstimate.confidence} />
+                      {be !== null ? (
+                        <ConfidenceBadge confidence={sectorYear.budgetEstimate.confidence} />
+                      ) : (
+                        <span className="inline-flex items-center rounded-full border px-1.5 py-px text-[10px] font-medium bg-neutral-100 text-neutral-600 border-neutral-200">
+                          Not published
+                        </span>
+                      )}
                       <button
                         onClick={() => toggleSector(sectorYear.sector)}
                         className="text-xs text-neutral-500 hover:text-neutral-900 inline-flex items-center gap-1 p-1 rounded-md hover:bg-neutral-100 transition-colors"
@@ -393,8 +423,13 @@ export default function BudgetDashboard() {
                   <div className="space-y-3 pt-1">
                     {/* BE Bar */}
                     <div className="space-y-1">
-                      <div className="flex justify-between text-xs">
-                        <span className="font-medium text-neutral-600">Budget Estimate (BE):</span>
+                      <div className="flex justify-between items-baseline text-xs">
+                        <div className="flex items-center gap-2">
+                          <span className="font-medium text-neutral-600">Budget Estimate (BE):</span>
+                          {be !== null && (
+                            <ConfidenceBadge confidence={sectorYear.budgetEstimate.confidence} />
+                          )}
+                        </div>
                         <span className="font-semibold text-neutral-900">{formatAmount(be)}</span>
                       </div>
                       <div className="h-3 w-full rounded-full bg-neutral-100 overflow-hidden">
@@ -405,27 +440,96 @@ export default function BudgetDashboard() {
                       </div>
                     </div>
 
+                    {/* Derived Component Rows Expander under BE */}
+                    {sectorYear.budgetEstimate.confidence === 'derived' && sectorYear.budgetEstimate.source.componentRows && (
+                      <div className="pt-0.5 pb-1">
+                        <button
+                          type="button"
+                          onClick={() => toggleSourceRows(beSourceRowsKey)}
+                          className="text-[11px] font-medium text-purple-700 hover:text-purple-900 inline-flex items-center gap-1 hover:underline cursor-pointer"
+                        >
+                          <span>{expandedSourceRows[beSourceRowsKey] ? 'Hide source rows' : 'Show source rows'}</span>
+                          {expandedSourceRows[beSourceRowsKey] ? (
+                            <ChevronUp className="h-3 w-3" />
+                          ) : (
+                            <ChevronDown className="h-3 w-3" />
+                          )}
+                        </button>
+
+                        {expandedSourceRows[beSourceRowsKey] && (
+                          <div className="mt-2 rounded-lg bg-purple-50/60 p-3 border border-purple-200/80 text-[11px] overflow-x-auto space-y-2">
+                            <div className="text-[11px] font-semibold text-purple-950">
+                              Derived Total Breakdown (Demands for Grants {sectorYear.fiscalYear}):
+                            </div>
+                            <table className="w-full text-left border-collapse">
+                              <thead>
+                                <tr className="border-b border-purple-200 text-purple-900 font-semibold text-[10px]">
+                                  <th className="py-1 pr-2">Component Demand Row</th>
+                                  <th className="py-1 px-2 text-right">Printed Amount</th>
+                                  <th className="py-1 px-2 text-right">Printed Unit</th>
+                                  <th className="py-1 pl-2 text-right">In ₹ Crore</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-purple-100">
+                                {sectorYear.budgetEstimate.source.componentRows.map((row, idx) => (
+                                  <tr key={idx}>
+                                    <td className="py-1 pr-2 text-neutral-800 font-mono text-[10px]">
+                                      {row.demandNumber ? `Demand ${row.demandNumber}: ` : ''}{row.headOrName} ({row.page})
+                                    </td>
+                                    <td className="py-1 px-2 text-right font-mono text-[10px]">{row.printedAmount}</td>
+                                    <td className="py-1 px-2 text-right text-neutral-500 text-[10px]">{row.unit}</td>
+                                    <td className="py-1 pl-2 text-right font-semibold text-neutral-900 text-[10px]">
+                                      ₹{row.amountCr.toLocaleString('en-IN')} Cr
+                                    </td>
+                                  </tr>
+                                ))}
+                                <tr className="border-t border-purple-300 font-bold text-neutral-900 text-[11px]">
+                                  <td className="py-1.5 pr-2" colSpan={3}>
+                                    Derived Sum (Revenue + Capital):
+                                  </td>
+                                  <td className="py-1.5 pl-2 text-right text-purple-950 font-bold">
+                                    ₹{be?.toLocaleString('en-IN')} Cr
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div className="text-[10px] text-purple-800 italic">
+                              * Units in primary Demands for Grants are in ₹ Lakhs. Converted to ₹ Crore via 1 Cr = 100 Lakhs.
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
                     {/* RE Bar */}
                     <div className="space-y-1">
-                      <div className="flex justify-between text-xs">
+                      <div className="flex justify-between items-baseline text-xs">
                         <span className="font-medium text-neutral-600">Revised Estimate (RE):</span>
-                        <span className="font-semibold text-neutral-800">{formatAmount(re)}</span>
+                        {re === null ? (
+                          <span className="text-neutral-500 text-[11px]">Not published</span>
+                        ) : (
+                          <span className="font-semibold text-neutral-800">{formatAmount(re)}</span>
+                        )}
                       </div>
                       <div className="h-3 w-full rounded-full bg-neutral-100 overflow-hidden">
-                        <div
-                          className="h-full rounded-full bg-amber-500 transition-all duration-500"
-                          style={{ width: `${Math.min(100, ((re || 0) / maxBarValue) * 100)}%` }}
-                        />
+                        {re === null ? (
+                          <div className="h-full rounded-full bg-neutral-200/50" />
+                        ) : (
+                          <div
+                            className="h-full rounded-full bg-amber-500 transition-all duration-500"
+                            style={{ width: `${Math.min(100, ((re || 0) / maxBarValue) * 100)}%` }}
+                          />
+                        )}
                       </div>
                     </div>
 
                     {/* Actual Bar */}
                     <div className="space-y-1">
-                      <div className="flex justify-between text-xs">
+                      <div className="flex justify-between items-baseline text-xs">
                         <span className="font-medium text-neutral-600">Audited Actual Spent:</span>
                         {actual === null ? (
-                          <span className="text-amber-800 text-[11px] font-medium">
-                            Not published yet (audited accounts lag by 1-2 years)
+                          <span className="text-neutral-500 text-[11px]">
+                            Not published in verified summary tables
                           </span>
                         ) : (
                           <span className="font-bold text-emerald-800">{formatAmount(actual)}</span>
@@ -433,7 +537,7 @@ export default function BudgetDashboard() {
                       </div>
                       <div className="h-3 w-full rounded-full bg-neutral-100 overflow-hidden">
                         {actual === null ? (
-                          <div className="h-full rounded-full bg-neutral-200/60 dashed" />
+                          <div className="h-full rounded-full bg-neutral-200/50" />
                         ) : (
                           <div
                             className="h-full rounded-full bg-emerald-600 transition-all duration-500"
@@ -460,7 +564,7 @@ export default function BudgetDashboard() {
                         </span>
                       ) : (
                         <span className="text-neutral-400 text-[11px]">
-                          Pending CAG Finance Accounts
+                          Audited actuals not available in primary dataset
                         </span>
                       )}
                     </div>
@@ -469,37 +573,7 @@ export default function BudgetDashboard() {
                   {/* Expandable Details Drawer */}
                   {isExpanded && (
                     <div className="mt-4 pt-4 border-t border-neutral-100 space-y-4 text-xs">
-                      {/* Centre vs State Split */}
-                      <div className="rounded-xl bg-[#faf9f6] p-3.5 border border-neutral-200/80 space-y-2">
-                        <div className="font-semibold text-neutral-900 flex items-center justify-between">
-                          <span>Centre vs State Funding Split</span>
-                          <span className="text-[10px] text-neutral-400 font-normal">
-                            Centrally Sponsored Schemes (CSS) vs State Own
-                          </span>
-                        </div>
-                        {sectorYear.centralShare && sectorYear.stateOwn ? (
-                          <div className="grid grid-cols-2 gap-3 text-xs">
-                            <div className="bg-white p-2.5 rounded-lg border border-neutral-200/70">
-                              <span className="text-neutral-500 text-[11px]">Central Share (CSS / Grants):</span>
-                              <div className="font-semibold text-neutral-900 mt-0.5">
-                                {formatAmount(sectorYear.centralShare.amountCr)}
-                              </div>
-                            </div>
-                            <div className="bg-white p-2.5 rounded-lg border border-neutral-200/70">
-                              <span className="text-neutral-500 text-[11px]">State&apos;s Own Budget Share:</span>
-                              <div className="font-semibold text-neutral-900 mt-0.5">
-                                {formatAmount(sectorYear.stateOwn.amountCr)}
-                              </div>
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="text-neutral-500 text-xs italic bg-white p-2.5 rounded-lg border border-neutral-200/70">
-                            Where the split for this sector isn&apos;t published separately in state budget volumes, we do not derive or guess it.
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Source & Verbatim Excerpt */}
+                      {/* Official Citation */}
                       <div className="rounded-xl bg-white p-3.5 border border-neutral-200/80 space-y-2">
                         <div className="flex items-center justify-between">
                           <span className="font-semibold text-neutral-900">Official Document Citation</span>
@@ -507,7 +581,7 @@ export default function BudgetDashboard() {
                             href={`/feedback?category=budget&year=${sectorYear.fiscalYear}&sector=${sectorYear.sector}&figure=BE`}
                             className="text-neutral-500 hover:text-neutral-900 inline-flex items-center gap-1 text-[11px]"
                           >
-                            <Flag className="h-3 w-3" /> Report an error on this figure
+                            <Flag className="h-3 w-3" /> Report error on this figure
                           </Link>
                         </div>
                         <div className="space-y-1.5 text-neutral-600">
@@ -529,10 +603,16 @@ export default function BudgetDashboard() {
                               <span>{sectorYear.budgetEstimate.source.page}</span>
                             </div>
                           )}
+                          {sectorYear.budgetEstimate.source.printedUnit && (
+                            <div>
+                              <strong className="text-neutral-800">Printed Unit:</strong>{' '}
+                              <span>{sectorYear.budgetEstimate.source.printedUnit}</span>
+                            </div>
+                          )}
                           {sectorYear.budgetEstimate.source.excerpt && (
                             <div className="rounded-lg bg-neutral-50 p-2.5 border border-neutral-200/60 mt-1">
                               <span className="text-[10px] font-semibold text-neutral-400 uppercase tracking-wider block mb-1">
-                                Verbatim Excerpt ({sectorYear.budgetEstimate.source.excerptChecked || 'manual'} verified):
+                                Verbatim Excerpt ({sectorYear.budgetEstimate.source.excerptChecked || 'machine'} verified):
                               </span>
                               <p className="italic text-neutral-700 font-serif text-[12px] leading-relaxed">
                                 &ldquo;{sectorYear.budgetEstimate.source.excerpt}&rdquo;
@@ -591,7 +671,7 @@ export default function BudgetDashboard() {
               6-Year Sector Spending Trends (FY 2019-20 to 2024-25)
             </h2>
             <p className="text-xs text-neutral-500 mt-1">
-              Nominal expenditure comparisons across years. Note: figures are not adjusted for inflation.
+              Nominal expenditure comparisons across years from official state documents. Unverified or missing years are explicitly recorded as null.
             </p>
           </div>
 
@@ -633,8 +713,8 @@ export default function BudgetDashboard() {
                               </td>
                               <td className="py-2 px-3 text-right font-semibold text-neutral-900">
                                 {row.actual === null ? (
-                                  <span className="text-amber-700 text-[11px] font-normal">
-                                    Audit Pending
+                                  <span className="text-neutral-500 text-[11px] font-normal">
+                                    Not published
                                   </span>
                                 ) : (
                                   formatAmount(row.actual)
@@ -666,10 +746,10 @@ export default function BudgetDashboard() {
             })}
           </div>
 
-          <div className="rounded-xl bg-amber-50 p-3.5 border border-amber-200/70 text-xs text-amber-900 flex items-start gap-2.5">
-            <AlertCircle className="h-4 w-4 shrink-0 text-amber-700 mt-0.5" />
+          <div className="rounded-xl bg-neutral-50 p-3.5 border border-neutral-200/70 text-xs text-neutral-600 flex items-start gap-2.5">
+            <AlertCircle className="h-4 w-4 shrink-0 text-neutral-500 mt-0.5" />
             <div>
-              <strong>Methodology note on trends:</strong> Nominal rupees reflect figures stated in budget books of each year without CPI / WPI discounting. Large jumps (e.g. 2022-23 to 2023-24) reflect both state economic growth and policy introductions such as universal bus fare support (Shakti) and major metro equity infusions.
+              <strong>Strict Data Rule:</strong> All sector numbers shown are sourced directly from official Demands for Grants. Years prior to FY 2022-23 without verified downloaded demand volumes are marked null.
             </div>
           </div>
         </div>
@@ -683,8 +763,35 @@ export default function BudgetDashboard() {
               Centre vs State Fiscal Federalism (FY {yearSummary.fiscalYear})
             </h2>
             <p className="text-xs text-neutral-500 mt-1">
-              Breakdown of how much of Karnataka&apos;s revenue is self-generated vs received through Union tax devolution and central grants-in-aid.
+              Exact revenue receipt breakdown printed in Karnataka Finance Department Table 1: State own taxes and non-tax revenues vs Central tax devolution and grants-in-aid.
             </p>
+          </div>
+
+          {/* Central % of Total Receipts Display */}
+          <div className="rounded-xl bg-sky-50/70 p-4 border border-sky-200 text-sky-950 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-semibold uppercase tracking-wider text-sky-800">
+                Central Share of Revenue Receipts
+              </span>
+              <span className="text-xl font-bold text-sky-950">
+                {centralPct !== null ? `${centralPct}%` : 'Not published'}
+              </span>
+            </div>
+            <div className="text-xs font-mono bg-white/80 p-2.5 rounded-lg border border-sky-100 text-sky-900 leading-relaxed">
+              {centralTransfers !== null && totalRevenueReceipts !== null ? (
+                <>
+                  <div><strong>Formula:</strong> Central % = (Total Central Transfers / Total Revenue Receipts) × 100</div>
+                  <div className="mt-1">
+                    = (₹{centralTransfers.toLocaleString('en-IN')} Cr / ₹{totalRevenueReceipts.toLocaleString('en-IN')} Cr) × 100 = <strong>{centralPct}%</strong>
+                  </div>
+                  <div className="text-[11px] text-sky-700 mt-1 font-sans">
+                    Where Total Central Transfers = Share of Central Taxes (₹{yearSummary.revenueReceipts.centralTaxDevolution.amountCr?.toLocaleString('en-IN')} Cr) + Grants-in-Aid (₹{yearSummary.revenueReceipts.centralGrants.amountCr?.toLocaleString('en-IN')} Cr).
+                  </div>
+                </>
+              ) : (
+                <div>Formula components not fully published for this fiscal year.</div>
+              )}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -692,9 +799,7 @@ export default function BudgetDashboard() {
             <div className="rounded-xl border border-neutral-200 bg-[#faf9f6] p-4 space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="font-bold text-sm text-neutral-900">State&apos;s Own Resources</h3>
-                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-900">
-                  Self-Generated
-                </span>
+                <ConfidenceBadge confidence={yearSummary.revenueReceipts.totalStateOwn.confidence} />
               </div>
               <div className="text-2xl font-bold text-neutral-900">
                 {formatAmount(yearSummary.revenueReceipts.totalStateOwn.amountCr)}
@@ -719,9 +824,7 @@ export default function BudgetDashboard() {
             <div className="rounded-xl border border-neutral-200 bg-[#faf9f6] p-4 space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="font-bold text-sm text-neutral-900">Union Government Transfers</h3>
-                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-sky-100 text-sky-900">
-                  Devolution & Grants
-                </span>
+                <ConfidenceBadge confidence={yearSummary.revenueReceipts.totalCentralTransfers.confidence} />
               </div>
               <div className="text-2xl font-bold text-neutral-900">
                 {formatAmount(yearSummary.revenueReceipts.totalCentralTransfers.amountCr)}
@@ -734,7 +837,7 @@ export default function BudgetDashboard() {
                   </strong>
                 </li>
                 <li className="flex justify-between">
-                  <span>Grants-in-Aid from Centre (CSS, disaster relief, local bodies):</span>
+                  <span>Grants-in-Aid from Centre (Centrally Sponsored Schemes, disaster relief):</span>
                   <strong className="text-neutral-900">
                     {formatAmount(yearSummary.revenueReceipts.centralGrants.amountCr)}
                   </strong>
@@ -746,7 +849,7 @@ export default function BudgetDashboard() {
           <div className="rounded-xl bg-neutral-50 p-4 border border-neutral-200 text-xs text-neutral-600 space-y-1.5">
             <div className="font-semibold text-neutral-900">Data Rule on Sector Splits:</div>
             <p>
-              While macro transfers are audited in Annual Financial Statements (AFS) and CAG Accounts, sector-level splits (such as CSS allocations for specific urban projects) are presented only when directly published in Demand volumes. We never derive or guess sector splits where official accounts combine them into block grants.
+              While macro transfers are audited in Annual Financial Statements and Budget Overview Table 1, sector-level splits (such as CSS allocations for specific infrastructure schemes) are presented only when directly published in Demand volumes. We do not speculate or extrapolate sector splits where official accounts combine them into block grants.
             </p>
           </div>
         </div>
@@ -760,7 +863,7 @@ export default function BudgetDashboard() {
               Department & Demand for Grants Mapping
             </h2>
             <p className="text-xs text-neutral-500 mt-1">
-              How individual State Government departments and legislative demand numbers map into our five standard sectors.
+              How individual State Government departments and legislative demand numbers map into our standard sectors, citing official Demand summary pages.
             </p>
           </div>
 
@@ -771,7 +874,7 @@ export default function BudgetDashboard() {
                   <th className="py-2 pr-3 font-semibold">Demand #</th>
                   <th className="py-2 px-3 font-semibold">Standard Sector</th>
                   <th className="py-2 px-3 font-semibold">Department Name</th>
-                  <th className="py-2 pl-3 font-semibold">Scope & Inclusions</th>
+                  <th className="py-2 pl-3 font-semibold">Scope & Source Citation</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-100">
@@ -787,7 +890,7 @@ export default function BudgetDashboard() {
                       {d.departmentName}
                     </td>
                     <td className="py-2.5 pl-3 text-neutral-600">
-                      {d.notes || '—'}
+                      {d.notes || d.sourceDocument || '—'}
                     </td>
                   </tr>
                 ))}
@@ -802,7 +905,7 @@ export default function BudgetDashboard() {
         <div className="space-y-1">
           <h3 className="text-sm font-semibold text-neutral-900">Spot an error or missing budget table?</h3>
           <p className="text-xs text-neutral-500">
-            All data points cite official Finance Department volumes and CAG audit reports. If you find a discrepancy with an official gazette, report it with page number.
+            All data points cite official Karnataka Finance Department volumes. If you find a discrepancy with an official gazette, report it with page and table number.
           </p>
         </div>
         <Link

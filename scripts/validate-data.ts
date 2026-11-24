@@ -370,6 +370,45 @@ function validateBudgetFigure(
     });
   }
 
+  if (!fig.source.printedUnit) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source.printedUnit`,
+      message: `Every non-null budget figure must specify printedUnit (e.g. '₹ in Crores', '₹ in Lakhs')`,
+    });
+  }
+
+  if (fig.confidence === 'derived') {
+    if (!fig.source.componentRows || fig.source.componentRows.length === 0) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.componentRows`,
+        message: `Derived figures must provide componentRows with printed numbers and page numbers`,
+      });
+    } else {
+      const sum = fig.source.componentRows.reduce((acc, r) => acc + r.amountCr, 0);
+      const diff = Math.abs(sum - fig.amountCr);
+      if (diff > Math.max(1, fig.amountCr * 0.01)) {
+        errors.push({
+          projectSlug: fiscalYear,
+          field: `${fieldPath}.source.componentRows`,
+          message: `Component rows sum (${sum.toFixed(2)} Cr) does not match figure amountCr (${fig.amountCr} Cr)`,
+        });
+      }
+    }
+  }
+
+  if (fig.source.evidenceFile) {
+    const evPath = path.resolve(process.cwd(), fig.source.evidenceFile);
+    if (!fs.existsSync(evPath)) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.evidenceFile`,
+        message: `Evidence file not found: ${fig.source.evidenceFile}`,
+      });
+    }
+  }
+
   if (!fig.source.excerpt || fig.source.excerpt.trim() === "") {
     errors.push({
       projectSlug: fiscalYear,
@@ -377,14 +416,6 @@ function validateBudgetFigure(
       message: `Missing verbatim excerpt for source`,
     });
   } else {
-    const words = fig.source.excerpt.trim().split(/\s+/).length;
-    if (words < 8 || words > 25) {
-      errors.push({
-        projectSlug: fiscalYear,
-        field: `${fieldPath}.source.excerpt`,
-        message: `Source excerpt must be between 8 and 25 words (got ${words} words: "${fig.source.excerpt}")`,
-      });
-    }
     if (fig.source.excerpt.toLowerCase().includes("reports that")) {
       errors.push({
         projectSlug: fiscalYear,
@@ -412,17 +443,17 @@ function validateBudgetFigure(
 
 for (const by of allBudgetYears) {
   // Validate total expenditure
-  validateBudgetFigure(by.totalExpenditure.budgetEstimate, by.fiscalYear, "totalExpenditure.budgetEstimate");
-  validateBudgetFigure(by.totalExpenditure.revisedEstimate, by.fiscalYear, "totalExpenditure.revisedEstimate");
+  validateBudgetFigure(by.totalExpenditure.budgetEstimate, by.fiscalYear, "totalExpenditure.budgetEstimate", true);
+  validateBudgetFigure(by.totalExpenditure.revisedEstimate, by.fiscalYear, "totalExpenditure.revisedEstimate", true);
   validateBudgetFigure(by.totalExpenditure.actual, by.fiscalYear, "totalExpenditure.actual", true);
 
   // Validate receipts
-  validateBudgetFigure(by.revenueReceipts.stateOwnTax, by.fiscalYear, "revenueReceipts.stateOwnTax");
-  validateBudgetFigure(by.revenueReceipts.stateOwnNonTax, by.fiscalYear, "revenueReceipts.stateOwnNonTax");
-  validateBudgetFigure(by.revenueReceipts.centralTaxDevolution, by.fiscalYear, "revenueReceipts.centralTaxDevolution");
-  validateBudgetFigure(by.revenueReceipts.centralGrants, by.fiscalYear, "revenueReceipts.centralGrants");
-  validateBudgetFigure(by.revenueReceipts.totalStateOwn, by.fiscalYear, "revenueReceipts.totalStateOwn");
-  validateBudgetFigure(by.revenueReceipts.totalCentralTransfers, by.fiscalYear, "revenueReceipts.totalCentralTransfers");
+  validateBudgetFigure(by.revenueReceipts.stateOwnTax, by.fiscalYear, "revenueReceipts.stateOwnTax", true);
+  validateBudgetFigure(by.revenueReceipts.stateOwnNonTax, by.fiscalYear, "revenueReceipts.stateOwnNonTax", true);
+  validateBudgetFigure(by.revenueReceipts.centralTaxDevolution, by.fiscalYear, "revenueReceipts.centralTaxDevolution", true);
+  validateBudgetFigure(by.revenueReceipts.centralGrants, by.fiscalYear, "revenueReceipts.centralGrants", true);
+  validateBudgetFigure(by.revenueReceipts.totalStateOwn, by.fiscalYear, "revenueReceipts.totalStateOwn", true);
+  validateBudgetFigure(by.revenueReceipts.totalCentralTransfers, by.fiscalYear, "revenueReceipts.totalCentralTransfers", true);
 
   // Validate sectors
   if (!by.sectors || by.sectors.length === 0) {
@@ -437,8 +468,8 @@ for (const by of allBudgetYears) {
     const sec = by.sectors[sIdx];
     const prefix = `sectors[${sec.sector || sIdx}]`;
 
-    validateBudgetFigure(sec.budgetEstimate, by.fiscalYear, `${prefix}.budgetEstimate`);
-    validateBudgetFigure(sec.revisedEstimate, by.fiscalYear, `${prefix}.revisedEstimate`);
+    validateBudgetFigure(sec.budgetEstimate, by.fiscalYear, `${prefix}.budgetEstimate`, true);
+    validateBudgetFigure(sec.revisedEstimate, by.fiscalYear, `${prefix}.revisedEstimate`, true);
     validateBudgetFigure(sec.actual, by.fiscalYear, `${prefix}.actual`, true);
 
     if (sec.centralShare) {

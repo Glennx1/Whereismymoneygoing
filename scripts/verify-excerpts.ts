@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { projects } from "../src/data/projects/index";
-import { Article } from "../src/lib/types";
+import { allBudgetYears } from "../src/data/budget/index";
+import { Article, BudgetFigure } from "../src/lib/types";
 
 interface ArticleItem {
   projectSlug: string;
@@ -140,6 +141,78 @@ async function runPool(concurrency: number) {
   return results;
 }
 
+function verifyBudgetEvidence(): { passed: number; failed: number; errors: string[] } {
+  console.log(`\n==================================================`);
+  console.log(`  Karnataka Budget Evidence & Verbatim Substring Verifier`);
+  console.log(`==================================================\n`);
+
+  let passed = 0;
+  let failed = 0;
+  const errors: string[] = [];
+
+  const figures: { year: string; field: string; figure: BudgetFigure }[] = [];
+
+  for (const by of allBudgetYears) {
+    if (by.totalExpenditure.budgetEstimate.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'totalExpenditure.BE', figure: by.totalExpenditure.budgetEstimate });
+    if (by.totalExpenditure.revisedEstimate.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'totalExpenditure.RE', figure: by.totalExpenditure.revisedEstimate });
+    if (by.totalExpenditure.actual.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'totalExpenditure.Actual', figure: by.totalExpenditure.actual });
+
+    if (by.revenueReceipts.stateOwnTax.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.stateOwnTax', figure: by.revenueReceipts.stateOwnTax });
+    if (by.revenueReceipts.stateOwnNonTax.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.stateOwnNonTax', figure: by.revenueReceipts.stateOwnNonTax });
+    if (by.revenueReceipts.centralTaxDevolution.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.centralTaxDevolution', figure: by.revenueReceipts.centralTaxDevolution });
+    if (by.revenueReceipts.centralGrants.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.centralGrants', figure: by.revenueReceipts.centralGrants });
+    if (by.revenueReceipts.totalStateOwn.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.totalStateOwn', figure: by.revenueReceipts.totalStateOwn });
+    if (by.revenueReceipts.totalCentralTransfers.amountCr !== null) figures.push({ year: by.fiscalYear, field: 'receipts.totalCentralTransfers', figure: by.revenueReceipts.totalCentralTransfers });
+
+    for (const sec of by.sectors) {
+      if (sec.budgetEstimate.amountCr !== null) figures.push({ year: by.fiscalYear, field: `sectors[${sec.sector}].BE`, figure: sec.budgetEstimate });
+      if (sec.revisedEstimate.amountCr !== null) figures.push({ year: by.fiscalYear, field: `sectors[${sec.sector}].RE`, figure: sec.revisedEstimate });
+      if (sec.actual.amountCr !== null) figures.push({ year: by.fiscalYear, field: `sectors[${sec.sector}].Actual`, figure: sec.actual });
+    }
+  }
+
+  for (const item of figures) {
+    const { year, field, figure } = item;
+    const src = figure.source;
+
+    if (!src.excerpt || src.excerpt.trim() === '') {
+      errors.push(`[${year} ${field}] Missing verbatim excerpt`);
+      failed++;
+      continue;
+    }
+
+    if (!src.evidenceFile) {
+      errors.push(`[${year} ${field}] Missing evidenceFile path in docs/budget-evidence/`);
+      failed++;
+      continue;
+    }
+
+    const evidencePath = path.resolve(process.cwd(), src.evidenceFile);
+    if (!fs.existsSync(evidencePath)) {
+      errors.push(`[${year} ${field}] Evidence file not found: ${src.evidenceFile}`);
+      failed++;
+      continue;
+    }
+
+    const evidenceContent = fs.readFileSync(evidencePath, 'utf8');
+    const normEvidence = normalizeText(evidenceContent);
+    const normExcerpt = normalizeText(src.excerpt);
+
+    const stripCommas = (s: string) => s.replace(/,/g, '');
+    const cleanEvidence = stripCommas(normEvidence);
+    const cleanExcerpt = stripCommas(normExcerpt);
+
+    if (normEvidence.includes(normExcerpt) || cleanEvidence.includes(cleanExcerpt)) {
+      passed++;
+    } else {
+      errors.push(`[${year} ${field}] Excerpt is NOT a substring of evidence file ${src.evidenceFile}!\n    Excerpt: "${src.excerpt}"`);
+      failed++;
+    }
+  }
+
+  return { passed, failed, errors };
+}
+
 async function main() {
   const results = await runPool(6);
 
@@ -173,9 +246,25 @@ async function main() {
       console.log(`    ↳ Reason: ${f.reason}`);
     }
     process.exit(1);
-  } else {
-    console.log(`\n✅ All verbatim excerpts verified successfully!`);
   }
+
+  // Budget Evidence Verification
+  const budgetCheck = verifyBudgetEvidence();
+  console.log(`📊 BUDGET EVIDENCE VERIFICATION:`);
+  console.table([
+    { Check: "Budget Excerpts Verified (Substring in Evidence)", Count: budgetCheck.passed },
+    { Check: "Budget Excerpt Mismatches / Missing Evidence", Count: budgetCheck.failed },
+  ]);
+
+  if (budgetCheck.failed > 0) {
+    console.log(`\n❌ FAILED BUDGET EVIDENCE EXCERPTS (${budgetCheck.failed}):`);
+    for (const err of budgetCheck.errors) {
+      console.log(`  • ${err}`);
+    }
+    process.exit(1);
+  }
+
+  console.log(`\n✅ All project and budget verbatim excerpts verified successfully!`);
 }
 
 main().catch((err) => {

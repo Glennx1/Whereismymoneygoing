@@ -59,7 +59,7 @@ export type RedFlagType =
  *  - reported:   stated in news or a third-party tracker, not yet matched to a primary document
  *  - unverified: no source found yet; shown with a warning
  */
-export type Confidence = 'verified' | 'reported' | 'unverified';
+export type Confidence = 'verified' | 'reported' | 'unverified' | 'derived';
 
 export interface SourceRef {
   label: string;
@@ -217,13 +217,25 @@ export interface Project {
 // Karnataka Budget vs Actual Data Model
 // -------------------------------------------------------------
 
+export interface ComponentDemandRow {
+  demandNumber?: string;
+  headOrName: string;
+  printedAmount: string; // e.g. "38,64,566.35"
+  unit: string; // e.g. "₹ in Lakhs"
+  page: string; // e.g. "Page 6"
+  amountCr: number;
+}
+
 export interface BudgetSource {
   label: string;
   url: string;
   page?: string;
   table?: string;
+  printedUnit?: string;
+  evidenceFile?: string;
   excerpt?: string;
   excerptChecked?: 'machine' | 'manual';
+  componentRows?: ComponentDemandRow[];
 }
 
 export interface BudgetFigure {
@@ -256,6 +268,7 @@ export interface DepartmentMapping {
   departmentName: string;
   demandNumber?: string;
   sector: BudgetSector;
+  sourceDocument?: string;
   notes?: string;
 }
 

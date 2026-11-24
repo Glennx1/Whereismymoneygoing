@@ -1,100 +1,61 @@
 import { DepartmentMap } from '@/lib/types';
 
 /**
- * Mapping of Karnataka Government Departments and Demands for Grants to standardized Budget Sectors.
- * Department names and grant demand numbers evolve over time across budget cycles; this mapping
- * standardizes them across fiscal years.
+ * Mapping of Karnataka Government Demands for Grants to standardized Budget Sectors.
+ * Sourced directly from Summary of Demands for Grants (Page 6) in official Demands for Grants volumes.
  */
 export const departmentMappings: DepartmentMap = [
   // --- EDUCATION ---
   {
-    departmentCode: 'EDN_SCH',
-    departmentName: 'Department of Primary and Secondary Education / School Education and Literacy',
+    departmentCode: 'DEMAND_17',
+    departmentName: 'Education (²PÀët)',
     demandNumber: '17',
     sector: 'Education',
-    notes: 'Includes elementary education, secondary schools, Samagra Shikshana, and Akshara Dasoha mid-day meal scheme.',
-  },
-  {
-    departmentCode: 'EDN_HGH',
-    departmentName: 'Department of Higher Education',
-    demandNumber: '17',
-    sector: 'Education',
-    notes: 'Includes universities, collegiate education, technical education, and polytechnics.',
+    sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
+    notes: 'Covers General Education, Higher Education, and School Education and Literacy capital and revenue expenditures.',
   },
 
   // --- HEALTH ---
   {
-    departmentCode: 'HLT_FW',
-    departmentName: 'Health and Family Welfare Services',
+    departmentCode: 'DEMAND_22',
+    departmentName: 'Health and Family Welfare (DgÉÆÃUÀå ªÀÄvÀÄÛ PÀÄlÄA§ PÀ®Áåt)',
     demandNumber: '22',
     sector: 'Health',
-    notes: 'Includes urban and rural allopathic hospitals, primary health centres, Ayushman Bharat - Arogya Karnataka, and drug logistics.',
-  },
-  {
-    departmentCode: 'HLT_MED',
-    departmentName: 'Department of Medical Education',
-    demandNumber: '22',
-    sector: 'Health',
-    notes: 'Includes government medical colleges, autonomous super-speciality institutes (e.g. Jayadeva, Kidwai), and nursing directorate.',
+    sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
+    notes: 'Covers public health, family welfare, district hospitals, and primary health centre networks.',
   },
 
   // --- URBAN DEVELOPMENT ---
   {
-    departmentCode: 'URB_DEV',
-    departmentName: 'Urban Development Department (Municipal Administration & Town Planning)',
+    departmentCode: 'DEMAND_19',
+    departmentName: 'Urban Development and Housing (£ÀUÀgÁ©sªÀÈ¢Þ ªÀÄvÀÄÛ ªÀ¸Àw)',
     demandNumber: '19',
     sector: 'Urban Development',
-    notes: 'Covers Directorate of Municipal Administration (DMA), urban local bodies devolution, smart cities, and AMRUT.',
-  },
-  {
-    departmentCode: 'URB_BLR',
-    departmentName: 'Bengaluru Development / BDA / BBMP Grants',
-    demandNumber: '19',
-    sector: 'Urban Development',
-    notes: 'State budget capital and revenue transfers to Bruhat Bengaluru Mahanagara Palike (BBMP) and Bangalore Development Authority (BDA).',
+    sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
+    notes: 'Covers urban local body grants, municipal administration, town planning, and state housing schemes.',
   },
 
   // --- TRANSPORT AND ROADS ---
   {
-    departmentCode: 'TRN_PWD',
-    departmentName: 'Public Works Department (PWD)',
+    departmentCode: 'DEMAND_20',
+    departmentName: 'Public Works (¯ÉÆÃPÉÆÃ¥ÀAiÉÆÃV)',
     demandNumber: '20',
     sector: 'Transport and Roads',
-    notes: 'Capital outlay on state highways, major district roads (MDRs), bridges, and communication networks.',
-  },
-  {
-    departmentCode: 'TRN_COMM',
-    departmentName: 'Transport Department (Road Transport & RTC Subsidies)',
-    demandNumber: '05',
-    sector: 'Transport and Roads',
-    notes: 'Motor vehicle regulation, road safety cell, RTC viability gap funding, and Shakthi scheme free travel reimbursements.',
-  },
-  {
-    departmentCode: 'TRN_INF',
-    departmentName: 'Infrastructure Development Department (IDD)',
-    demandNumber: '06',
-    sector: 'Transport and Roads',
-    notes: 'State equity and cost-sharing for Namma Metro (BMRCL), Bengaluru Suburban Rail (K-RIDE), railway overbridges, and regional airports.',
+    sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
+    notes: 'Covers State Highways, Major District Roads (MDRs), bridges, and road communications capital outlays.',
   },
 
   // --- WATER RESOURCES ---
   {
-    departmentCode: 'WAT_MAJ',
-    departmentName: 'Water Resources Department (Major and Medium Irrigation)',
+    departmentCode: 'DEMAND_21',
+    departmentName: 'Irrigation / Water Resources (¤ÃgÁªÀj / d® ¸ÀA¥À£ÀÆä®)',
     demandNumber: '21',
     sector: 'Water Resources',
-    notes: 'Canal systems, dam modernisation, flood control embankments, and state irrigation corporations (KBJNL, CNNL, KNNL).',
-  },
-  {
-    departmentCode: 'WAT_MIN',
-    departmentName: 'Minor Irrigation and Ground Water Development',
-    demandNumber: '21',
-    sector: 'Water Resources',
-    notes: 'Tanks rejuvenation, check dams, watershed management, and KC Valley / HN Valley treated water lift irrigation projects.',
+    sourceDocument: 'Demands for Grants 2024-25 (Page 6), Demands for Grants 2023-24 July (Page 6), Demands for Grants 2022-23 (Page 6)',
+    notes: 'Covers major and medium irrigation canal systems, dam infrastructure, and minor irrigation works.',
   },
 ];
 
 export function getSectorDepartments(sector: string) {
   return departmentMappings.filter((m) => m.sector === sector);
 }
-

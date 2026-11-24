@@ -9,13 +9,12 @@
  *   npx tsx scripts/budget/extract-budget.ts [urlOrPath] [--demand <num>] [--hash-only]
  */
 
+import { execSync } from 'child_process';
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
 // @ts-ignore
 import { PDFParse } from 'pdf-parse';
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 export interface ExtractedTableData {
   sourceUrl: string;
@@ -34,17 +33,27 @@ export interface ExtractedTableData {
 export async function fetchAndHashBuffer(urlOrPath: string): Promise<{ buffer: Buffer; sha256: string }> {
   let buffer: Buffer;
   if (urlOrPath.startsWith('http://') || urlOrPath.startsWith('https://')) {
-    const res = await fetch(urlOrPath, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      },
-    });
-    if (!res.ok) {
-      throw new Error(`Failed to fetch ${urlOrPath}: HTTP ${res.status}`);
+    try {
+      const res = await fetch(urlOrPath, {
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        },
+      });
+      if (!res.ok) {
+        throw new Error(`Failed to fetch ${urlOrPath}: HTTP ${res.status}`);
+      }
+      const arrayBuffer = await res.arrayBuffer();
+      buffer = Buffer.from(arrayBuffer);
+    } catch {
+      // Fallback to system curl.exe using Windows OS certificate store with strict TLS verification (no -k flag)
+      const tmpFile = path.resolve(process.cwd(), '.tmp_download.bin');
+      execSync(`curl.exe -sSL "${urlOrPath}" -o "${tmpFile}"`);
+      buffer = fs.readFileSync(tmpFile);
+      if (fs.existsSync(tmpFile)) {
+        fs.unlinkSync(tmpFile);
+      }
     }
-    const arrayBuffer = await res.arrayBuffer();
-    buffer = Buffer.from(arrayBuffer);
   } else {
     buffer = fs.readFileSync(path.resolve(process.cwd(), urlOrPath));
   }
