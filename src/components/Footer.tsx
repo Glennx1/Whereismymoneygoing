@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand info */}
           <div className="space-y-2 md:col-span-1">
-            <div className="font-semibold text-neutral-900 text-sm">NammaKharcha</div>
+            <div className="font-semibold text-neutral-900 text-sm">Bengaluru Project Tracker</div>
             <p className="text-neutral-500 leading-relaxed">
               A public tracker for Bengaluru infrastructure projects, under construction. We compare published costs and timelines with progress, and show where data is missing.
             </p>
@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-neutral-400 text-[11px]">
-          <div>© {new Date().getFullYear()} NammaKharcha • Independent public project tracker</div>
+          <div>© {new Date().getFullYear()} Bengaluru Project Tracker • Independent public project tracker</div>
           <div>Bengaluru, Karnataka</div>
         </div>
       </div>

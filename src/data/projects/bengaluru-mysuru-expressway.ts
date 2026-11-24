@@ -178,6 +178,4 @@ export const bengaluruMysuruExpressway: Project = {
       "type": "NEWS_REPORT"
     }
   ],
-  "geometrySource": "OpenStreetMap (Overpass API - NH 275 motorway alignment)",
-  "geometryFetchDate": "2026-11-23"
 };
