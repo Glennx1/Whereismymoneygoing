@@ -3,12 +3,18 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import { Project } from "@/lib/types";
+import { projectGeometries, metroStations } from "@/data/geo";
+import { RotateCcw } from "lucide-react";
 
 interface LeafletMapInnerProps {
   projects: Project[];
   selectedProject: Project | null;
   onSelectProject: (p: Project) => void;
+  onResetView?: () => void;
 }
+
+const DEFAULT_CENTER: [number, number] = [12.9716, 77.5946];
+const DEFAULT_ZOOM = 11;
 
 export default function LeafletMapInner({
   projects,
@@ -17,33 +23,62 @@ export default function LeafletMapInner({
 }: LeafletMapInnerProps) {
   const mapRef = useRef<L.Map | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const markersRef = useRef<L.LayerGroup | null>(null);
+  const layersRef = useRef<L.LayerGroup | null>(null);
+  const stationsLayerRef = useRef<L.LayerGroup | null>(null);
 
   // Initialize Map
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
     const map = L.map(containerRef.current, {
-      center: [12.9716, 77.5946],
-      zoom: 11,
+      center: DEFAULT_CENTER,
+      zoom: DEFAULT_ZOOM,
       zoomControl: true,
       minZoom: 9,
       maxZoom: 18,
     });
 
-    // CARTO Positron Light Tiles
-    L.tileLayer(
-      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-      {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: "abcd",
-        maxZoom: 19,
-      }
-    ).addTo(map);
+    // Standard OpenStreetMap Tiles (Overridable via NEXT_PUBLIC_MAP_TILES_URL)
+    const tileUrl =
+      process.env.NEXT_PUBLIC_MAP_TILES_URL ||
+      "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 
-    const layerGroup = L.layerGroup().addTo(map);
-    markersRef.current = layerGroup;
+    L.tileLayer(tileUrl, {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Metro Stations Layer (from OSM)
+    const stationsLayer = L.layerGroup().addTo(map);
+    stationsLayerRef.current = stationsLayer;
+
+    if (metroStations && Array.isArray(metroStations.features)) {
+      metroStations.features.forEach((st: any) => {
+        if (!st.geometry || !st.geometry.coordinates) return;
+        const [lng, lat] = st.geometry.coordinates;
+
+        const stationMarker = L.circleMarker([lat, lng], {
+          radius: 3.5,
+          fillColor: "#64748b",
+          fillOpacity: 0.8,
+          color: "#ffffff",
+          weight: 1.5,
+        });
+
+        stationMarker.bindTooltip(
+          `<div style="font-family:system-ui,sans-serif;font-size:11px;font-weight:500;">
+            🚉 ${st.properties?.name || "Metro Station"}
+          </div>`,
+          { direction: "top", offset: [0, -4] }
+        );
+
+        stationMarker.addTo(stationsLayer);
+      });
+    }
+
+    const layersGroup = L.layerGroup().addTo(map);
+    layersRef.current = layersGroup;
     mapRef.current = map;
 
     return () => {
@@ -52,13 +87,15 @@ export default function LeafletMapInner({
     };
   }, []);
 
-  // Update Layers & Polylines when projects change
+  // Update Layers & Corridors when projects change
   useEffect(() => {
     const map = mapRef.current;
-    const layerGroup = markersRef.current;
-    if (!map || !layerGroup) return;
+    const layersGroup = layersRef.current;
+    if (!map || !layersGroup) return;
 
-    layerGroup.clearLayers();
+    layersGroup.clearLayers();
+
+    const bounds: [number, number][] = [];
 
     projects.forEach((proj) => {
       let color = "#f59e0b"; // ongoing: amber
@@ -68,29 +105,83 @@ export default function LeafletMapInner({
 
       const isSelected = selectedProject?.id === proj.id;
 
-      // 1. Draw route polyline if coordinates available
-      if (proj.routeCoordinates && proj.routeCoordinates.length > 1) {
-        const polyline = L.polyline(proj.routeCoordinates, {
-          color: color,
-          weight: isSelected ? 5 : 3.5,
-          opacity: isSelected ? 0.95 : 0.75,
-          dashArray: proj.category === "planned" ? "6, 6" : undefined,
+      // 1. Check if real OSM GeoJSON alignment exists for this project
+      const geoData = projectGeometries[proj.slug];
+      if (geoData && geoData.features) {
+        geoData.features.forEach((feature: any) => {
+          if (
+            feature.geometry &&
+            feature.geometry.type === "LineString" &&
+            Array.isArray(feature.geometry.coordinates)
+          ) {
+            // Convert GeoJSON [lng, lat] to Leaflet [lat, lng]
+            const latLngs: [number, number][] = feature.geometry.coordinates.map(
+              (pt: [number, number]) => [pt[1], pt[0]]
+            );
+
+            if (latLngs.length > 1) {
+              bounds.push(...latLngs);
+
+              // Visible polyline
+              const polyline = L.polyline(latLngs, {
+                color: isSelected ? "#1e293b" : color,
+                weight: isSelected ? 5.5 : 3.5,
+                opacity: isSelected ? 1 : 0.8,
+                dashArray: proj.category === "planned" ? "6, 6" : undefined,
+              });
+
+              // Wide invisible hit area for easy clicking
+              const hitArea = L.polyline(latLngs, {
+                weight: 18,
+                opacity: 0,
+                color: "transparent",
+              });
+
+              const tooltipHtml = `<strong>${proj.title}</strong><br/><span style="font-size:11px;color:#666">${proj.sector} • ${proj.status.replace(/_/g, " ")}</span>`;
+
+              polyline.bindTooltip(tooltipHtml, { sticky: true });
+              hitArea.bindTooltip(tooltipHtml, { sticky: true });
+
+              const handleMouseOver = () => {
+                polyline.setStyle({
+                  weight: isSelected ? 7 : 5.5,
+                  opacity: 1,
+                  color: "#0f172a",
+                });
+              };
+
+              const handleMouseOut = () => {
+                polyline.setStyle({
+                  weight: isSelected ? 5.5 : 3.5,
+                  opacity: isSelected ? 1 : 0.8,
+                  color: isSelected ? "#1e293b" : color,
+                });
+              };
+
+              const handleClick = () => {
+                onSelectProject(proj);
+              };
+
+              polyline.on("mouseover", handleMouseOver);
+              polyline.on("mouseout", handleMouseOut);
+              polyline.on("click", handleClick);
+
+              hitArea.on("mouseover", handleMouseOver);
+              hitArea.on("mouseout", handleMouseOut);
+              hitArea.on("click", handleClick);
+
+              polyline.addTo(layersGroup);
+              hitArea.addTo(layersGroup);
+            }
+          }
         });
-
-        polyline.on("click", () => {
-          onSelectProject(proj);
-        });
-
-        polyline.bindTooltip(
-          `<strong>${proj.title}</strong><br/><span style="font-size:11px;color:#666">${proj.sector} • ${proj.status}</span>`,
-          { sticky: true }
-        );
-
-        polyline.addTo(layerGroup);
       }
 
       // 2. Draw point marker
-      const marker = L.circleMarker([proj.coordinates.lat, proj.coordinates.lng], {
+      const markerPos: [number, number] = [proj.coordinates.lat, proj.coordinates.lng];
+      bounds.push(markerPos);
+
+      const marker = L.circleMarker(markerPos, {
         radius: isSelected ? 10 : 7,
         fillColor: color,
         fillOpacity: isSelected ? 1 : 0.85,
@@ -100,7 +191,7 @@ export default function LeafletMapInner({
 
       marker.on("click", () => {
         onSelectProject(proj);
-        map.panTo([proj.coordinates.lat, proj.coordinates.lng], { animate: true });
+        map.panTo(markerPos, { animate: true });
       });
 
       marker.bindTooltip(
@@ -113,8 +204,16 @@ export default function LeafletMapInner({
         { direction: "top", offset: [0, -6] }
       );
 
-      marker.addTo(layerGroup);
+      marker.addTo(layersGroup);
     });
+
+    // Fit to bounds on filter change if multiple coordinates exist
+    if (bounds.length > 1) {
+      try {
+        const leafletBounds = L.latLngBounds(bounds);
+        map.fitBounds(leafletBounds, { padding: [35, 35], maxZoom: 14 });
+      } catch (err) {}
+    }
   }, [projects, selectedProject, onSelectProject]);
 
   // Center on selected project when it changes
@@ -126,5 +225,25 @@ export default function LeafletMapInner({
     );
   }, [selectedProject]);
 
-  return <div ref={containerRef} className="w-full h-full min-h-[440px] z-0" />;
+  const handleReset = () => {
+    if (mapRef.current) {
+      mapRef.current.setView(DEFAULT_CENTER, DEFAULT_ZOOM, { animate: true });
+    }
+  };
+
+  return (
+    <div className="relative w-full h-full min-h-[60vh] lg:min-h-[460px]">
+      <div ref={containerRef} className="w-full h-full min-h-[60vh] lg:min-h-[460px] z-0" />
+
+      {/* Reset View Button */}
+      <button
+        onClick={handleReset}
+        title="Reset map view"
+        className="absolute top-3 right-3 z-[1000] bg-white/95 hover:bg-white text-neutral-700 text-xs font-medium px-2.5 py-1.5 rounded-lg shadow-sm border border-neutral-200/90 flex items-center gap-1.5 transition-colors"
+      >
+        <RotateCcw className="h-3.5 w-3.5 text-neutral-500" />
+        <span>Reset View</span>
+      </button>
+    </div>
+  );
 }

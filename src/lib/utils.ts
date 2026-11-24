@@ -8,8 +8,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export const NOT_AVAILABLE = "Not available";
 
-/** Reference audit date: November 2026 */
-export const REFERENCE_DATE = "2026-11-21";
+/** Build & audit date: 23 November 2026 */
+export const BUILD_DATE = "2026-11-23";
+export const REFERENCE_DATE = BUILD_DATE;
 
 /**
  * Format amounts in Indian Crores with ₹ symbol.
@@ -44,27 +45,54 @@ export function isStale(asOf?: string | null): boolean {
 }
 
 /**
- * Delay between the original deadline and the current target.
- * Returns null when either date is unknown, so the UI can say so instead of guessing.
+ * Delay between original deadline and delivery target.
+ * For unfinished projects: max(current target, build date) - original deadline,
+ * labelled "overdue since <date>" when target has passed.
  */
 export function calculateDelayString(
   originalDateStr: string | null,
-  revisedDateStr: string | null
+  revisedDateStr: string | null,
+  isCompleted?: boolean,
+  completionDate?: string | null
 ): string | null {
-  if (!originalDateStr || !revisedDateStr) return null;
+  if (!originalDateStr) return null;
+
+  // Completed projects: measured to completion date
+  if (isCompleted && completionDate) {
+    const orig = new Date(originalDateStr).getTime();
+    const done = new Date(completionDate).getTime();
+    const diffDays = Math.round((done - orig) / (1000 * 60 * 60 * 24));
+    if (diffDays <= 0) return "Completed on Schedule";
+
+    const years = Math.floor(diffDays / 365);
+    const months = Math.floor((diffDays % 365) / 30.4);
+    if (years > 0) return `Completed with ${years} yr ${months} mo delay`;
+    return `Completed with ${months} mo delay`;
+  }
+
+  if (!revisedDateStr) return null;
+
   const orig = new Date(originalDateStr).getTime();
   const rev = new Date(revisedDateStr).getTime();
-  const diffDays = Math.round((rev - orig) / (1000 * 60 * 60 * 24));
+  const build = new Date(BUILD_DATE).getTime();
+
+  // If current target has already passed relative to build date, count delay to build date
+  const isOverdue = rev < build;
+  const effectiveEnd = Math.max(rev, build);
+  const diffDays = Math.round((effectiveEnd - orig) / (1000 * 60 * 60 * 24));
 
   if (diffDays <= 0) return "On Schedule";
 
   const years = Math.floor(diffDays / 365);
-  const months = Math.floor((diffDays % 365) / 30);
+  const months = Math.floor((diffDays % 365) / 30.4);
+  const delayStr = years > 0 ? `${years} yr ${months} mo delay` : `${months} mo delay`;
 
-  if (years > 0) {
-    return `${years} yr ${months} mo delay`;
+  if (isOverdue) {
+    const targetFormatted = new Date(revisedDateStr).toLocaleDateString("en-IN", { month: "short", year: "numeric" });
+    return `Overdue since ${targetFormatted} (${delayStr} as of ${BUILD_DATE})`;
   }
-  return `${months} months delay`;
+
+  return delayStr;
 }
 
 /**
@@ -88,9 +116,13 @@ export function bestCostCr(p: Project): number | null {
 /**
  * Derived estimated spend: cost × progress%.
  * Labeled in UI: "Estimate (cost × reported progress). Not an official payment figure."
- * Returns null if either cost or progress% is null.
+ * Returns null for completed projects or if either cost or progress% is null.
  */
 export function calculateEstimatedSpentCr(p: Project): number | null {
+  // Rule 6: Never compute derived spend for completed projects
+  if (p.status === "completed" || p.category === "completed") {
+    return null;
+  }
   const cost = bestCostCr(p);
   if (cost === null || p.physicalProgressPct === null || p.physicalProgressPct === undefined) {
     return null;
@@ -123,4 +155,26 @@ export function statusLabel(status: Project["status"]): string {
     default:
       return "Announced";
   }
+}
+
+/**
+ * Great-circle distance between two geographic coordinates in kilometers.
+ */
+export function haversineDistanceKm(
+  lat1: number,
+  lon1: number,
+  lat2: number,
+  lon2: number
+): number {
+  const R = 6371; // Earth's mean radius in km
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return Math.round(R * c * 10) / 10;
 }

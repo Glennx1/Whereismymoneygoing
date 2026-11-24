@@ -13,9 +13,10 @@ import { Clock, TrendingUp, ArrowRight, MapPin } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
+  distanceKm?: number;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, distanceKm }: ProjectCardProps) {
   const isCompleted = project.status === "completed";
   const delayStr = calculateDelayString(project.originalDeadline, project.revisedDeadline);
   const isDelayed = delayStr !== null && delayStr !== "On Schedule" && !isCompleted;
@@ -82,30 +83,41 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </p>
 
         {/* Location */}
-        <div className="mt-3 flex items-center gap-1.5 text-xs text-neutral-400">
-          <MapPin className="h-3.5 w-3.5 shrink-0 text-neutral-400" />
-          <span className="truncate">{project.wardOrZone}</span>
+        <div className="mt-3 flex items-center justify-between gap-1.5 text-xs text-neutral-400">
+          <div className="flex items-center gap-1.5 truncate">
+            <MapPin className="h-3.5 w-3.5 shrink-0 text-neutral-400" />
+            <span className="truncate">{project.wardOrZone}</span>
+          </div>
+          {distanceKm !== undefined && (
+            <span className="shrink-0 text-[10px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
+              {distanceKm < 1 ? `${Math.round(distanceKm * 1000)}m away` : `${distanceKm.toFixed(1)} km away`}
+            </span>
+          )}
         </div>
 
         {/* 3-Box Stats */}
         <div className="mt-4 grid grid-cols-3 gap-2 rounded-xl bg-[#faf9f6] border border-neutral-200/60 p-3 text-center">
           <div>
             <div className="text-[10px] uppercase font-medium text-neutral-400">
-              {isCompleted ? "Final Cost" : "Cost"}
+              {isCompleted ? "Final Cost (Reported)" : "Reported Cost"}
             </div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
               {formatCrores(bestCostCr(project))}
             </div>
           </div>
           <div>
-            <div className="text-[10px] uppercase font-medium text-neutral-400">Paid Out</div>
+            <div className="text-[10px] uppercase font-medium text-neutral-400">
+              {isCompleted ? "Paid Out" : "Spent (Est.)"}
+            </div>
             <div className="mt-0.5 text-xs sm:text-sm font-semibold text-neutral-900 truncate">
-              {project.actualDisbursedCr !== null ? (
+              {isCompleted ? (
+                formatCrores(bestCostCr(project))
+              ) : project.actualDisbursedCr !== null ? (
                 formatCrores(project.actualDisbursedCr)
               ) : estimatedSpent !== null ? (
-                <span title="Estimated from progress">~{formatCrores(estimatedSpent)}</span>
+                <span title="Estimated from cost × progress">~{formatCrores(estimatedSpent)}</span>
               ) : (
-                <span className="text-neutral-400 text-xs">Unpublished</span>
+                <span className="text-neutral-400 text-xs">Not available</span>
               )}
             </div>
           </div>

@@ -77,8 +77,11 @@ export type CheckedField =
   | 'status'
   | 'contractors';
 
+export type CostBasis = 'sanctioned' | 'revised' | 'final' | 'estimate';
+
 export interface FieldCheck {
   confidence: Confidence;
+  costBasis?: CostBasis;
   /** What we found, including conflicts between sources */
   note: string;
   sources: SourceRef[];
@@ -140,6 +143,9 @@ export interface Article {
   url: string;
   claim: string; // Which fact or figure it supports
   isOfficial?: boolean;
+  checkedOn?: string; // ISO date YYYY-MM-DD
+  excerpt?: string; // Verbatim quote, 25 words or fewer, supporting the claim
+  excerptChecked?: "machine" | "manual";
 }
 
 export interface FundingSplit {
@@ -189,7 +195,8 @@ export interface Project {
     lat: number;
     lng: number;
   };
-  routeCoordinates?: [number, number][];
+  geometrySource?: string;
+  geometryFetchDate?: string;
 
   overview: string;
   dataQuality: DataQuality;
