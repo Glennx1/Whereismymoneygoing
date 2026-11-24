@@ -59,6 +59,16 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <Link href="/budget" className="hover:text-neutral-900">
+                  Karnataka Budget vs Actual
+                </Link>
+              </li>
+              <li>
+                <Link href="/feedback" className="hover:text-neutral-900">
+                  Report Data Error / Feedback
+                </Link>
+              </li>
+              <li>
                 <Link href="/methodology" className="hover:text-neutral-900">
                   How we check data
                 </Link>

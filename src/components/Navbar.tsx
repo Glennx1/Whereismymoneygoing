@@ -10,10 +10,12 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Projects" },
+    { href: "/budget", label: "Budget" },
     { href: "/insights", label: "Insights" },
     { href: "/map", label: "Map View" },
     { href: "/red-flags", label: "Delays & Warnings" },
     { href: "/agencies", label: "Departments" },
+    { href: "/feedback", label: "Feedback" },
   ];
 
   return (

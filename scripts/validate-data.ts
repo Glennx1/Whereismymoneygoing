@@ -1,6 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { projects } from "../src/data/projects/index";
+import { allBudgetYears } from "../src/data/budget/index";
+import { BudgetFigure, SectorYear } from "../src/lib/types";
 
 interface ValidationError {
   projectSlug: string;
@@ -293,6 +295,231 @@ for (const project of projects) {
     }
   }
 }
+
+// ---------------------------------------------------------------------
+// 7. Karnataka Budget Data Validation
+// ---------------------------------------------------------------------
+console.log(`\n🔍 Validating Karnataka Budget datasets across ${allBudgetYears.length} fiscal years...`);
+
+function validateBudgetFigure(
+  fig: BudgetFigure | undefined,
+  fiscalYear: string,
+  fieldPath: string,
+  allowNull = false
+) {
+  if (!fig) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: fieldPath,
+      message: `Missing budget figure`,
+    });
+    return;
+  }
+
+  if (fig.amountCr === null) {
+    if (!allowNull) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.amountCr`,
+        message: `Amount cannot be null for this field`,
+      });
+    }
+    // If null is allowed (e.g. audited actuals lag), still require source citation explaining status
+    if (!fig.source || !fig.source.url) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source`,
+        message: `Null figure must still cite source explaining why account is pending`,
+      });
+    }
+    return;
+  }
+
+  if (typeof fig.amountCr !== "number" || isNaN(fig.amountCr)) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.amountCr`,
+      message: `Invalid number: ${fig.amountCr}`,
+    });
+  }
+
+  if (!fig.source) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source`,
+      message: `Missing source citation`,
+    });
+    return;
+  }
+
+  if (!fig.source.url || !fig.source.url.startsWith("http")) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source.url`,
+      message: `Invalid or missing source URL: ${fig.source.url}`,
+    });
+  } else {
+    checkUrlNotDead(fig.source.url, fiscalYear, `${fieldPath}.source.url`);
+  }
+
+  if (!fig.source.page && !fig.source.table) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source.page`,
+      message: `Every budget figure must specify page or table number`,
+    });
+  }
+
+  if (!fig.source.printedUnit) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source.printedUnit`,
+      message: `Every non-null budget figure must specify printedUnit (e.g. '₹ in Crores', '₹ in Lakhs')`,
+    });
+  }
+
+  if (fig.confidence === 'derived') {
+    if (!fig.source.componentRows || fig.source.componentRows.length === 0) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.componentRows`,
+        message: `Derived figures must provide componentRows with printed numbers and page numbers`,
+      });
+    } else {
+      const sum = fig.source.componentRows.reduce((acc, r) => acc + r.amountCr, 0);
+      const diff = Math.abs(sum - fig.amountCr);
+      if (diff > Math.max(1, fig.amountCr * 0.01)) {
+        errors.push({
+          projectSlug: fiscalYear,
+          field: `${fieldPath}.source.componentRows`,
+          message: `Component rows sum (${sum.toFixed(2)} Cr) does not match figure amountCr (${fig.amountCr} Cr)`,
+        });
+      }
+    }
+  }
+
+  if (fig.source.evidenceFile) {
+    const evPath = path.resolve(process.cwd(), fig.source.evidenceFile);
+    if (!fs.existsSync(evPath)) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.evidenceFile`,
+        message: `Evidence file not found: ${fig.source.evidenceFile}`,
+      });
+    }
+  }
+
+  if (!fig.source.excerpt || fig.source.excerpt.trim() === "") {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.source.excerpt`,
+      message: `Missing verbatim excerpt for source`,
+    });
+  } else {
+    if (fig.source.excerpt.toLowerCase().includes("reports that")) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.excerpt`,
+        message: `Source excerpt contains forbidden pattern 'reports that': "${fig.source.excerpt}"`,
+      });
+    }
+    if (fig.source.excerpt.trim().endsWith("...") || fig.source.excerpt.trim().endsWith("…")) {
+      errors.push({
+        projectSlug: fiscalYear,
+        field: `${fieldPath}.source.excerpt`,
+        message: `Source excerpt must not end in truncation '...': "${fig.source.excerpt}"`,
+      });
+    }
+  }
+
+  if (!fig.asOf || !ISO_DATE_REGEX.test(fig.asOf)) {
+    errors.push({
+      projectSlug: fiscalYear,
+      field: `${fieldPath}.asOf`,
+      message: `Invalid ISO date: ${fig.asOf}`,
+    });
+  }
+}
+
+for (const by of allBudgetYears) {
+  // Validate total expenditure
+  validateBudgetFigure(by.totalExpenditure.budgetEstimate, by.fiscalYear, "totalExpenditure.budgetEstimate", true);
+  validateBudgetFigure(by.totalExpenditure.revisedEstimate, by.fiscalYear, "totalExpenditure.revisedEstimate", true);
+  validateBudgetFigure(by.totalExpenditure.actual, by.fiscalYear, "totalExpenditure.actual", true);
+
+  // Validate receipts
+  validateBudgetFigure(by.revenueReceipts.stateOwnTax, by.fiscalYear, "revenueReceipts.stateOwnTax", true);
+  validateBudgetFigure(by.revenueReceipts.stateOwnNonTax, by.fiscalYear, "revenueReceipts.stateOwnNonTax", true);
+  validateBudgetFigure(by.revenueReceipts.centralTaxDevolution, by.fiscalYear, "revenueReceipts.centralTaxDevolution", true);
+  validateBudgetFigure(by.revenueReceipts.centralGrants, by.fiscalYear, "revenueReceipts.centralGrants", true);
+  validateBudgetFigure(by.revenueReceipts.totalStateOwn, by.fiscalYear, "revenueReceipts.totalStateOwn", true);
+  validateBudgetFigure(by.revenueReceipts.totalCentralTransfers, by.fiscalYear, "revenueReceipts.totalCentralTransfers", true);
+
+  // Validate sectors
+  if (!by.sectors || by.sectors.length === 0) {
+    errors.push({
+      projectSlug: by.fiscalYear,
+      field: "sectors",
+      message: `No sector records found`,
+    });
+  }
+
+  for (let sIdx = 0; sIdx < by.sectors.length; sIdx++) {
+    const sec = by.sectors[sIdx];
+    const prefix = `sectors[${sec.sector || sIdx}]`;
+
+    validateBudgetFigure(sec.budgetEstimate, by.fiscalYear, `${prefix}.budgetEstimate`, true);
+    validateBudgetFigure(sec.revisedEstimate, by.fiscalYear, `${prefix}.revisedEstimate`, true);
+    validateBudgetFigure(sec.actual, by.fiscalYear, `${prefix}.actual`, true);
+
+    if (sec.centralShare) {
+      validateBudgetFigure(sec.centralShare, by.fiscalYear, `${prefix}.centralShare`, true);
+    }
+    if (sec.stateOwn) {
+      validateBudgetFigure(sec.stateOwn, by.fiscalYear, `${prefix}.stateOwn`, true);
+    }
+
+    // Ratio checks between BE and Actual
+    const beAmount = sec.budgetEstimate.amountCr;
+    const actualAmount = sec.actual.amountCr;
+
+    if (beAmount !== null && actualAmount !== null && actualAmount > 0) {
+      if (beAmount > 10 * actualAmount && !sec.notes) {
+        errors.push({
+          projectSlug: by.fiscalYear,
+          field: `${prefix}.ratio`,
+          message: `BE (${beAmount} Cr) is > 10x Actual (${actualAmount} Cr) without a 'notes' explanation`,
+        });
+      }
+      if (actualAmount > 5 * beAmount && !sec.notes) {
+        errors.push({
+          projectSlug: by.fiscalYear,
+          field: `${prefix}.ratio`,
+          message: `Actual (${actualAmount} Cr) is > 5x BE (${beAmount} Cr) without a 'notes' explanation`,
+        });
+      }
+    }
+  }
+
+  // Population figure check
+  if (by.populationCr) {
+    if (typeof by.populationCr.countCr !== "number" || by.populationCr.countCr <= 0) {
+      errors.push({
+        projectSlug: by.fiscalYear,
+        field: "populationCr.countCr",
+        message: `Invalid population figure: ${by.populationCr.countCr}`,
+      });
+    }
+    if (!by.populationCr.source || !by.populationCr.source.url) {
+      errors.push({
+        projectSlug: by.fiscalYear,
+        field: "populationCr.source",
+        message: `Missing population source URL`,
+      });
+    }
+  }
+}
+
 
 if (errors.length > 0) {
   console.error(`❌ Validation failed with ${errors.length} issue(s):\n`);

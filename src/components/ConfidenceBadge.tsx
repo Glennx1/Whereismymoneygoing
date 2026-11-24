@@ -13,6 +13,10 @@ const STYLES: Record<Confidence, { label: string; className: string }> = {
     label: "Unverified",
     className: "bg-amber-50 text-amber-800 border-amber-200",
   },
+  derived: {
+    label: "Derived",
+    className: "bg-purple-50 text-purple-800 border-purple-200",
+  },
 };
 
 export function ConfidenceBadge({ confidence }: { confidence: Confidence }) {
@@ -22,6 +26,8 @@ export function ConfidenceBadge({ confidence }: { confidence: Confidence }) {
       title={
         confidence === "verified"
           ? "Matches a primary official document"
+          : confidence === "derived"
+          ? "Sum of printed component demand rows; not printed as a single total"
           : confidence === "reported"
           ? "Stated in news or a third-party source; not yet matched to an official document"
           : "No source found yet"
