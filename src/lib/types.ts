@@ -212,3 +212,75 @@ export interface Project {
     type: 'GOVERNMENT_ORDER' | 'CAG_REPORT' | 'TENDER_NOTICE' | 'BMRCL_REPORT' | 'RTI_REPLY' | 'NEWS_REPORT';
   }[];
 }
+
+// -------------------------------------------------------------
+// Karnataka Budget vs Actual Data Model
+// -------------------------------------------------------------
+
+export interface BudgetSource {
+  label: string;
+  url: string;
+  page?: string;
+  table?: string;
+  excerpt?: string;
+  excerptChecked?: 'machine' | 'manual';
+}
+
+export interface BudgetFigure {
+  amountCr: number | null;
+  confidence: Confidence;
+  source: BudgetSource;
+  asOf: string;
+}
+
+export type BudgetSector =
+  | 'Education'
+  | 'Health'
+  | 'Urban Development'
+  | 'Transport and Roads'
+  | 'Water Resources';
+
+export interface SectorYear {
+  sector: BudgetSector;
+  fiscalYear: string; // e.g. "2023-24"
+  budgetEstimate: BudgetFigure;
+  revisedEstimate: BudgetFigure;
+  actual: BudgetFigure;
+  centralShare?: BudgetFigure;
+  stateOwn?: BudgetFigure;
+  notes?: string;
+}
+
+export interface DepartmentMapping {
+  departmentCode?: string;
+  departmentName: string;
+  demandNumber?: string;
+  sector: BudgetSector;
+  notes?: string;
+}
+
+export type DepartmentMap = DepartmentMapping[];
+
+export interface StateBudgetYearSummary {
+  fiscalYear: string;
+  totalExpenditure: {
+    budgetEstimate: BudgetFigure;
+    revisedEstimate: BudgetFigure;
+    actual: BudgetFigure;
+  };
+  revenueReceipts: {
+    stateOwnTax: BudgetFigure;
+    stateOwnNonTax: BudgetFigure;
+    centralTaxDevolution: BudgetFigure;
+    centralGrants: BudgetFigure;
+    totalStateOwn: BudgetFigure;
+    totalCentralTransfers: BudgetFigure;
+  };
+  sectors: SectorYear[];
+  populationCr?: {
+    countCr: number;
+    source: BudgetSource;
+    asOf: string;
+  };
+  notes?: string;
+}
