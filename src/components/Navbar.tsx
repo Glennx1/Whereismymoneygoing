@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Camera } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -22,12 +21,9 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-900 text-white font-bold text-sm tracking-tight">
-            NK
-          </div>
           <div>
             <span className="text-base font-semibold tracking-tight text-neutral-900">
-              NammaKharcha
+              Bengaluru Project Tracker
             </span>
           </div>
         </Link>
@@ -52,16 +48,6 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Action: Share a photo */}
-        <div className="hidden sm:flex items-center gap-3">
-          <Link
-            href="/submit-report"
-            className="flex items-center gap-1.5 rounded-full bg-neutral-900 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-neutral-800 transition-all active:scale-95"
-          >
-            <Camera className="h-3.5 w-3.5" />
-            <span>Share a Photo</span>
-          </Link>
-        </div>
 
         {/* Mobile menu toggle */}
         <button
@@ -97,16 +83,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <div className="pt-2 border-t border-neutral-100">
-            <Link
-              href="/submit-report"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2.5 text-xs font-medium text-white"
-            >
-              <Camera className="h-4 w-4" />
-              <span>Share a Photo from Ground</span>
-            </Link>
-          </div>
         </div>
       )}
     </header>

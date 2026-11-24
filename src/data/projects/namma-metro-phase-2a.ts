@@ -254,6 +254,4 @@ export const nammaMetroPhase2a: Project = {
       "type": "NEWS_REPORT"
     }
   ],
-  "geometrySource": "OpenStreetMap (Overpass API - Outer Ring Road primary highway corridor)",
-  "geometryFetchDate": "2026-11-23"
 };

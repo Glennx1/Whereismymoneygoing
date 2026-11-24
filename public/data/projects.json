@@ -78,7 +78,7 @@
             },
             {
               "label": "The Hindu: Yellow line progress and budget updates",
-              "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+              "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
             }
           ]
         },
@@ -89,7 +89,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+              "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
             }
           ]
         },
@@ -100,7 +100,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+              "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
             }
           ]
         },
@@ -111,7 +111,7 @@
           "sources": [
             {
               "label": "The Hindu: Yellow Line CRS clearance and opening",
-              "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+              "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
             }
           ]
         },
@@ -133,7 +133,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+              "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
             }
           ]
         }
@@ -184,7 +184,7 @@
         "description": "Prototype six-coach train arrived at Hebbagodi depot for statutory oscillation tests.",
         "source": {
           "label": "Deccan Herald",
-          "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412"
+          "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
         }
       },
       {
@@ -194,7 +194,7 @@
         "description": "Revenue operations commenced following Commissioner of Metro Railway Safety (CMRS) sanction.",
         "source": {
           "label": "The Hindu",
-          "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+          "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
         }
       }
     ],
@@ -208,7 +208,7 @@
         "calculatedMetric": "3 yr 8 mo delay",
         "officialCitation": {
           "sourceName": "The Hindu",
-          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece"
+          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece"
         }
       },
       {
@@ -226,22 +226,22 @@
     ],
     "articles": [
       {
-        "title": "Yellow Line Metro trial runs completed; CRS gives safety approval",
+        "title": "Four years late, Bengaluru metro’s Yellow Line ready to run",
         "outlet": "The Hindu",
         "publishedDate": "2025-07-28",
-        "url": "https://www.thehindu.com/news/cities/bangalore/yellow-line-metro-trial-runs-august-launch/article68453412.ece",
-        "claim": "Confirms statutory testing, signalling validation, and opening readiness",
+        "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece",
+        "claim": "Reports readiness and inauguration schedule for Yellow Line metro from RV Road to Bommasandra",
         "checkedOn": "2026-11-23",
-        "excerpt": "Yellow Line Metro trial runs completed; CRS gives safety approval reports that confirms statutory testing, signalling validation, and opening readiness."
+        "excerpt": "the much-awaited Yellow Line of Namma Metro, from R.V. Road to Bommasandra, will finally be inaugurated by Prime Minister Narendra Modi"
       },
       {
         "title": "First prototype train for Bengaluru Yellow Line arrives from CRRC",
         "outlet": "Deccan Herald",
         "publishedDate": "2024-02-15",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/first-train-for-yellow-line-arrives-in-bengaluru-2895412",
+        "url": "https://www.thehindu.com/news/cities/bangalore/eight-years-late-bengaluru-metros-yellow-line-ready-to-run/article69910569.ece",
         "claim": "Delivery of driverless train coaches and track testing milestones",
         "checkedOn": "2026-11-23",
-        "excerpt": "First prototype train for Bengaluru Yellow Line arrives from CRRC reports that delivery of driverless train coaches and track testing milestones."
+        "excerpt": "Once all trains are delivered and fully inducted, the line is expected to carry over 2."
       },
       {
         "title": "Namma Metro Phase 2 cost escalated by Rs 10,000 Cr across extensions",
@@ -250,7 +250,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-2-delays-push-up-cost-by-rs-10000-cr-3307265",
         "claim": "Reports total cost escalation for Reach 5 and Phase 2 packages",
         "checkedOn": "2026-11-23",
-        "excerpt": "Namma Metro Phase 2 cost escalated by Rs 10,000 Cr across extensions reports that reports total cost escalation for reach 5 and phase 2 packages."
+        "excerpt": "the Yellow Line (RV Road-Bommasandra, 19.15 km) has long been ready but commercial operations haven't begun for want of trains."
       }
     ],
     "officialDocLinks": [
@@ -322,7 +322,7 @@
           "sources": [
             {
               "label": "Deccan Herald: Pink Line elevated stretch opened",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/pink-line-first-stretch-kalena-agrahara-tavarekere-opens-3829141"
+              "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13"
             }
           ]
         },
@@ -445,7 +445,7 @@
         "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13",
         "claim": "Reports official flag-off of 7.5-km elevated section on 13 November 2026",
         "checkedOn": "2026-11-23",
-        "excerpt": "Prime Minister Narendra Modi on Friday inaugurated Bengaluru Metro's Pink Line ... took a ride on the newly opened 7.5-km stretch between Tavarekere and..."
+        "excerpt": "PM Modi, during his Karnataka visit, inaugurated the Bengaluru Metro's Pink Line, flagged off Bengaluru-Mangaluru-Madgaon Vande Bharat Express"
       },
       {
         "title": "Pink Line likely to be inaugurated on November 13",
@@ -454,7 +454,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/pink-line-likely-to-be-inaugurated-on-november-13/article71657962.ece",
         "claim": "Confirms target opening date for elevated Reach 6 section",
         "checkedOn": "2026-11-23",
-        "excerpt": "Member of Parliament for Bangalore South, L.S. Tejasvi Surya, on Monday hinted that the Namma Metro’s elevated Pink Line will likely be inaugurated on..."
+        "excerpt": "Tejasvi Surya, on Monday hinted that the Namma Metro's elevated Pink Line will likely be inaugurated on November 13."
       },
       {
         "title": "GR Infra Wins Bangalore Metro Pink Line's Pending Work",
@@ -463,7 +463,8 @@
         "url": "https://themetrorailguy.com/2021/07/16/gr-infra-wins-bangalore-metro-pink-lines-pending-work/",
         "claim": "Details award of balance civil and viaduct works on Reach 6 elevated",
         "checkedOn": "2026-11-23",
-        "excerpt": "GR Infraprojects emerged as the lowest bidder for balance viaduct and station works on Bangalore Metro Reach 6 along Bannerghatta Road."
+        "excerpt": "GR Infra has no experience in delivering metro projects, but they qualified through the technical round based on the parameters set.",
+        "excerptChecked": "manual"
       }
     ],
     "officialDocLinks": [
@@ -598,16 +599,7 @@
         "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/karnataka-cm-launches-game-changing-hebbal-flyover-loop-to-ease-bengaluru-traffic/123383360?next=1",
         "claim": "Confirms official inauguration of new KR Puram-Mekhri Circle loop on 18 August 2025",
         "checkedOn": "2026-11-23",
-        "excerpt": "Chief Minister Siddaramaiah and Deputy CM DK Shivakumar inaugurated the newly constructed two-lane loop of Hebbal flyover easing traffic towards Mekhri Circle."
-      },
-      {
-        "title": "BDA to construct two-lane loop from KR Puram towards city at Hebbal",
-        "outlet": "Construction World",
-        "publishedDate": "2023-04-12",
-        "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bda-to-construct-two-lane-loop-from-kr-puram-towards-city-at-hebbal/40892",
-        "claim": "Details Rs 80 crore contract and technical specifications of new loop",
-        "checkedOn": "2026-11-23",
-        "excerpt": "The Bangalore Development Authority awarded the two-lane ramp project costing approximately Rs 80 crore to eliminate the massive bottleneck at Hebbal junction."
+        "excerpt": "A 700 metre ramp built at a cost of 80 crore in just seven months, will reduce traffic congestion by 30 per cent"
       }
     ],
     "officialDocLinks": [
@@ -779,35 +771,17 @@
         "title": "PM dedicates Bengaluru-Mysuru Expressway to the Nation",
         "outlet": "Press Information Bureau (PIB)",
         "publishedDate": "2023-03-12",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1906233",
+        "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1905535",
         "claim": "Official government announcement confirming ₹8,480 Cr cost and 118 km alignment",
         "isOfficial": true,
         "checkedOn": "2026-11-23",
-        "excerpt": "PM dedicates Bengaluru-Mysuru Expressway to the Nation reports that official government announcement confirming ₹8,480 cr cost and 118 km alignment."
-      },
-      {
-        "title": "Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts",
-        "outlet": "Moneycontrol",
-        "publishedDate": "2023-03-11",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-mysuru-expressway-all-you-need-to-know-about-nh-275-10234121.html",
-        "claim": "Detailed travel times, bypass structures, and tolling infrastructure",
-        "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru-Mysuru Expressway to cut travel time to 75 minutes: Project facts reports that detailed travel times, bypass structures, and tolling infrastructure."
-      },
-      {
-        "title": "How the 10-lane Bengaluru-Mysuru highway transforms regional logistics",
-        "outlet": "Deccan Herald",
-        "publishedDate": "2023-03-13",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/how-bengaluru-mysuru-expressway-alters-karnataka-economy-1199841.html",
-        "claim": "Analysis of commercial freight velocity and bypass decongestion",
-        "checkedOn": "2026-11-23",
-        "excerpt": "How the 10-lane Bengaluru-Mysuru highway transforms regional logistics reports that analysis of commercial freight velocity and bypass decongestion."
+        "excerpt": "The 118 Km long project has been developed at a total cost of around Rs 8480 crores."
       }
     ],
     "officialDocLinks": [
       {
         "label": "PIB Release: Prime Minister dedicates Bengaluru-Mysuru Expressway",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1906233",
+        "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1905535",
         "type": "GOVERNMENT_ORDER"
       },
       {
@@ -815,9 +789,7 @@
         "url": "https://nhai.gov.in",
         "type": "NEWS_REPORT"
       }
-    ],
-    "geometrySource": "OpenStreetMap (Overpass API - NH 275 motorway alignment)",
-    "geometryFetchDate": "2026-11-23"
+    ]
   },
   {
     "id": "strr-dobbaspet-hoskote",
@@ -863,7 +835,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+              "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
             }
           ]
         },
@@ -874,7 +846,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+              "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
             }
           ]
         },
@@ -885,7 +857,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+              "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
             }
           ]
         },
@@ -896,7 +868,7 @@
           "sources": [
             {
               "label": "Construction World: STRR packages awarded",
-              "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148"
+              "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
             }
           ]
         },
@@ -907,7 +879,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+              "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
             }
           ]
         }
@@ -940,7 +912,7 @@
         "description": "NHAI awarded northern arc packages under Bharatmala Pariyojana.",
         "source": {
           "label": "Construction World",
-          "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/nhai-awards-strr-packages/29148"
+          "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
         }
       },
       {
@@ -950,20 +922,20 @@
         "description": "80-km expressway section dedicated by Prime Minister Narendra Modi.",
         "source": {
           "label": "Moneycontrol",
-          "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html"
+          "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway",
-        "outlet": "Moneycontrol",
+        "title": "PM Modi launches two key Satellite Town Ring Road stretches in Bengaluru",
+        "outlet": "The News Minute",
         "publishedDate": "2024-04-01",
-        "url": "https://www.moneycontrol.com/news/business/economy/nhai-notifies-toll-rates-for-bengaluru-strr-12567841.html",
-        "claim": "Notifies toll plazas and commercial user charges on NH-648",
+        "url": "https://www.thenewsminute.com/karnataka/pm-modi-launches-two-key-satellite-town-ring-road-stretches-in-bengaluru",
+        "claim": "Inauguration of two key STRR stretches totalling 80 km around Bengaluru",
         "checkedOn": "2026-11-23",
-        "excerpt": "NHAI implements FASTag tolling on Dobbaspet-Hoskote expressway reports that notifies toll plazas and commercial user charges on nh-648."
+        "excerpt": "Prime Minister Narendra Modi, on Monday, March 11, virtually inaugurated two key stretches of the Satellite Town Ring Road (STRR) around Bengaluru."
       }
     ],
     "officialDocLinks": [
@@ -1020,10 +992,6 @@
             {
               "label": "Daijiworld: JICA loan for ₹5,550 Cr Stage V",
               "url": "https://daijiworld.com/news/newsDisplay?newsID=492393"
-            },
-            {
-              "label": "The Hindu: Cauvery Stage V to be inaugurated",
-              "url": "https://www.thehindu.com/news/cities/bangalore/cauvery-stage-v-to-be-inaugurated-on-october-16/article68748347.ece"
             }
           ]
         },
@@ -1102,10 +1070,11 @@
         "title": "Project to provide Cauvery water to Bengaluru's peripheral areas launched",
         "outlet": "ThePrint",
         "publishedDate": "2024-10-16",
-        "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754",
+        "url": "https://theprint.in/india/project-to-provide-cauvery-water-to-bengalurus-peripheral-areas-launched/2314754/",
         "claim": "Official dedication and inauguration of 775 MLD water scheme",
         "checkedOn": "2026-11-23",
-        "excerpt": "Project to provide Cauvery water to Bengaluru's peripheral areas launched reports that official dedication and inauguration of 775 mld water scheme."
+        "excerpt": "The project was completed at a cost of Rs 4,336 crore and received financial backing from the Japan International Cooperation Agency",
+        "excerptChecked": "manual"
       },
       {
         "title": "BWSSB to launch Stage V of Cauvery water supply scheme on Oct 16",
@@ -1114,7 +1083,7 @@
         "url": "https://deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fbwssb-to-launch-stage-v-of-cauvery-water-supply-scheme-on-oct-16-3224963",
         "claim": "Launch dates, testing phase, and pumping station readiness",
         "checkedOn": "2026-11-23",
-        "excerpt": "BWSSB to launch Stage V of Cauvery water supply scheme on Oct 16 reports that launch dates, testing phase, and pumping station readiness."
+        "excerpt": "> Bangalore Water Supply and Sewerage Board (BWSSB)."
       },
       {
         "title": "After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts",
@@ -1123,7 +1092,7 @@
         "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fafter-a-decade-long-wait-cauvery-water-to-finally-reach-bengalurus-outskirts-3233582",
         "claim": "Supply rollout across 110 villages in Mahadevapura, Bommanahalli, RR Nagar",
         "checkedOn": "2026-11-23",
-        "excerpt": "After a decade-long wait, Cauvery water to finally reach Bengaluru's outskirts reports that supply rollout across 110 villages in mahadevapura, bommanahalli, rr nagar."
+        "excerpt": "> Four lakh new Cauvery water connections will be added, taking the total count to 14."
       },
       {
         "title": "Bengaluru: JICA to fund Cauvery water supply project Phase V",
@@ -1132,7 +1101,7 @@
         "url": "https://daijiworld.com/news/newsDisplay?newsID=492393",
         "claim": "JICA financing structure and ₹5,550 Cr overall project outlay",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru: JICA to fund Cauvery water supply project Phase V reports that jica financing structure and ₹5,550 cr overall project outlay."
+        "excerpt": "JICA loan for Rs 5,550 crore Cauvery Stage V Water Supply Project - Daijiworld."
       }
     ],
     "officialDocLinks": [
@@ -1286,7 +1255,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/bmtc-to-induct-921-non-ac-electric-buses-soon-all-four-rtcs-to-add-3888-new-buses-to-its-fleet/article67093574.ece",
         "claim": "Details induction of 921 12-metre electric buses under FAME II scheme",
         "checkedOn": "2026-11-23",
-        "excerpt": "BMTC will induct 921 non-air-conditioned electric buses under the CESL FAME II scheme with operations managed under a gross cost contract."
+        "excerpt": "According to BMTC officials, Tata Motors, a commercial vehicle manufacturer, will lease 921 electric buses under the FAME-2 scheme."
       },
       {
         "title": "Bengaluru's BMTC signs pact with Tata Motors for 921 electric buses",
@@ -1295,7 +1264,7 @@
         "url": "https://government.economictimes.indiatimes.com/news/digital-india/green-mobility-bengalurus-bmtc-signs-pact-with-tata-motors-for-921-electric-buses/102243991",
         "claim": "Confirms 12-year GCC agreement with Tata Motors subsidiary for 921 e-buses",
         "checkedOn": "2026-11-23",
-        "excerpt": "Tata Motors subsidiary TML Smart City Mobility Solutions signed a definitive agreement with BMTC to supply, operate and maintain 921 electric buses for 12 years."
+        "excerpt": "All the 921 buses will be added to service in a phased manner."
       }
     ],
     "officialDocLinks": [
@@ -1350,7 +1319,7 @@
           "sources": [
             {
               "label": "Deccan Herald: SMVT terminal features and costs",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html"
+              "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/"
             }
           ]
         },
@@ -1372,7 +1341,7 @@
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/smvt-baiyappanahalli-begins-commercial-operations-1115891.html"
+              "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/"
             }
           ]
         },
@@ -1426,7 +1395,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/road-link-to-sir-m-visvesvaraya-terminal-to-be-ready-by-nov-end/article37448561.ece",
         "claim": "Reports road connectivity work connecting Banaswadi and Baiyappanahalli to SMVT",
         "checkedOn": "2026-11-23",
-        "excerpt": "BBMP and South Western Railway are executing road link works to provide smooth passenger access to the new Baiyappanahalli terminal."
+        "excerpt": "The lack of planning of the road network during the design stage of the terminal has resulted in a long delay in opening the terminal."
       },
       {
         "title": "Bengaluru's airport-like railway terminal opens to the public",
@@ -1435,7 +1404,7 @@
         "url": "https://indianexpress.com/photos/india-news/bengalurus-airport-like-railway-terminal-finally-opens-to-the-public-karnataka-7956454/",
         "claim": "Confirms commencement of commercial train operations at ₹314 Cr air-conditioned terminal",
         "checkedOn": "2026-11-23",
-        "excerpt": "Sir M Visvesvaraya Terminal at Baiyappanahalli built at Rs 314 crore opened for commercial passenger operations with the departure of Ernakulam Tri-Weekly Express."
+        "excerpt": "After facing several delays, Bengaluru’s Sir M Visvesvaraya Terminal, India's airport-like railway terminal in Bengaluru began operations on Monday night."
       }
     ],
     "officialDocLinks": [
@@ -1583,7 +1552,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/city-gets-7795-cr-for-comprehensive-development/article34018546.ece",
         "claim": "Reports initial allocation of ₹169 Cr for K-100 waterway",
         "checkedOn": "2026-11-23",
-        "excerpt": "The government has allocated Rs 169 crore to transform the Koramangala Valley Rajakaluve into a public waterway corridor."
+        "excerpt": "Under this project, the stormwater drain network in Koramangala Valley will be converted into a fresh water canal."
       },
       {
         "title": "K-100 project: Sewage flow still a challenge",
@@ -1592,7 +1561,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/k-100-project-sewage-flow-still-a-challenge/article65360567.ece",
         "claim": "Reports execution progress and wastewater interception challenges on K-100",
         "checkedOn": "2026-11-23",
-        "excerpt": "Work on the 11.5 km K-100 waterway from KR Market to Bellandur continues with sewage interception lines being laid along the valley."
+        "excerpt": "The project, which began in March 2021, was to be completed in 10 months."
       },
       {
         "title": "Bengaluru: CM Yediyurappa lays foundation stone for K-100 waterway project",
@@ -1601,7 +1570,7 @@
         "url": "https://daijiworld.com/news/newsDisplay?newsID=817115",
         "claim": "Confirms project foundation stone laid at ₹179.5 Cr estimated cost",
         "checkedOn": "2026-11-23",
-        "excerpt": "Chief Minister B S Yediyurappa on Thursday laid the foundation stone for the Rs 179.5 crore K-100 Citizens Waterway project."
+        "excerpt": "When the state cabinet approved the project last year, the estimated cost was Rs 169 crore."
       }
     ],
     "officialDocLinks": [
@@ -1805,7 +1774,7 @@
         "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fdycm-dk-shivakumar-promises-completion-of-long-delayed-ejipura-flyover-by-june-2026-3769909",
         "claim": "Revised completion timeline and inspection update",
         "checkedOn": "2026-11-23",
-        "excerpt": "Dy CM DK Shivakumar promises completion of long-delayed Ejipura flyover reports that revised completion timeline and inspection update."
+        "excerpt": "> Deputy Chief Minister DK Shivakumar inspects work on the Koramangala-Ejipura flyover on Sunday."
       },
       {
         "title": "Delays, debt, disputes: Inside the saga of Bengaluru's Ejipura flyover",
@@ -1814,7 +1783,7 @@
         "url": "https://www.thenewsminute.com/karnataka/delays-debt-disputes-inside-the-saga-of-bengalurus-ejipura-flyover",
         "claim": "Original work order issued in May 2017 with November 2019 deadline",
         "checkedOn": "2026-11-23",
-        "excerpt": "Delays, debt, disputes: Inside the saga of Bengaluru's Ejipura flyover reports that original work order issued in may 2017 with november 2019 deadline."
+        "excerpt": "Now, with work set to be completed by the end of the year, residents have rallied around the slogan 'Ee sala flyover sampoorna'."
       },
       {
         "title": "BBMP finds sole bidder for long-delayed Ejipura flyover on fourth attempt; cost escalation raises concerns",
@@ -1823,7 +1792,7 @@
         "url": "https://swarajyamag.com/amp/story/infrastructure/bengaluru-bbmp-finds-sole-bidder-for-long-delayed-ejipura-flyover-on-fourth-attempt-cost-escalation-raises-concerns",
         "claim": "Revised project estimate around ₹307.96 Cr and sole bidder BSCPL Infrastructure",
         "checkedOn": "2026-11-23",
-        "excerpt": "BBMP finds sole bidder for long-delayed Ejipura flyover on fourth attempt; cost escalation raises concerns reports that revised project estimate around ₹307.96 cr and..."
+        "excerpt": "The BBMP's initial estimate for the project's cost was Rs 204 crore."
       },
       {
         "title": "Ejipura flyover status: 2.5 km long project takes shape with new pillars",
@@ -1832,7 +1801,7 @@
         "url": "https://www.oneindia.com/bengaluru/ejipura-flyover-status-2-5-km-long-project-takes-shape-with-new-pillars-3870279.html",
         "claim": "Resumption of physical work and pier casting on ground",
         "checkedOn": "2026-11-23",
-        "excerpt": "Ejipura flyover status: 2.5 km long project takes shape with new pillars reports that resumption of physical work and pier casting on ground."
+        "excerpt": "After a prolonged delay of five years, the stalled flyover on the critical Koramangala 100 feet road is finally going to resume construction."
       }
     ],
     "officialDocLinks": [
@@ -2062,7 +2031,7 @@
         "url": "https://www.oneindia.com/bengaluru/namma-metro-blue-line-bengaluru-s-silk-board-to-airport-route-to-open-by-december-2027-7854863.html",
         "claim": "Revised December 2027 timeline for Blue Line",
         "checkedOn": "2026-11-23",
-        "excerpt": "Namma Metro Blue Line: Bengaluru's Silk Board to airport route to open by December 2027 reports that revised december 2027 timeline for blue line."
+        "excerpt": "Once completed, the Namma Metro Blue Line will provide Bengaluru with its first direct metro connectivity to the airport."
       },
       {
         "title": "KR Puram-Silk Board metro trials set to begin by October end",
@@ -2071,7 +2040,7 @@
         "url": "https://www.constructionworld.in/amp/transport-infrastructure/metro-rail-and-railways-infrastructure/kr-puram-silk-board-metro-trials-set-to-begin-by-october-end/99490",
         "claim": "Reports 87% civil progress and planned trial runs",
         "checkedOn": "2026-11-23",
-        "excerpt": "KR Puram-Silk Board metro trials set to begin by October end reports that reports 87% civil progress and planned trial runs."
+        "excerpt": "75-km KR Puram-Central Silk Board stretch are expected to begin by the end of October, with overall construction 87 per cent complete."
       },
       {
         "title": "Bengaluru Metro Phase 2 delays push up cost by Rs 10,000 crore",
@@ -2080,7 +2049,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-2-delays-push-up-cost-by-rs-10000-cr-3307265",
         "claim": "Cost increases across Namma Metro Phase 2 extensions",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Metro Phase 2 delays push up cost by Rs 10,000 crore reports that cost increases across namma metro phase 2 extensions."
+        "excerpt": "Going by the revised estimation, Phase 2 will cost Rs 541."
       },
       {
         "title": "Bangalore Metro Phase 2A Information and Alignment Map",
@@ -2089,7 +2058,7 @@
         "url": "https://themetrorailguy.com/bangalore-metro-phase-2a-information-map/",
         "claim": "Phase 2A alignment details and ₹5,227.35 Cr project figure",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Metro Phase 2A Information and Alignment Map reports that phase 2a alignment details and ₹5,227.35 cr project figure."
+        "excerpt": "An official PDF route map of Bangalore Metro Phase 2A will be added here when available."
       }
     ],
     "officialDocLinks": [
@@ -2103,9 +2072,7 @@
         "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
         "type": "NEWS_REPORT"
       }
-    ],
-    "geometrySource": "OpenStreetMap (Overpass API - Outer Ring Road primary highway corridor)",
-    "geometryFetchDate": "2026-11-23"
+    ]
   },
   {
     "id": "namma-metro-phase-2b",
@@ -2296,7 +2263,7 @@
         "url": "https://www.businesstoday.in/amp/india/story/tired-of-bengaluru-traffic-airport-metro-crosses-72-mark-heres-what-it-means-for-you-547584-2026-08-06",
         "claim": "Reports 72% construction progress on the Airport Metro corridor",
         "checkedOn": "2026-11-23",
-        "excerpt": "Tired of Bengaluru traffic? Airport Metro crosses 72% mark, here's what it means for you reports that reports 72% construction progress on the airport..."
+        "excerpt": "Despite these setbacks, officials maintain that the airport Metro corridor remains on schedule for phased opening through 2027."
       },
       {
         "title": "Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report",
@@ -2305,7 +2272,7 @@
         "url": "https://swarajyamag.com/infrastructure/bengaluru-metros-blue-line-to-kia-airport-slated-for-completion-by-end-of-2027-report",
         "claim": "Revised completion timeline targeting late 2027",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Metro's Blue Line to KIA airport slated for completion by end of 2027: report reports that revised completion timeline targeting late 2027."
+        "excerpt": "The Blue Line will introduce driverless trains equipped with luggage racks and modern safety systems, designed to meet the needs of air passengers."
       },
       {
         "title": "Bangalore Metro Phase 2B Information and Stations Map",
@@ -2314,7 +2281,7 @@
         "url": "https://themetrorailguy.com/bangalore-metro-phase-2b-information-map",
         "claim": "Detailed station alignment and package tender specifications",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Metro Phase 2B Information and Stations Map reports that detailed station alignment and package tender specifications."
+        "excerpt": "An official PDF route map of Bangalore Metro Phase 2B will be added here when available."
       },
       {
         "title": "MPC approves Rs 14,788.10 cr Namma Metro expansion",
@@ -2323,7 +2290,7 @@
         "url": "https://www.nbmcw.com/news/mpc-approves-14-788-10-cr-namma-metro-expansion.html",
         "claim": "Combined sanction of Phase 2A and Phase 2B network",
         "checkedOn": "2026-11-23",
-        "excerpt": "MPC approves Rs 14,788.10 cr Namma Metro expansion reports that combined sanction of phase 2a and phase 2b network."
+        "excerpt": "The approval came after the Centre approved the project and nearly two years after the state government steered cleared the mega metro project."
       }
     ],
     "officialDocLinks": [
@@ -2409,7 +2376,7 @@
           "sources": [
             {
               "label": "Construction World",
-              "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+              "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
             }
           ]
         },
@@ -2420,7 +2387,7 @@
           "sources": [
             {
               "label": "Construction World: Bengaluru Pink Line tunneling completed",
-              "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+              "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
             }
           ]
         },
@@ -2442,7 +2409,7 @@
           "sources": [
             {
               "label": "Construction World",
-              "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+              "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
             }
           ]
         }
@@ -2493,7 +2460,7 @@
         "description": "TBM Urja deployed by L&T to begin tunneling at Cantonment station.",
         "source": {
           "label": "Construction World",
-          "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+          "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
         }
       },
       {
@@ -2503,7 +2470,7 @@
         "description": "TBM Tunga completed the final breakthrough at Nagawara, completing 100% of underground tunnel excavation.",
         "source": {
           "label": "Construction World",
-          "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+          "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
         }
       }
     ],
@@ -2517,19 +2484,19 @@
         "calculatedMetric": "Over 2 years delay in tunneling milestones",
         "officialCitation": {
           "sourceName": "Construction World",
-          "documentUrl": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294"
+          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece"
         }
       }
     ],
     "articles": [
       {
-        "title": "BMRCL completes Pink Line underground tunneling works with 9 TBMs",
-        "outlet": "Construction World",
-        "publishedDate": "2024-10-02",
-        "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/bmrcl-completes-pink-line-underground-tunneling/61294",
-        "claim": "Details 91% civil progress and handover to track and electrification teams",
+        "title": "Namma Metro’s Bhadra TBM achieves final breakthrough in underground tunnelling",
+        "outlet": "The Hindu",
+        "publishedDate": "2024-10-31",
+        "url": "https://www.thehindu.com/news/cities/bangalore/namma-metros-bhadra-tbm-achieves-final-breakthrough-in-underground-tunnelling/article68815104.ece",
+        "claim": "Final TBM breakthrough marking completion of Reach 6 underground tunneling",
         "checkedOn": "2026-11-23",
-        "excerpt": "BMRCL completes Pink Line underground tunneling works with 9 TBMs reports that details 91% civil progress and handover to track and electrification teams."
+        "excerpt": "This breakthrough, achieved by tunnel boring machine (TBM) Bhadra, marks the end of a 937-metre stretch from K.G. Halli to Nagawara."
       },
       {
         "title": "Bangalore Metro Phase 2 Underground Reach 6 Information and Map",
@@ -2538,7 +2505,8 @@
         "url": "https://themetrorailguy.com/bangalore-metro-phase-2-information-map/",
         "claim": "Technical breakdown of all 4 underground packages, station depths, and TBM stats",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Metro Phase 2 Underground Reach 6 Information and Map reports that technical breakdown of all 4 underground packages, station depths, and tbm stats."
+        "excerpt": "An official PDF route map of Bangalore Metro Phase 2 will be added here when available.",
+        "excerptChecked": "manual"
       }
     ],
     "officialDocLinks": [
@@ -2592,7 +2560,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
             }
           ]
         },
@@ -2603,7 +2571,7 @@
           "sources": [
             {
               "label": "The Hindu: NHAI pushes STRR Hosur stretch target to 2027",
-              "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
             }
           ]
         },
@@ -2614,7 +2582,7 @@
           "sources": [
             {
               "label": "Construction World: STRR southern packages status",
-              "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
             }
           ]
         },
@@ -2625,7 +2593,7 @@
           "sources": [
             {
               "label": "Construction World",
-              "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
             }
           ]
         },
@@ -2636,7 +2604,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
             }
           ]
         }
@@ -2669,7 +2637,7 @@
         "description": "NHAI awarded 5 remaining packages totaling 144.25 km for ₹4,749.74 Cr.",
         "source": {
           "label": "The Hindu",
-          "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+          "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
         }
       }
     ],
@@ -2683,28 +2651,19 @@
         "calculatedMetric": "Over 15 months delay on ROB package",
         "officialCitation": {
           "sourceName": "The Hindu",
-          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece"
+          "documentUrl": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece"
         }
       }
     ],
     "articles": [
       {
-        "title": "Railway bridge clearances set new timeline for STRR Hoskote-Tamil Nadu section",
+        "title": "Bengaluru STRR nears completion as four of six packages finished, remaining stretches due this year",
         "outlet": "The Hindu",
-        "publishedDate": "2024-07-08",
-        "url": "https://www.thehindu.com/news/cities/bangalore/strr-hoskote-hosur-railway-bridge-target-2027/article68310945.ece",
-        "claim": "Details South Western Railway permissions and superstructure fabrication",
+        "publishedDate": "2026-08-20",
+        "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-strr-nears-completion-as-four-of-six-packages-finished-remaining-stretches-due-this-year/article71254009.ece",
+        "claim": "Status of STRR packages and physical completion milestones",
         "checkedOn": "2026-11-23",
-        "excerpt": "Railway bridge clearances set new timeline for STRR Hoskote-Tamil Nadu section reports that details south western railway permissions and superstructure fabrication."
-      },
-      {
-        "title": "NHAI expedites work on Satellite Town Ring Road southern arc",
-        "outlet": "Construction World",
-        "publishedDate": "2024-08-15",
-        "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/strr-hoskote-hosur-construction-update/59812",
-        "claim": "Reports 58% physical completion across southern packages",
-        "checkedOn": "2026-11-23",
-        "excerpt": "NHAI expedites work on Satellite Town Ring Road southern arc reports that reports 58% physical completion across southern packages."
+        "excerpt": "The Dobbspet-Doddballapur package has achieved 100% completion, while the Doddballapur-Hoskote section has been completed despite recording 99.2% physical progress"
       }
     ],
     "officialDocLinks": [
@@ -2802,7 +2761,7 @@
           "sources": [
             {
               "label": "Construction World",
-              "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-chennai-expressway-update/41294"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece"
             }
           ]
         },
@@ -2854,7 +2813,7 @@
         "description": "NHAI awarded all 3 civil packages covering 71 km in Karnataka under Hybrid Annuity / EPC models.",
         "source": {
           "label": "Construction World",
-          "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-chennai-expressway-update/41294"
+          "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece"
         }
       },
       {
@@ -2890,7 +2849,7 @@
         "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-to-be-fully-operational-by-june-2026/article69340081.ece",
         "claim": "Reports target completion timeline for four-lane greenfield expressway corridor",
         "checkedOn": "2026-11-23",
-        "excerpt": "Union Minister Nitin Gadkari stated that the 262-km Bengaluru-Chennai Expressway project will be fully operational by June 2026."
+        "excerpt": "Union Minister for Road Transport Nitin Gadkari recently stated that the remaining portions of the expressway are scheduled to be completed by June 2026."
       },
       {
         "title": "Bengaluru-Chennai expressway work to be flagged off by PM",
@@ -2899,7 +2858,7 @@
         "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-chennai-expressway-work-to-be-flagged-off-by-pm/article33264727.ece",
         "claim": "Details foundation laying and package-wise construction of 71-km Karnataka section",
         "checkedOn": "2026-11-23",
-        "excerpt": "The 71-km stretch of the greenfield expressway falling in Karnataka from Hoskote to Bethamangala is divided into three construction packages."
+        "excerpt": "Prime Minister Narendra Modi is expected to flag off work on the much-awaited 263-km-long Bengaluru-Chennai Expressway, a greenfield project"
       }
     ],
     "officialDocLinks": [
@@ -2953,7 +2912,7 @@
           "sources": [
             {
               "label": "The Hindu: Silk Board double-decker flyover opened",
-              "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+              "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
             }
           ]
         },
@@ -2964,7 +2923,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+              "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
             }
           ]
         },
@@ -2975,7 +2934,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+              "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
             }
           ]
         },
@@ -2986,7 +2945,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+              "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
             }
           ]
         },
@@ -3008,7 +2967,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+              "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
             }
           ]
         }
@@ -3034,7 +2993,7 @@
         "description": "Inaugurated by Karnataka Deputy Chief Minister DK Shivakumar for vehicular traffic.",
         "source": {
           "label": "The Hindu",
-          "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+          "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
         }
       }
     ],
@@ -3048,19 +3007,19 @@
         "calculatedMetric": "Ramps delayed past main opening",
         "officialCitation": {
           "sourceName": "The Hindu",
-          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece"
+          "documentUrl": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/"
         }
       }
     ],
     "articles": [
       {
-        "title": "Silk Board double-decker flyover opened for vehicular traffic",
-        "outlet": "The Hindu",
+        "title": "South India’s first double-decker flyover opens for public, BMRCL says Yellow line to be commissioned by end of 2024",
+        "outlet": "The Indian Express",
         "publishedDate": "2024-07-17",
-        "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece",
-        "claim": "Reports inauguration of lower road deck and ₹449 Cr project outlay",
+        "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/",
+        "claim": "South India's first double-decker flyover opens between Ragigudda and Central Silk Board to reduce travel times",
         "checkedOn": "2026-11-23",
-        "excerpt": "Silk Board double-decker flyover opened for vehicular traffic reports that reports inauguration of lower road deck and ₹449 cr project outlay."
+        "excerpt": "signal-free travel from Ragigudda to HSR Layout and Hosur Road, promising to reduce travel time by more than 30 per cent"
       }
     ],
     "officialDocLinks": [
@@ -3071,7 +3030,7 @@
       },
       {
         "label": "The Hindu: Silk Board double-decker flyover opened",
-        "url": "https://www.thehindu.com/news/cities/bangalore/silk-board-double-decker-flyover-opened-for-traffic/article68414981.ece",
+        "url": "https://indianexpress.com/article/cities/bangalore/south-india-first-double-decker-flyover-opens-public-bmrcl-yellow-line-2024-9459610/",
         "type": "NEWS_REPORT"
       }
     ],
@@ -3287,7 +3246,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-suburban-railway-project-deadline-pushed-to-2028-2644956",
         "claim": "Suburban rail Corridor 2 target pushed to December 2028",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru suburban railway project deadline pushed to 2028 reports that suburban rail corridor 2 target pushed to december 2028."
+        "excerpt": "The 148.17-km Bengaluru Suburban Railway Project (BSRP) will get ready by 2028, Minister of Infrastructure Development M B Patil has stated"
       },
       {
         "title": "Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track",
@@ -3296,16 +3255,7 @@
         "url": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Ffresh-tenders-to-bring-149-km-long-bengaluru-suburban-rail-project-back-on-track-3754945",
         "claim": "Re-tendering of Corridor 2 civil packages following contractor exit",
         "checkedOn": "2026-11-23",
-        "excerpt": "Fresh tenders to bring 149-km-long Bengaluru Suburban Rail project back on track reports that re-tendering of corridor 2 civil packages following contractor exit."
-      },
-      {
-        "title": "NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project",
-        "outlet": "Metro Rail Today",
-        "publishedDate": "2024-05-10",
-        "url": "https://metrorailtoday.com/news/ncc-awarded-50125-crore-civil-contract-for-bengaluru-suburban-rail-project",
-        "claim": "Award of Package C2-A for 12 stations to NCC Ltd.",
-        "checkedOn": "2026-11-23",
-        "excerpt": "NCC awarded Rs 501.25 crore civil contract for Bengaluru Suburban Rail Project reports that award of package c2-a for 12 stations to ncc ltd.."
+        "excerpt": "With L&T out of the picture, the K-RIDE board has now decided to call fresh tenders."
       },
       {
         "title": "Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages",
@@ -3314,7 +3264,7 @@
         "url": "https://www.oneindia.com/bengaluru/bengaluru-suburban-rail-back-on-track-as-k-ride-divides-mallige-line-work-into-three-packages-7908251.html",
         "claim": "Packaging strategy and timeline milestones for Corridor 2",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Suburban Rail back on track as K-RIDE divides Mallige Line work into three packages reports that packaging strategy and timeline milestones for corridor 2."
+        "excerpt": "The project, which had slowed down after Larsen & Toubro (L&T) pulled out earlier this year, will now move ahead through three separate construction packages."
       }
     ],
     "officialDocLinks": [
@@ -3459,7 +3409,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/cag-raps-bbmp-bda-over-unreliable-records-on-storm-water-drains-1030811.html",
         "claim": "CAG performance audit findings on documentation and encroachment tracking",
         "checkedOn": "2026-11-23",
-        "excerpt": "CAG raps BBMP, BDA over unreliable records on storm water drains reports that cag performance audit findings on documentation and encroachment tracking."
+        "excerpt": "A performance audit criticised agencies for lack of financial discipline, shoddy mapping of storm water drains and tertiary drains."
       },
       {
         "title": "Audit flags lapses in BBMP's SWD department",
@@ -3468,7 +3418,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/audit-flags-lapses-in-bbmps-swd-department-1231205.html",
         "claim": "Irregularities flagged in ₹490 Cr drain development spending",
         "checkedOn": "2026-11-23",
-        "excerpt": "Audit flags lapses in BBMP's SWD department reports that irregularities flagged in ₹490 cr drain development spending."
+        "excerpt": "The auditors have flagged a total of 132 discrepancies in the SWD department over three financial years."
       },
       {
         "title": "Why BBMP encroachment clearance on storm water drains faces endless delays",
@@ -3477,7 +3427,7 @@
         "url": "https://citizenmatters.in/bbmp-encroachment-clearance-delay-problems/",
         "claim": "Encroachment survey data: 714 of 2,626 encroachments remaining",
         "checkedOn": "2026-11-23",
-        "excerpt": "Why BBMP encroachment clearance on storm water drains faces endless delays reports that encroachment survey data: 714 of 2,626 encroachments remaining."
+        "excerpt": "After the 2016 floods, BBMP started the demolition drive to clear drain encroachments, and followed it with a plan to remodel Bengaluru's stormwater drains."
       },
       {
         "title": "Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru",
@@ -3487,7 +3437,8 @@
         "claim": "Official CAG audit findings on stormwater drains in Bengaluru",
         "isOfficial": true,
         "checkedOn": "2026-11-23",
-        "excerpt": "Executive Summary: Performance Audit on Management of Storm Water Drains in Bengaluru reports that official cag audit findings on stormwater drains in bengaluru."
+        "excerpt": "Performance Audit on Management of Storm Water Drains in Bengaluru Urban area was conducted to evaluate whether stormwater drains were managed efficiently.",
+        "excerptChecked": "manual"
       }
     ],
     "officialDocLinks": [
@@ -3656,7 +3607,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/varthur-lake-to-be-rejuvenated-at-an-estimated-cost-of-119-crore/article30668486.ece",
         "claim": "Confirms ₹119 Cr BDA rejuvenation and desilting project sanctioned under NGT directions",
         "checkedOn": "2026-11-23",
-        "excerpt": "The Bangalore Development Authority has invited tenders for the rejuvenation of the 450-acre Varthur lake at an estimated cost of Rs 119 crore."
+        "excerpt": "The Bangalore Development Authority (BDA) has finally called for tenders for the rejuvenation and development of the downstream Varthur lake."
       }
     ],
     "officialDocLinks": [
@@ -3820,7 +3771,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/bda-finally-floats-tender-for-rejuvenation-of-bellandur-lake/article30467183.ece",
         "claim": "Confirms tender floated for Bellandur lake desilting and wetland development",
         "checkedOn": "2026-11-23",
-        "excerpt": "BDA invited tenders for desilting and developing wetlands in Bellandur Lake following directives from the National Green Tribunal."
+        "excerpt": "Floated a tender for desilting, rejuvenation and development of Bellandur lake with an estimated project cost of ₹250 crore."
       },
       {
         "title": "BDA floats a 250 crore tender for desilting, rejuvenation and development of Bellandur Lake",
@@ -3829,7 +3780,7 @@
         "url": "https://swarajyamag.com/insta/bda-floats-a-250-crore-tender-for-desilting-rejuvenation-and-development-of-bellandur-lake-in-bengaluru",
         "claim": "Reports ₹250 Cr tender value for desilting 50 lakh cubic metres of silt",
         "checkedOn": "2026-11-23",
-        "excerpt": "The Bangalore Development Authority floated tenders valued at Rs 250 crore for clearing weeds and desilting the severely polluted Bellandur Lake."
+        "excerpt": "Floated a tender for desilting, rejuvenation and development of Bellandur lake with an estimated project cost of Rs 250 crore"
       },
       {
         "title": "Bellandur and Varthur lake rejuvenation causing damage, warns open letter",
@@ -3838,7 +3789,7 @@
         "url": "https://citizenmatters.in/bellandur-varthur-lake-rejuvenation-causing-damage-desilting-bet-bangalore-environment-trust-open-letter-to-government/",
         "claim": "Details environmental challenges and expert objections during lake de-watering",
         "checkedOn": "2026-11-23",
-        "excerpt": "Environmental experts warned that desilting without stopping untreated sewage inflow merely transfers pollution downstream into the Pinakini river."
+        "excerpt": "Environmentalists, in an open letter to the government, pointed out that draining and desilting the toxic Bellandur and Varthur lakes would have severe impacts."
       }
     ],
     "officialDocLinks": [
@@ -3874,7 +3825,7 @@
     "originalDeadline": "2026-12-31",
     "revisedDeadline": "2027-06-30",
     "financialProgressPct": null,
-    "physicalProgressPct": 65,
+    "physicalProgressPct": null,
     "wardOrZone": "Devanahalli, Kempegowda International Airport, North Peri-urban",
     "coordinates": {
       "lat": 13.1986,
@@ -3914,7 +3865,7 @@
           "sources": [
             {
               "label": "Construction World: Bengaluru Airport T2 Phase 2 update",
-              "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142"
+              "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece"
             }
           ]
         },
@@ -3925,7 +3876,7 @@
           "sources": [
             {
               "label": "Construction World",
-              "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142"
+              "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece"
             }
           ]
         },
@@ -3969,22 +3920,13 @@
     "redFlags": [],
     "articles": [
       {
-        "title": "BIAL to invest in Terminal 2 Phase-2 expansion at Bengaluru airport to handle 45M passengers",
-        "outlet": "Business Standard",
-        "publishedDate": "2023-06-21",
-        "url": "https://www.business-standard.com/companies/news/bial-to-invest-in-terminal-2-phase-2-expansion-at-bengaluru-airport-123062000841_1.html",
-        "claim": "Details ₹4,000 Cr capital investment, boarding pier expansion, and passenger capacity metrics",
+        "title": "BIAL aims to complete second phase of KIA’s T2 by 2029",
+        "outlet": "The Hindu",
+        "publishedDate": "2026-02-07",
+        "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece",
+        "claim": "Target completion of T2 Phase 2 by 2029 to expand passenger capacity",
         "checkedOn": "2026-11-23",
-        "excerpt": "BIAL to invest in Terminal 2 Phase-2 expansion at Bengaluru airport to handle 45M passengers reports that details ₹4,000 cr capital investment, boarding pier..."
-      },
-      {
-        "title": "L&T advances structural works for Kempegowda Airport T2 Phase 2 piers",
-        "outlet": "Construction World",
-        "publishedDate": "2024-05-18",
-        "url": "https://www.constructionworld.in/transport-infrastructure/aviation-infrastructure/bial-t2-phase-2-civil-progress/59142",
-        "claim": "Reports 65% civil completion and baggage handling system integration",
-        "checkedOn": "2026-11-23",
-        "excerpt": "L&T advances structural works for Kempegowda Airport T2 Phase 2 piers reports that reports 65% civil completion and baggage handling system integration."
+        "excerpt": "The completion of the second phase of Terminal 2 will add capacity by an additional 20 million passengers per annum"
       }
     ],
     "officialDocLinks": [
@@ -3994,8 +3936,8 @@
         "type": "NEWS_REPORT"
       },
       {
-        "label": "Business Standard: BIAL to invest in T2 Phase 2",
-        "url": "https://www.business-standard.com/companies/news/bial-to-invest-in-terminal-2-phase-2-expansion-at-bengaluru-airport-123062000841_1.html",
+        "label": "The Hindu: BIAL aims to complete second phase of T2 by 2029",
+        "url": "https://www.thehindu.com/news/national/karnataka/bial-aims-to-complete-second-phase-of-kias-t2-by-2029/article70600070.ece",
         "type": "NEWS_REPORT"
       }
     ]
@@ -4017,7 +3959,7 @@
       "notes": "Funded by BBMP / GBA through state capital works grant"
     },
     "announcedAmountCr": null,
-    "sanctionedAmountCr": 152,
+    "sanctionedAmountCr": null,
     "revisedEstimatedCostCr": null,
     "actualDisbursedCr": null,
     "announcedDate": "2016-08-20",
@@ -4037,13 +3979,13 @@
       "summary": "Civil cost (₹152 Cr), TDR land value (~₹600 Cr; total ~₹752 Cr), six-year timeline slippage, and landowner disputes are verified through BBMP council records and High Court affidavits.",
       "fields": {
         "sanctionedAmountCr": {
-          "confidence": "reported",
-          "asOf": "2018-03-12",
-          "note": "Civil construction sanctioned at ₹152 Cr by BBMP.",
+          "confidence": "unverified",
+          "asOf": "2026-11-23",
+          "note": "Civil construction sanctioned amount unverified without official tender/order.",
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         },
@@ -4054,7 +3996,7 @@
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         },
@@ -4065,7 +4007,7 @@
           "sources": [
             {
               "label": "Deccan Herald: BBMP promises end of 2025 deadline",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         },
@@ -4076,7 +4018,7 @@
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         },
@@ -4087,7 +4029,7 @@
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         },
@@ -4098,7 +4040,7 @@
           "sources": [
             {
               "label": "Deccan Herald",
-              "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
             }
           ]
         }
@@ -4118,7 +4060,7 @@
         "description": "BBMP issued work order for 7.4 km widening with an initial December 2019 deadline.",
         "source": {
           "label": "Deccan Herald",
-          "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+          "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
         }
       },
       {
@@ -4128,7 +4070,7 @@
         "description": "Work stalled as property owners refused TDR certificates, demanding fair cash compensation.",
         "source": {
           "label": "Deccan Herald",
-          "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+          "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
         }
       }
     ],
@@ -4142,19 +4084,19 @@
         "calculatedMetric": "5+ years land litigation delay",
         "officialCitation": {
           "sourceName": "Deccan Herald",
-          "documentUrl": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841"
+          "documentUrl": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece"
         }
       }
     ],
     "articles": [
       {
-        "title": "BBMP sets new deadline for Bannerghatta road widening as tree felling hurdles clear",
-        "outlet": "Deccan Herald",
-        "publishedDate": "2024-06-20",
-        "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bbmp-sets-new-deadline-for-bannerghatta-road-widening-3129841",
-        "claim": "Reports tree expert committee permissions and late 2025 completion roadmap",
+        "title": "Bannerghatta Road widening: Cash relief for land-losers",
+        "outlet": "The Hindu",
+        "publishedDate": "2019-09-09",
+        "url": "https://www.thehindu.com/news/cities/bangalore/bannerghatta-road-widening-cash-relief-for-land-losers/article29370454.ece",
+        "claim": "Land acquisition disputes and rejection of Transferable Development Rights for Bannerghatta Road widening",
         "checkedOn": "2026-11-23",
-        "excerpt": "BBMP sets new deadline for Bannerghatta road widening as tree felling hurdles clear reports that reports tree expert committee permissions and late 2025 completion roadmap."
+        "excerpt": "The BBMP has been offering Transferable Development Rights (TDR), which the land-losers have rejected."
       }
     ],
     "officialDocLinks": [
@@ -4337,7 +4279,7 @@
         "url": "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-business-corridor-deadlock-over-as-bda-begins-issuing-awards-for-land-3809159",
         "claim": "Reports BDA issuing compensation awards to land owners",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Business Corridor deadlock over as BDA begins issuing awards for land reports that reports bda issuing compensation awards to land owners."
+        "excerpt": "the pace of awards will accelerate in the coming days, putting the land acquisition machinery into its most active phase"
       },
       {
         "title": "Bengaluru Business Corridor: Global tenders floated for 20k first phase works",
@@ -4346,7 +4288,7 @@
         "url": "https://www.etvbharat.com/en/state/bengaluru-business-corridor-global-tenders-floated-for-20k-first-phase-works-enn26033105183",
         "claim": "Corridor cost ₹27,000 Cr and Phase 1 tender issuance",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Business Corridor: Global tenders floated for 20k first phase works reports that corridor cost ₹27,000 cr and phase 1 tender issuance."
+        "excerpt": "The project will use a design, build, operate and transfer model and includes 10 years of operations and maintenance."
       },
       {
         "title": "Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR",
@@ -4355,7 +4297,7 @@
         "url": "https://swarajyamag.com/amp/story/news-brief%2Fbangalore-development-authority-invites-rs-3348-crore-bids-for-first-package-of-bengaluru-business-corridor-project",
         "claim": "Package 1 estimate of ₹3,348 Cr for Madavara to Ballari Road stretch",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Development Authority invites Rs 3,348 crore bids for first package of PRR reports that package 1 estimate of ₹3,348 cr for madavara to..."
+        "excerpt": "The Bangalore Development Authority (BDA) has invited bids for civil works covering a nearly 20 km section."
       },
       {
         "title": "Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1",
@@ -4364,7 +4306,7 @@
         "url": "https://www.oneindia.com/bengaluru/bengaluru-business-corridor-nears-execution-as-two-firms-bid-for-prr-package-1-8081733.html",
         "claim": "Bidding outcome with 2 bidders and LOA recommendation",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru Business Corridor nears execution as two firms bid for PRR Package 1 reports that bidding outcome with 2 bidders and loa recommendation."
+        "excerpt": "The Bengaluru Business Corridor is estimated to cost around Rs 26,786 crore, including land acquisition costs."
       }
     ],
     "officialDocLinks": [
@@ -4517,7 +4459,7 @@
         "description": "State cabinet approved DPR for 44.65 km Phase 3 at ₹16,328 Cr (including double-decker provisions).",
         "source": {
           "label": "Press Information Bureau (PIB)",
-          "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952"
+          "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079"
         }
       },
       {
@@ -4527,21 +4469,21 @@
         "description": "Cabinet Committee on Economic Affairs (CCEA) approved Phase 3 at ₹15,611 Cr with central equity funding.",
         "source": {
           "label": "PIB",
-          "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952"
+          "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "Cabinet approves Bangalore Metro Rail Project Phase-3",
+        "title": "Cabinet approves two corridors of Bangalore Metro Rail Project Phase-3 project for 44.65 km with 31stations",
         "outlet": "Press Information Bureau (PIB)",
         "publishedDate": "2024-08-16",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079",
         "claim": "Official approval of ₹15,611 Cr project cost, 44.65 km length, and 31 stations",
         "isOfficial": true,
         "checkedOn": "2026-11-23",
-        "excerpt": "Cabinet approves Bangalore Metro Rail Project Phase-3 reports that official approval of ₹15,611 cr project cost, 44.65 km length, and 31 stations."
+        "excerpt": "The total project completion cost of Phase-3 is Rs.15,611 crore to be operational by 2029"
       },
       {
         "title": "Bangalore Metro Phase 3 Information, Routes and Station List",
@@ -4550,13 +4492,14 @@
         "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
         "claim": "Detailed station locations, alignment map, and tender packaging breakdown",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Metro Phase 3 Information, Routes and Station List reports that detailed station locations, alignment map, and tender packaging breakdown."
+        "excerpt": "An official PDF route map of Bangalore Metro Phase 3 will be added here when available.",
+        "excerptChecked": "manual"
       }
     ],
     "officialDocLinks": [
       {
         "label": "PIB: Union Cabinet Phase 3 Sanction Order",
-        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2045952",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2046079",
         "type": "GOVERNMENT_ORDER"
       },
       {
@@ -4611,7 +4554,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
             }
           ]
         },
@@ -4622,7 +4565,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
             }
           ]
         },
@@ -4633,7 +4576,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
             }
           ]
         },
@@ -4655,7 +4598,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
             }
           ]
         },
@@ -4666,7 +4609,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+              "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
             }
           ]
         }
@@ -4685,20 +4628,20 @@
         "description": "BMRCL submitted revised DPR of ₹25,999 Cr for 37 km corridor with 28 stations.",
         "source": {
           "label": "Moneycontrol",
-          "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html"
+          "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce",
-        "outlet": "Moneycontrol",
-        "publishedDate": "2024-08-10",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-red-line-sarjapur-hebbal-metro-dpr-details-12791821.html",
-        "claim": "Analyzes traffic reduction across Outer Ring Road and Sarjapur Road",
+        "title": "Bengaluru’s Metro Phase 3A gets Cabinet nod",
+        "outlet": "The Hindu",
+        "publishedDate": "2024-12-06",
+        "url": "https://www.thehindu.com/news/cities/bangalore/bengalurus-metro-phase-3a-gets-cabinet-nod/article68956563.ece",
+        "claim": "State Cabinet approves Detailed Project Report for Sarjapur to Hebbal Red Line",
         "checkedOn": "2026-11-23",
-        "excerpt": "Why Sarjapur-Hebbal Red Line is crucial for Bengaluru's tech workforce reports that analyzes traffic reduction across outer ring road and sarjapur road."
+        "excerpt": "The Karnataka Cabinet on Friday (December 6) approved Phase 3A of the Bengaluru Metro's Red Line"
       },
       {
         "title": "Bangalore Metro Phase 3A Information and Alignment",
@@ -4707,7 +4650,8 @@
         "url": "https://themetrorailguy.com/bangalore-metro-phase-3-information-map/",
         "claim": "Route layout, interchange provisions at Agara and Hebbal",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bangalore Metro Phase 3A Information and Alignment reports that route layout, interchange provisions at agara and hebbal."
+        "excerpt": "An official PDF route map of Bangalore Metro Phase 3 will be added here when available.",
+        "excerptChecked": "manual"
       }
     ],
     "officialDocLinks": [
@@ -4761,7 +4705,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
             }
           ]
         },
@@ -4772,7 +4716,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
             }
           ]
         },
@@ -4783,7 +4727,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
             }
           ]
         },
@@ -4794,7 +4738,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
             }
           ]
         }
@@ -4813,20 +4757,20 @@
         "description": "State cabinet chaired by CM Siddaramaiah approved ₹2,215 Cr package for Hebbal junction.",
         "source": {
           "label": "Moneycontrol",
-          "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html"
+          "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints",
-        "outlet": "Moneycontrol",
+        "title": "Cabinet approves short tunnel - flyover between Hebbal junction and Mehkri Circle",
+        "outlet": "The Hindu",
         "publishedDate": "2024-08-20",
-        "url": "https://www.moneycontrol.com/news/business/economy/hebbal-junction-decongestion-plan-details-cost-and-timeline-12801941.html",
-        "claim": "Technical blueprints and traffic simulation data for Mekhri Circle corridor",
+        "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-short-tunnel-flyover-between-hebbal-junction-and-mehkri-circle/article70358774.ece",
+        "claim": "Cabinet approval of ₹2,215 Cr plan for Hebbal short tunnel and elevated corridor",
         "checkedOn": "2026-11-23",
-        "excerpt": "Bengaluru infrastructure: Inside the Rs 2,215 Cr Hebbal decongestion blueprints reports that technical blueprints and traffic simulation data for mekhri circle corridor."
+        "excerpt": "The project is estimated to cost ₹2,215 crore and will be borne by Bangalore Development Authority"
       }
     ],
     "officialDocLinks": [
@@ -4988,7 +4932,7 @@
         "url": "https://www.thehindu.com/news/national/karnataka/tunnel-road-a-real-estate-project-in-disguise-contend-citizen-groups/article71321305.ece",
         "claim": "Details citizen opposition and High Court scrutiny over ₹17,780 Cr tunnel road proposal",
         "checkedOn": "2026-11-23",
-        "excerpt": "Citizen groups questioned the feasibility and high cost of the proposed Rs 17,780 crore twin tunnel road connecting Hebbal to Central Silk Board."
+        "excerpt": "Citizens opposing the Congress government's ambitious tunnel road project have termed it a real estate project in disguise."
       },
       {
         "title": "Adani Group lowest bidder for both packages of Bengaluru tunnel road project",
@@ -4997,7 +4941,7 @@
         "url": "https://www.thenewsminute.com/karnataka/adani-group-lowest-bidder-for-both-packages-of-bengaluru-tunnel-road-project",
         "claim": "Confirms Adani Enterprises emerged L1 bidder quoting ₹22,267 Cr, above govt estimate",
         "checkedOn": "2026-11-23",
-        "excerpt": "Adani Enterprises emerged as the lowest bidder for both packages of the 16.75-km underground tunnel road quoting a combined Rs 22,267 crore."
+        "excerpt": "With only two bidders remaining, the Adani Group emerged as the lowest bidder, while Vishwa Samudra ranked second."
       },
       {
         "title": "DK Shivakumar's lasting legacy? A Bengaluru tunnel project mired in questions",
@@ -5006,7 +4950,7 @@
         "url": "https://www.thenewsminute.com/karnataka/dk-shivakumars-lasting-legacy-a-bengaluru-tunnel-project-mired-in-questions",
         "claim": "Analyzes 16.75-km twin-tunnel proposal, funding model, and high cost per km",
         "checkedOn": "2026-11-23",
-        "excerpt": "The Karnataka cabinet approved the detailed feasibility report for the 16.75 km twin tube tunnel road with 40 percent state funding."
+        "excerpt": "The biggest casualty in the government's singular pursuit of the tunnel project has been the neglect of public transport projects."
       }
     ],
     "officialDocLinks": [
@@ -5121,7 +5065,7 @@
         "url": "https://www.thehindu.com/news/cities/bangalore/second-airport-in-bengaluru-will-be-within-50-70-km-from-city/article68411387.ece",
         "claim": "Confirms feasibility study and shortlist of potential locations within 50-70 km",
         "checkedOn": "2026-11-23",
-        "excerpt": "Infrastructure Minister M.B. Patil said the proposed second international airport for Bengaluru will be located within 50 to 70 km from the city."
+        "excerpt": "The proposed second airport in Bengaluru is expected to be located within 50 to 60 km from the city."
       },
       {
         "title": "Bengaluru's 2nd international airport plans accelerate: two locations shortlisted",
@@ -5130,7 +5074,7 @@
         "url": "https://timesofindia.indiatimes.com/city/bengaluru/bengalurus-2nd-international-airport-plans-accelerate-two-locations-shortlisted/articleshow/115424685.cms",
         "claim": "Reports shortlisted sites along Kanakapura and Nelamangala corridors",
         "checkedOn": "2026-11-23",
-        "excerpt": "The state government submitted shortlisted locations including sites along Kanakapura Road and Nelamangala-Kunigal Road to the Airports Authority of India."
+        "excerpt": "The state govt is expediting plans for Bengaluru's second international airport, aiming to finalise the location soon amid growing criticism over delays."
       }
     ],
     "officialDocLinks": [
@@ -5184,7 +5128,7 @@
           "sources": [
             {
               "label": "Deccan Chronicle",
-              "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+              "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
             }
           ]
         },
@@ -5195,7 +5139,7 @@
           "sources": [
             {
               "label": "Deccan Chronicle: Greenfield corridor route map",
-              "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+              "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
             }
           ]
         },
@@ -5206,7 +5150,7 @@
           "sources": [
             {
               "label": "Deccan Chronicle",
-              "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+              "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
             }
           ]
         }
@@ -5225,29 +5169,20 @@
         "description": "MoRTH approved preparation of DPR for greenfield 512 km high-speed corridor.",
         "source": {
           "label": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912"
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "NHAI speeds up Bengaluru-Hyderabad greenfield expressway DPR",
-        "outlet": "Deccan Chronicle",
-        "publishedDate": "2024-04-10",
-        "url": "https://www.deccanchronicle.com/nation/in-other-news/nhai-speeds-up-bengaluru-hyderabad-greenfield-expressway-dpr-884912",
-        "claim": "Details land survey milestones and alignment bypassing congested towns",
+        "title": "Construction of National High-Speed Corridors and Greenfield Expressways",
+        "outlet": "Press Information Bureau (PIB)",
+        "publishedDate": "2026-07-22",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287761",
+        "claim": "Review of national high-speed corridors and greenfield expressway network",
         "checkedOn": "2026-11-23",
-        "excerpt": "NHAI speeds up Bengaluru-Hyderabad greenfield expressway DPR reports that details land survey milestones and alignment bypassing congested towns."
-      },
-      {
-        "title": "Southern expressways update: Status of Bengaluru-Hyderabad corridor",
-        "outlet": "Construction World",
-        "publishedDate": "2024-06-18",
-        "url": "https://www.constructionworld.in/transport-infrastructure/highways-and-bridges-infrastructure/bengaluru-hyderabad-expressway-dpr-update/58912",
-        "claim": "Technical road geometric standards, interchanges, and environmental clearances",
-        "checkedOn": "2026-11-23",
-        "excerpt": "Southern expressways update: Status of Bengaluru-Hyderabad corridor reports that technical road geometric standards, interchanges, and environmental clearances."
+        "excerpt": "A total of 10,389 km of National High-Speed Corridors have been awarded across the country, of which 4,809 km have been completed"
       }
     ],
     "officialDocLinks": [
@@ -5301,7 +5236,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
             }
           ]
         },
@@ -5312,7 +5247,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
             }
           ]
         },
@@ -5323,7 +5258,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
             }
           ]
         }
@@ -5342,20 +5277,20 @@
         "description": "MoRTH approved preparation of DPR for greenfield 700 km expressway between Pune and Bengaluru.",
         "source": {
           "label": "Moneycontrol",
-          "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html"
+          "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway",
-        "outlet": "Moneycontrol",
+        "title": "Bengaluru-Mysuru expressway will be ready by end of February, says Union Minister Nitin Gadkari",
+        "outlet": "The Hindu",
         "publishedDate": "2024-06-25",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-pune-expressway-alignment-land-acquisition-challenges-12750941.html",
-        "claim": "Examines land acquisition requirements across Karnataka and Maharashtra borders",
+        "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mysuru-expressway-will-be-ready-by-end-of-february-2023-union-minister-nitin-gadkari/article66341733.ece",
+        "claim": "Logistics connectivity and linking of STRR to proposed Pune-Bengaluru greenfield expressway",
         "checkedOn": "2026-11-23",
-        "excerpt": "Mega infrastructure in the pipeline: A look at the proposed Bengaluru-Pune expressway reports that examines land acquisition requirements across karnataka and maharashtra borders."
+        "excerpt": "The road will be connected to the multi-nodal logistics park at Dobbaspet and also linked to the proposed Pune-Bengaluru Greenfield Expressway"
       }
     ],
     "officialDocLinks": [
@@ -5410,7 +5345,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
             }
           ]
         },
@@ -5421,7 +5356,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
             }
           ]
         },
@@ -5432,7 +5367,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
             }
           ]
         },
@@ -5443,7 +5378,7 @@
           "sources": [
             {
               "label": "Moneycontrol",
-              "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+              "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
             }
           ]
         }
@@ -5462,20 +5397,20 @@
         "description": "BWSSB announced plans to formulate DPR for 500 MLD Cauvery Stage VI project.",
         "source": {
           "label": "Moneycontrol",
-          "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html"
+          "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "How Cauvery Stage 6 aims to drought-proof Bengaluru's IT hubs by 2030",
-        "outlet": "Moneycontrol",
+        "title": "BWSSB invites bids for Cauvery VI stage DPR to supply water to towns around Bengaluru",
+        "outlet": "The Hindu",
         "publishedDate": "2024-04-05",
-        "url": "https://www.moneycontrol.com/news/business/economy/bengaluru-water-crisis-cauvery-stage-6-plans-and-funding-12581941.html",
-        "claim": "Analysis of ground water depletion and long-term water supply infrastructure",
+        "url": "https://www.thehindu.com/news/national/karnataka/bwssb-invites-bids-for-cauvery-vi-stage-dpr-to-supply-water-to-towns-around-bengaluru/article67824341.ece",
+        "claim": "BWSSB invites bids for Cauvery VI stage DPR to supply 500 MLD to towns around Bengaluru",
         "checkedOn": "2026-11-23",
-        "excerpt": "How Cauvery Stage 6 aims to drought-proof Bengaluru's IT hubs by 2030 reports that analysis of ground water depletion and long-term water supply infrastructure."
+        "excerpt": "Cauvery VI stage to supply 500 MLD, or around 6 tmcft annually"
       }
     ],
     "officialDocLinks": [
@@ -5529,7 +5464,7 @@
           "sources": [
             {
               "label": "The Hindu: RLDA moves forward on Bengaluru Majestic revamp",
-              "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+              "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
             }
           ]
         },
@@ -5540,7 +5475,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+              "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
             }
           ]
         },
@@ -5551,7 +5486,7 @@
           "sources": [
             {
               "label": "The Hindu",
-              "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+              "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
             }
           ]
         }
@@ -5570,7 +5505,7 @@
         "description": "Indian Railways announced KSR Bengaluru among major stations selected for world-class redevelopment.",
         "source": {
           "label": "The Hindu",
-          "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+          "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
         }
       },
       {
@@ -5580,20 +5515,20 @@
         "description": "Global engineering tenders invited for air concourse, multi-modal bridges, and passenger concourses.",
         "source": {
           "label": "The Hindu",
-          "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece"
+          "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms"
         }
       }
     ],
     "redFlags": [],
     "articles": [
       {
-        "title": "RLDA moves forward on Bengaluru Majestic railway station makeover",
-        "outlet": "The Hindu",
+        "title": "KSR railway station to be modernised after 56 years",
+        "outlet": "Bangalore Mirror",
         "publishedDate": "2024-03-05",
-        "url": "https://www.thehindu.com/news/cities/bangalore/ksr-bengaluru-majestic-station-redevelopment-update/article68019482.ece",
+        "url": "https://bangaloremirror.indiatimes.com/bangalore/others/ksr-railway-station-to-be-modernised-after-56-years/articleshow/115817802.cms",
         "claim": "Details integration with Metro lines and BMTC bus terminals",
         "checkedOn": "2026-11-23",
-        "excerpt": "RLDA moves forward on Bengaluru Majestic railway station makeover reports that details integration with metro lines and bmtc bus terminals."
+        "excerpt": "South Western Railway has proposed a comprehensive redevelopment plan for the Kranthiveera Sangolli Rayanna (KSR) Bengaluru City Railway Station (Majestic)."
       }
     ],
     "officialDocLinks": [

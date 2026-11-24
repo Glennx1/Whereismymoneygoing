@@ -32,12 +32,12 @@ export function generateMetadata({ params }: ProjectPageProps): Metadata {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) {
     return {
-      title: "Project Not Found | NammaKharcha",
+      title: "Project Not Found | Bengaluru Project Tracker",
       description: "Bengaluru public infrastructure project spending and timeline tracker.",
     };
   }
 
-  const title = `${project.title} — Budget, Delays & Progress | NammaKharcha`;
+  const title = `${project.title} — Budget, Delays & Progress | Bengaluru Project Tracker`;
   const description = `${project.tagline} Tracking reported budget, contract timeline, delays, and contractor details from verified public records.`;
 
   return {
@@ -47,7 +47,7 @@ export function generateMetadata({ params }: ProjectPageProps): Metadata {
       title,
       description,
       type: "article",
-      siteName: "NammaKharcha",
+      siteName: "Bengaluru Project Tracker",
     },
     twitter: {
       card: "summary_large_image",

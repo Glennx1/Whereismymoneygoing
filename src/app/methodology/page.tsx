@@ -3,7 +3,7 @@ import { ArrowLeft, CheckCircle2, ShieldAlert, Clock, Database, Search } from "l
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 
 export const metadata = {
-  title: "Methodology & Data Sourcing Standards • NammaKharcha",
+  title: "Methodology & Data Sourcing Standards • Bengaluru Project Tracker",
 };
 
 export default function MethodologyPage() {
@@ -87,7 +87,7 @@ export default function MethodologyPage() {
       <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 space-y-3 text-xs sm:text-sm text-neutral-600 leading-relaxed shadow-xs">
         <h2 className="text-base font-semibold text-neutral-900">Coverage Scope</h2>
         <p>
-          NammaKharcha currently tracks 32 major public works spanning Metro Rail, Suburban Rail, National Expressways, Arterial Flyovers, Water Supply, Stormwater Drain Remodelling, and Lake Rejuvenation across the Bengaluru metropolitan region.
+          Bengaluru Project Tracker currently tracks 32 major public works spanning Metro Rail, Suburban Rail, National Expressways, Arterial Flyovers, Water Supply, Stormwater Drain Remodelling, and Lake Rejuvenation across the Bengaluru metropolitan region.
         </p>
         <p>
           Our full audit trail documenting every corrected figure and citation is maintained in the <code className="text-neutral-800 font-mono text-[11px] bg-neutral-100 px-1 py-0.5 rounded">docs/data-audit-log.md</code> file in our repository.

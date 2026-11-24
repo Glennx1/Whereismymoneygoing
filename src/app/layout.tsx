@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { DataBanner } from "@/components/DataBanner";
 
 export const metadata: Metadata = {
-  title: "NammaKharcha • Bengaluru Public Projects Tracker",
+  title: "Bengaluru Project Tracker • Bengaluru Public Projects Tracker",
   description: "Independent citizen tracker following budget allocations, payouts, and real progress across major infrastructure projects in Bengaluru.",
 };
 
